@@ -1,0 +1,162 @@
+.info {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height: 100%;
+    border-left: 1px solid grey;
+  }
+  
+  .ContactButton {
+    width: 70%;
+    height: 3em;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+  
+  .info button:hover {
+    background-color: #0056b3;
+  }
+  
+  .personal-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+.profile-pic {
+    width: 6em;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: transparent;
+    margin-bottom: 1em;
+}
+  
+  .details h3 {
+    margin: 0;
+    margin-bottom: 0.5em;
+    font-size: x-large;
+    text-align: center;
+  }
+  
+  .details p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* Description */
+
+  .Info-Description {
+    font-size: medium;
+    line-height: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* Pinned Projects */
+  
+  .pinned-projects {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 10%;
+  }
+  
+  .pinned-projects h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+  
+  .pinned-projects ul  {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pinned-projects li {
+    margin-bottom: 10px;
+  }
+  
+  .pinned-projects a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .pinned-projects a:hover {
+    text-decoration: underline;
+  }
+
+  /* Social media */
+
+  .social-media {
+    width: 100%;
+    margin-bottom: 2em;
+    margin-left: 10%;
+  }
+  
+  .social-media h4 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  .social-media ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+  }
+  
+  .social-icon {
+    font-size: x-large;
+    margin-right: 1em;
+  }
+  
+  .social-details {
+    flex: 1;
+  }
+  
+  .social-details a {
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  .social-details p {
+    margin: 0;
+    color: #666;
+    font-size: 1em;
+  }
+  
+  .follow-btn {
+    width: 25%;
+    height: 2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 10%;
+  }
+  
+  .follow-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  

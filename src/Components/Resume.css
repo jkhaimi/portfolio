@@ -1,0 +1,16 @@
+.resume {
+}
+
+.resume h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: xx-large;
+    margin-bottom: 1.5em;
+}
+
+.CV {
+    border: 1px solid whitesmoke;
+    margin-left: 15%;
+    margin-bottom: 3em;
+
+}

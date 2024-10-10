@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(40, 40, 40);
+}
+
+.app {
+  display: flex;
+}
+
+.options {
+  width: 3%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.projects {
+  padding: 0;
+}
+
+.info {
+  width: 20%;
+}

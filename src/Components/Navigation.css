@@ -1,0 +1,27 @@
+.Navigation h3 {
+    color: whitesmoke;
+    font-size: xx-large;
+    margin-left: 1em;
+}
+
+.site-links {
+    display: flex;
+    justify-content: left;
+    gap: 2em;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-bottom: 1px solid grey;
+    padding-bottom: 1em;
+  }
+  
+  .site-links a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: large;
+  }
+
+  .site-links a.active {
+    font-weight: bold;
+  }
+  
