@@ -1,38 +1,61 @@
 .tinkerit {
     padding: 2em;
-    background-color: #f8f8f8; /* Adjust background color */
-    color: #333; /* Text color */
-  }
-  
-  .tinkerit-title {
+    color: whitesmoke;
+}
+
+.tinkerit-title {
     font-size: 2em;
     margin-bottom: 0.5em;
-  }
-  
-  .tinkerit-description {
-    font-size: 1.2em;
-    margin-bottom: 1.5em;
-  }
-  
-  .tinkerit-images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em; /* Space between images */
+    text-align: center;
+}
+
+.tinkerit-description {
+    font-size: large;
+    margin: 2em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.tinkerit-image-container {
     margin-bottom: 2em;
-  }
-  
-  .tinkerit-image {
-    width: 100%; /* Make responsive */
-    max-width: 400px; /* Set a max width */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.tinkerit-image {
+    width: 70%;
+    height: auto;
+}
+
+.tinkerit-button {
+    display: flex;
+    justify-self: center;
+    padding: 1em 4em;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: large;
+}
+
+.tinkerit-button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
     margin-top: 2em;
-  }
-  
-  ul {
+}
+
+ul {
     margin-left: 2em;
     list-style-type: disc;
-  }
-  
+}
+
+
+@media (max-width: 750px) {
+
+    .tinkerit-image {
+        width: 100%;
+    }
+}

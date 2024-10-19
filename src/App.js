@@ -8,10 +8,12 @@ import AboutMe from './Components/AboutMe';
 import Resume from './Components/Resume';
 import InfoMobile from './Components/InfoMobile';
 import Footer from './Components/Footer';
+import TinkerIT from './Components/Projects/TinkerIT';
 import './Components/i18n';
 
 function App() {
   const [activeComponent, setActiveComponent] = useState('projects');
+  const [selectedProject, setSelectedProject] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
 
   useEffect(() => {
@@ -25,8 +27,9 @@ function App() {
     };
   }, []);
 
-  const handleNavigationClick = (component) => {
+  const handleNavigationClick = (component, project = null) => {
     setActiveComponent(component);
+    setSelectedProject(project); // Set selected project for detailed view
   };
 
   return (
@@ -38,8 +41,9 @@ function App() {
             <Navigation onNavigate={handleNavigationClick} activeComponent={activeComponent} />
             {isMobile && <InfoMobile />}
             {activeComponent === 'about-me' && <AboutMe />}
-            {activeComponent === 'resume' && <Resume />} 
-            {activeComponent === 'projects' && <Projects />}
+            {activeComponent === 'resume' && <Resume />}
+            {activeComponent === 'projects' && <Projects onNavigate={handleNavigationClick} />} {/* Pass onNavigate to Projects */}
+            {activeComponent === 'project' && selectedProject && selectedProject.title === 'TinkerIT' && <TinkerIT />} {/* Show TinkerIT when selected */}
           </div>
           {!isMobile && <Info />}
         </div>

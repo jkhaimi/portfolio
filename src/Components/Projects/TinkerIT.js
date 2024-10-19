@@ -1,38 +1,30 @@
 import React from 'react';
-import './TinkerIT.css'; // Import the CSS for this project
-import TinkerITImage1 from '../Images/tinkerit-image1.jpg'; // Add your images
-import TinkerITImage2 from '../Images/tinkerit-image2.jpg';
+import './TinkerIT.css';
+import TinkerITImage from '../../Images/TinkerIT.png'; 
 
 function TinkerIT() {
   return (
     <div className="tinkerit">
-      <h1 className="tinkerit-title">TinkerIT</h1>
+
+      <div className="tinkerit-image-container">
+        <img src={TinkerITImage} alt="TinkerIT Overview" className="tinkerit-image" />
+      </div>
+
       <p className="tinkerit-description">
-        TinkerIT is a customer-oriented software company with a mission to enable modern websites and stores for all businesses.
+        Founded in the summer of 2023, TinkerIT is a customer-focused software company dedicated to empowering businesses with modern websites and online stores. As a co-founder, I actively contribute to both the marketing and coding aspects of the company. We've worked on a variety of exciting projects across different industries, and I personally took charge of developing our company website, ensuring it reflects our commitment to innovation and quality.
       </p>
 
-      {/* <div className="tinkerit-images">
-        <img src={TinkerITImage1} alt="TinkerIT Overview" className="tinkerit-image" />
-        <img src={TinkerITImage2} alt="TinkerIT Example" className="tinkerit-image" />
-      </div> */}
 
-      <h2>Project Details</h2>
-      <p>
-        Here you can include detailed explanations about the project, the technologies used, the challenges faced, and how you overcame them.
-      </p>
+      <h2 style={{textAlign: "center"}}>Visit Website</h2>
 
-      <h2>Features</h2>
-      <ul>
-        <li>Feature 1</li>
-        <li>Feature 2</li>
-        <li>Feature 3</li>
-        {/* Add more features as needed */}
-      </ul>
-
-      <h2>Conclusion</h2>
-      <p>
-        Write a conclusion about what you learned from this project and any future improvements you would like to make.
-      </p>
+      <a 
+        href="https://tinkerit.fi"
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="tinkerit-button"
+      >
+        tinkerit.fi
+      </a>
     </div>
   );
 }

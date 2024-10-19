@@ -11,7 +11,7 @@ import SavolainenOsakunta from '../Images/savo.png';
 import Game from '../Images/Game.png';
 
 
-function Projects() {
+function Projects({ onNavigate }) {
   const [filter, setFilter] = useState('All');
 
   const projects = [
@@ -30,6 +30,10 @@ function Projects() {
 
   const filteredProjects = projects.filter((project) => filter === 'All' || project.filter === filter);
 
+  const handleProjectClick = (project) => {
+    onNavigate('project', project);
+  };
+
   return (
     <div className="projects">
       <h3 className='Projects-title'>My Work</h3>
@@ -44,15 +48,15 @@ function Projects() {
       <div className="project-timeline">
         {filteredProjects.map((project, index) => (
           <div className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`} key={project.id}>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <div onClick={() => handleProjectClick(project)} style={{ cursor: 'pointer' }}>
               <div className="project-content">
-                  <img src={project.image} alt={project.title} className={`project-image project-image-${project.id}`} />
-                  <div className='project-description'>
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-                  </div>
+                <img src={project.image} alt={project.title} className={`project-image project-image-${project.id}`} />
+                <div className='project-description'>
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                </div>
               </div>
-              </a>
+            </div>
           </div>
         ))}
       </div>
