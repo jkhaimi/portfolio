@@ -7,6 +7,7 @@ import Projects from './Components/Projects';
 import AboutMe from './Components/AboutMe'; 
 import Resume from './Components/Resume';
 import InfoMobile from './Components/InfoMobile';
+import Footer from './Components/Footer';
 import './Components/i18n';
 
 function App() {
@@ -30,15 +31,20 @@ function App() {
 
   return (
     <div className="app">
-      <Options />
-      <div className="main-content">
-        <Navigation onNavigate={handleNavigationClick} activeComponent={activeComponent} />
-        {isMobile && <InfoMobile />}
-        {activeComponent === 'about-me' && <AboutMe />}
-        {activeComponent === 'resume' && <Resume />} 
-        {activeComponent === 'projects' && <Projects />}
+      <div className="content-wrapper">
+        <Options />
+        <div className="main-container">
+          <div className="main-content">
+            <Navigation onNavigate={handleNavigationClick} activeComponent={activeComponent} />
+            {isMobile && <InfoMobile />}
+            {activeComponent === 'about-me' && <AboutMe />}
+            {activeComponent === 'resume' && <Resume />} 
+            {activeComponent === 'projects' && <Projects />}
+          </div>
+          {!isMobile && <Info />}
+        </div>
       </div>
-      {!isMobile && <Info />}
+      <Footer />
     </div>
   );
 }

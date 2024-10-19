@@ -9,15 +9,13 @@ import ThaiMarketOlari from '../Images/ThaiMarket2.png';
 import AirportTaxi from '../Images/AirportTaxi.webp';
 import SavolainenOsakunta from '../Images/savo.png';
 import Game from '../Images/Game.png';
-import { IoGameControllerOutline } from "react-icons/io5";
-
 
 
 function Projects() {
   const [filter, setFilter] = useState('All');
 
   const projects = [
-    { id: 1, title: 'TinkerIT', filter: 'TinkerIT', description: 'TinkerIT is a customer oriented software company with a mission to enable modern websites and stores for all businesses', image: Lamppu, link: 'https://tinkerit.fi'},
+    { id: 1, title: 'TinkerIT', filter: 'TinkerIT', description: 'TinkerIT is a customer oriented software company with a mission to enable modern websites and stores for all businesses', image: Lamppu, link: '../Projects/TinkerIT'},
     { id: 2, title: 'My music', filter: 'Freetime', description: 'Music I have produced', image: Soundcloud, link: 'https://soundcloud.com/user-833201349' },
     { id: 7, title: 'Airport Taxi', filter: 'TinkerIT', description: 'Analyzed data for academic research.', image: AirportTaxi },
     { id: 8, title: 'Savolainen Osakunta', filter: 'TinkerIT', description: 'Analyzed data for academic research.', image: SavolainenOsakunta },
@@ -44,17 +42,15 @@ function Projects() {
       </div>
 
       <div className="project-timeline">
-        {/* <div style={{fontSize: "200px", color: "whitesmoke", marginLeft: "1em"}}>
-<IoGameControllerOutline />
-      </div> */}
-
         {filteredProjects.map((project, index) => (
           <div className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`} key={project.id}>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               <div className="project-content">
                   <img src={project.image} alt={project.title} className={`project-image project-image-${project.id}`} />
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
+                  <div className='project-description'>
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                  </div>
               </div>
               </a>
           </div>

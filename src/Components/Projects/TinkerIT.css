@@ -1,0 +1,38 @@
+.tinkerit {
+    padding: 2em;
+    background-color: #f8f8f8; /* Adjust background color */
+    color: #333; /* Text color */
+  }
+  
+  .tinkerit-title {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .tinkerit-description {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+  }
+  
+  .tinkerit-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; /* Space between images */
+    margin-bottom: 2em;
+  }
+  
+  .tinkerit-image {
+    width: 100%; /* Make responsive */
+    max-width: 400px; /* Set a max width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  h2 {
+    margin-top: 2em;
+  }
+  
+  ul {
+    margin-left: 2em;
+    list-style-type: disc;
+  }
+  
