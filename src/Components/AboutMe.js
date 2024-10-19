@@ -14,7 +14,8 @@ function AboutMe() {
         <div className="text text-left">
           <h3>Student Life</h3>
           <p>
-          I am a 23-year-old Information and Software Engineering student at the <strong>University of Jyväskylä</strong>, set to graduate in the spring. Throughout my studies, I've gained a deep interest in IT and had the chance to study abroad at the University of Jaén in Spain, which further fueled my passion for the field.          </p>
+          I am a 23-year-old Information and Software Engineering student at the <strong>University of Jyväskylä</strong>, set to graduate in the spring. 
+          Throughout my studies, I've gained a deep interest in IT and had the chance to study abroad at the University of Jaén in Spain, which further fueled my passion for the field.          </p>
         </div>
         <div className="images">
           <img src={Student} alt="Jesse Haimi" className="student-life-img" />
@@ -40,7 +41,7 @@ function AboutMe() {
           <h3>Personal Life</h3>
           <p>
           In my spare time, I play football, go to the gym, and produce music. I have learned useful skills from my hobbies for working life, such as teamwork skills, creativity and persistence. 
-          I am enthusiastic, active and positive by nature. I enjoy social situations and believe every interaction can be a lesson. IT is my passion and I have enjoyed my studies so far. I'm intrested in technology as a whole and love working on projects.
+          I am enthusiastic, active and positive by nature. I enjoy social situations and believe every interaction can be a lesson.
           </p>
         </div>
         <div className="images">

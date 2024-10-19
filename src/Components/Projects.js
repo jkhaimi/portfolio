@@ -2,7 +2,16 @@ import React, { useState } from 'react';
 import './Projects.css';
 import Lamppu from '../Images/lamppu.webp';
 import Soundcloud from '../Images/SC.webp';
-import StudyTracker from '../Images/studytracker.webp';
+import StudyTracker from '../Images/Studytracker.png';
+import SongLibrary from '../Images/songlibrary.png';
+import OnlineStore from '../Images/Onlinestore.png';
+import ThaiMarketOlari from '../Images/ThaiMarket2.png';
+import AirportTaxi from '../Images/AirportTaxi.webp';
+import SavolainenOsakunta from '../Images/savo.png';
+import Game from '../Images/Game.png';
+import { IoGameControllerOutline } from "react-icons/io5";
+
+
 
 function Projects() {
   const [filter, setFilter] = useState('All');
@@ -10,10 +19,15 @@ function Projects() {
   const projects = [
     { id: 1, title: 'TinkerIT', filter: 'TinkerIT', description: 'TinkerIT is a customer oriented software company with a mission to enable modern websites and stores for all businesses', image: Lamppu, link: 'https://tinkerit.fi'},
     { id: 2, title: 'My music', filter: 'Freetime', description: 'Music I have produced', image: Soundcloud, link: 'https://soundcloud.com/user-833201349' },
+    { id: 7, title: 'Airport Taxi', filter: 'TinkerIT', description: 'Analyzed data for academic research.', image: AirportTaxi },
+    { id: 8, title: 'Savolainen Osakunta', filter: 'TinkerIT', description: 'Analyzed data for academic research.', image: SavolainenOsakunta },
+    { id: 10, title: 'Eristyspalvelu Kaasalainen', filter: 'TinkerIT', description: 'Website for ', image: Lamppu },
+    { id: 9, title: 'Tietoturva-asiantuntija Heidi', filter: 'TinkerIT', description: 'Wordpress website for a course platform', image: Lamppu },
     { id: 3, title: 'StudyTracker', filter: 'Open Source', description: 'A database application for primary schools to create and conduct exams', image: StudyTracker, link: 'https://github.com/tuupsuu/StudyTracker' },
-    { id: 4, title: 'Social Media Dashboard', filter: 'TinkerIT', description: 'Built a social media analytics tool.', image: Lamppu, link: 'https://tinkerit.fi' },
-    { id: 5, title: 'Game Development Project', filter: 'Freetime', description: 'Created a simple 2D platformer game.', image: Lamppu },
-    { id: 6, title: 'Data Analysis Project', filter: 'Open Source', description: 'Analyzed data for academic research.', image: Lamppu },
+    { id: 6, title: 'Thai Market Olari', filter: 'TinkerIT', description: 'Website for an asian foodmarket in Espoo', image: ThaiMarketOlari },
+    { id: 5, title: 'Online Store', filter: 'Open Source', description: 'An online store that uses an API to fetch product infomation from a Shopify store to display on the page', image: OnlineStore },
+    { id: 4, title: 'Song Library', filter: 'Open Source', description: 'Database project where you create playlists and rate the songs you have listened to', image: SongLibrary, link: 'https://tinkerit.fi' },
+    { id: 11, title: 'Väistelypeli', filter: 'Open Source', description: 'Simple platforming game that I made after my first programming course', image: Game },
   ];
 
   const filteredProjects = projects.filter((project) => filter === 'All' || project.filter === filter);
@@ -30,6 +44,10 @@ function Projects() {
       </div>
 
       <div className="project-timeline">
+        {/* <div style={{fontSize: "200px", color: "whitesmoke", marginLeft: "1em"}}>
+<IoGameControllerOutline />
+      </div> */}
+
         {filteredProjects.map((project, index) => (
           <div className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`} key={project.id}>
             <a href={project.link} target="_blank" rel="noopener noreferrer">

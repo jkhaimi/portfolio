@@ -1,67 +1,97 @@
 .about-me {
-    color: white;
-    margin: 0 auto;
-  }
+  color: white;
+  margin: 0 auto;
+}
 
-  .about-me h2 {
-    text-align: center;
-    font-size: xx-large;
-  }
+.about-me h2 {
+  text-align: center;
+  font-size: xx-large;
+}
 
-  .about-me h3 {
-    font-size: x-large;
-  }
-  
-  .section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5em;
-  }
-  
-  .text {
-    flex: 1;
-    line-height: 1.5em;
-    font-size: large;
-  }
+.about-me h3 {
+  font-size: x-large;
+}
 
-  .text-left {
-    margin-left: 2em;
-  }
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
 
-  .text-right {
-    margin-right: 3em;
-  }
+.text {
+  flex: 1;
+  line-height: 1.5em;
+  font-size: large;
+}
 
-  .section .images {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .images {
-    display: flex;
-    gap: 10px; /* Space between the images */
-  }
-  
-  .images img {
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid whitesmoke;
-  }
+.text-left {
+  margin-left: 2em;
+}
 
-  /* Image sizes */
+.text-right {
+  margin-right: 3em;
+}
 
-  .student-life-img {
-    width: 20em;
-  }
+.section .images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .work-life-img {
-    width: 20em;
-  }
+.images {
+  display: flex;
+  gap: 10px;
+}
 
-  .personal-life-img {
-    width: 20em;
-  }
+.images img {
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
+}
+
+.student-life-img, .work-life-img, .personal-life-img {
+  width: 20em;
+}
+
+@media (max-width: 750px) {
+.section {
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+.text {
+  text-align: center;
+  margin: 0 1.5em;
+}
+
+.images img {
+  width: 100%;
+  max-width: 18em;
+}
+
+.text-left, .text-right {
+  margin: 0;
+}
+
+.student-life .text, .work-life .text, .personal-life .text {
+  order: -1;
+}
+
+.about-me h2 {
+  font-size: xx-large;
+}
+
+.about-me h3 {
+  font-size: x-large;
+}
+
+.text {
+  font-size: medium;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+}

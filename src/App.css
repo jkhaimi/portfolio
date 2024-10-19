@@ -21,5 +21,15 @@ body {
 }
 
 .info {
-  width: 20%;
+  width: 20%;        
+  border-left: 1px solid grey;
+  /* background-color: #a83c4c; */
+}
+
+@media(max-width: 750px) {
+
+  .options {
+    display: none;
+  }
+
 }
