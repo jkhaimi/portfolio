@@ -8,18 +8,20 @@ import OnlineStore from '../Images/Onlinestore.png';
 import ThaiMarketOlari from '../Images/ThaiMarket2.png';
 import AirportTaxi from '../Images/AirportTaxi.webp';
 import SavolainenOsakunta from '../Images/savo.png';
+import Kaasalainen from '../Images/kaasalainen.png';
 import Game from '../Images/Game.png';
+// import { RiSkipLeftLine } from "react-icons/ri";
 
 
 function Projects({ onNavigate }) {
   const [filter, setFilter] = useState('All');
 
   const projects = [
-    { id: 1, title: 'TinkerIT', filter: 'TinkerIT', description: 'TinkerIT is a customer oriented software company with a mission to enable modern websites and stores for all businesses', image: Lamppu, link: '../Projects/TinkerIT'},
-    { id: 2, title: 'My music', filter: 'Freetime', description: 'Music I have produced', image: Soundcloud, link: 'https://soundcloud.com/user-833201349' },
-    { id: 7, title: 'Airport Taxi', filter: 'TinkerIT', description: 'Analyzed data for academic research.', image: AirportTaxi },
-    { id: 8, title: 'Savolainen Osakunta', filter: 'TinkerIT', description: 'Analyzed data for academic research.', image: SavolainenOsakunta },
-    { id: 10, title: 'Eristyspalvelu Kaasalainen', filter: 'TinkerIT', description: 'Website for ', image: Lamppu },
+    { id: 1, title: 'TinkerIT', filter: 'TinkerIT', description: 'A software company creating modern websites and online stores for businesses', image: Lamppu, link: '../Projects/TinkerIT'},
+    { id: 2, title: 'My Music', filter: 'Freetime', description: 'Music I have produced', image: Soundcloud, link: 'https://soundcloud.com/user-833201349' },
+    { id: 7, title: 'Airport Taxi', filter: 'TinkerIT', description: "Node middleware application using AWS EC2 instance", image: AirportTaxi },
+    { id: 8, title: 'Savolainen osakunta', filter: 'TinkerIT', description: 'Website for a Savonian student organization', image: SavolainenOsakunta },
+    { id: 10, title: 'Eristyspalvelu Kaasalainen', filter: 'TinkerIT', description: 'One-page website for a Finnish insulation company', image: Kaasalainen },
     { id: 9, title: 'Tietoturva-asiantuntija Heidi', filter: 'TinkerIT', description: 'Wordpress website for a course platform', image: Lamppu },
     { id: 3, title: 'StudyTracker', filter: 'Open Source', description: 'A database application for primary schools to create and conduct exams', image: StudyTracker, link: 'https://github.com/tuupsuu/StudyTracker' },
     { id: 6, title: 'Thai Market Olari', filter: 'TinkerIT', description: 'Website for an asian foodmarket in Espoo', image: ThaiMarketOlari },

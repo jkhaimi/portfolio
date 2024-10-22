@@ -8,7 +8,14 @@ import AboutMe from './Components/AboutMe';
 import Resume from './Components/Resume';
 import InfoMobile from './Components/InfoMobile';
 import Footer from './Components/Footer';
-import TinkerIT from './Components/Projects/TinkerIT';
+import TinkerIT from './Projects/TinkerIT';
+import Music from './Projects/Music';
+import AirportTaxi from './Projects/AirportTaxi';
+import SavolainenOsakunta from './Projects/SavolainenOsakunta';
+import Kaasalainen from './Projects/Kaasalainen';
+import Heidi from './Projects/Heidi';
+import StudyTracker from './Projects/StudyTracker';
+import ThaiMarketOlari from './Projects/ThaiMarketOlari';
 import './Components/i18n';
 
 function App() {
@@ -29,7 +36,7 @@ function App() {
 
   const handleNavigationClick = (component, project = null) => {
     setActiveComponent(component);
-    setSelectedProject(project); // Set selected project for detailed view
+    setSelectedProject(project);
   };
 
   return (
@@ -43,7 +50,19 @@ function App() {
             {activeComponent === 'about-me' && <AboutMe />}
             {activeComponent === 'resume' && <Resume />}
             {activeComponent === 'projects' && <Projects onNavigate={handleNavigationClick} />} {/* Pass onNavigate to Projects */}
-            {activeComponent === 'project' && selectedProject && selectedProject.title === 'TinkerIT' && <TinkerIT />} {/* Show TinkerIT when selected */}
+            {activeComponent === 'project' && selectedProject && (
+              <>
+                {selectedProject.title === 'TinkerIT' && <TinkerIT />}
+                {selectedProject.title === 'My Music' && <Music />}
+                {selectedProject.title === 'Airport Taxi' && <AirportTaxi />}
+                {selectedProject.title === 'Savolainen osakunta' && <SavolainenOsakunta />}
+                {selectedProject.title === 'Eristyspalvelu Kaasalainen' && <Kaasalainen />}
+                {selectedProject.title === 'Tietoturva-asiantuntija Heidi' && <Heidi />}
+                {selectedProject.title === 'StudyTracker' && <StudyTracker />}
+                {selectedProject.title === 'Thai Market Olari' && <ThaiMarketOlari />}
+              </>
+            )}
+
           </div>
           {!isMobile && <Info />}
         </div>
