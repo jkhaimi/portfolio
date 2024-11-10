@@ -16,6 +16,7 @@ import Kaasalainen from './Projects/Kaasalainen';
 import Heidi from './Projects/Heidi';
 import StudyTracker from './Projects/StudyTracker';
 import ThaiMarketOlari from './Projects/ThaiMarketOlari';
+import OnlineStore from './Projects/OnlineStore';
 import './Components/i18n';
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
                 {selectedProject.title === 'Tietoturva-asiantuntija Heidi' && <Heidi />}
                 {selectedProject.title === 'StudyTracker' && <StudyTracker />}
                 {selectedProject.title === 'Thai Market Olari' && <ThaiMarketOlari />}
+                {selectedProject.title === 'Online Store' && <OnlineStore />}
               </>
             )}
 

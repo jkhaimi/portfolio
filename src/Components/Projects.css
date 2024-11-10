@@ -198,6 +198,17 @@
     flex-direction: column;
   }
 
+  .Projects-title {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+
+  .filter-buttons {
+    width: 100%;
+    margin: 0;
+    gap: 0.5em;
+  }
+
   .timeline-item {
     max-width: 100%;
     margin-bottom: 2em;
@@ -209,11 +220,12 @@
   }
 
   .timeline-item.left, .timeline-item.right {
-    margin-left: 0;
+    margin-left: 0.5em;
     width: auto;
     max-width: 80%;
   
   }
+
 
   .project-content {
     display: flex;
