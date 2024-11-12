@@ -1,5 +1,5 @@
 import React from 'react';
-import './Heidi.css';
+import '../Components/Projects.css';
 
 function Heidi() {
   return (

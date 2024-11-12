@@ -27,7 +27,7 @@ function Projects({ onNavigate }) {
     { id: 6, title: 'Thai Market Olari', filter: 'TinkerIT', description: 'Website for an asian foodmarket in Espoo', image: ThaiMarketOlari },
     { id: 5, title: 'Online Store', filter: 'Open Source', description: 'An online store that uses an API to fetch product infomation from a Shopify store to display on the page', image: OnlineStore },
     { id: 4, title: 'Song Library', filter: 'Open Source', description: 'Database project where you create playlists and rate the songs you have listened to', image: SongLibrary, link: 'https://tinkerit.fi' },
-    { id: 11, title: 'Väistelypeli', filter: 'Open Source', description: 'Simple platforming game that I made after my first programming course', image: Game },
+    { id: 11, title: 'Platforming Game', filter: 'Open Source', description: 'Simple platforming game that I made after my first programming course', image: Game },
   ];
 
   const filteredProjects = projects.filter((project) => filter === 'All' || project.filter === filter);

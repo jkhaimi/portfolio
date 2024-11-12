@@ -1,5 +1,5 @@
 import React from 'react';
-import './AirportTaxi.css';
+import '../Components/Projects.css';
 import AirportTaxiImage from '../Images/AirportTaxi3.png'; 
 
 function AirportTaxi() {

@@ -17,6 +17,8 @@ import Heidi from './Projects/Heidi';
 import StudyTracker from './Projects/StudyTracker';
 import ThaiMarketOlari from './Projects/ThaiMarketOlari';
 import OnlineStore from './Projects/OnlineStore';
+import SongLibrary from './Projects/SongLibrary';
+import PlatformingGame from './Projects/PlatformingGame';
 import './Components/i18n';
 
 function App() {
@@ -62,6 +64,8 @@ function App() {
                 {selectedProject.title === 'StudyTracker' && <StudyTracker />}
                 {selectedProject.title === 'Thai Market Olari' && <ThaiMarketOlari />}
                 {selectedProject.title === 'Online Store' && <OnlineStore />}
+                {selectedProject.title === 'Song Library' && <SongLibrary />}
+                {selectedProject.title === 'Platforming Game' && <PlatformingGame />}
               </>
             )}
 

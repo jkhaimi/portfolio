@@ -1,5 +1,5 @@
 import React from 'react';
-import './SavolainenOsakunta.css';
+import '../Components/Projects.css';
 import SavoImage from '../Images/savo.png'; 
 import SavoText from '../Images/savolainenText.png'; 
 

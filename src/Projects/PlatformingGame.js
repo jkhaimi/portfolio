@@ -1,31 +1,31 @@
 import React from 'react';
 import '../Components/Projects.css';
-import OnlineStoreImage from '../Images/OnlineStore.jpeg'
+import PlatformerImage from '../Images/platformer.png'; 
 
-function OnlineStore() {
+function PlatformingGame() {
   return (
     <div className="tinkerit">
 
-      <h1 className='tinkerit-title'>Online Store</h1>
+      <h1 className='tinkerit-title'>TinkerIT</h1>
 
       <div className="tinkerit-image-container">
-        <img src={OnlineStoreImage} alt="TinkerIT Overview" className="onlinestore-image" />
+        <img src={PlatformerImage} alt="TinkerIT Overview" className="tinkerit-image" />
       </div>
 
       <p className="tinkerit-description">
-
-      I developed a Vanilla Javascript Web Store foundation that fetches product data from Shopify stores through public APIs. The website allows users to browse products and view details like names and prices. </p>
+        For my very first coding project I developed a platformer game using C#. The game features classic platforming mechanics such as jumping and obstacles. The goal of the game is to survive as long as possible and the best results are submitted to a ranking list.
+      </p>
 
       <div className='project-buttons'>
         <div className='button-container'>
         <h2 style={{textAlign: "center"}}>Check the Code</h2>
         <a 
-          href="https://github.com/jkhaimi/nettikauppa"
+          href="https://gitlab.jyu.fi/jkhaimi/ohj1ht"
           target="_blank" 
           rel="noopener noreferrer" 
           className="tinkerit-button"
         >
-          github.com
+          gitlab.jyu.fi
         </a>
       </div>
 
@@ -44,4 +44,4 @@ function OnlineStore() {
   );
 }
 
-export default OnlineStore;
+export default PlatformingGame;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './StudyTracker.css';
+import '../Components/Projects.css';
 import StudyTrackerImage1 from '../Images/studytracker1.png'; 
 import StudyTrackerImage2 from '../Images/studytracker2.png'; 
 

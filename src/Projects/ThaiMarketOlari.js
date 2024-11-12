@@ -1,5 +1,5 @@
 import React from 'react';
-import './ThaiMarketOlari.css';
+import '../Components/Projects.css';
 import ThaiMarketOlariImage from '../Images/ThaiMarket2.png'; 
 
 function ThaiMarketOlari() {

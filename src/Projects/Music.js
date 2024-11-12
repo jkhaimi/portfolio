@@ -1,5 +1,5 @@
 import React from 'react';
-import './Music.css';
+import '../Components/Projects.css';
 import MusicImage from '../Images/music.png';
 import Sample1 from '../Audio/jkl4.wav';
 import Sample2 from '../Audio/JS1.wav';

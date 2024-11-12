@@ -1,31 +1,32 @@
 import React from 'react';
 import '../Components/Projects.css';
 import TinkerITImage from '../Images/TinkerIT.png'; 
+import SongLibraryImage from '../Images/BiisiKirjasto.png'
 
-function TinkerIT() {
+function SongLibrary() {
   return (
     <div className="tinkerit">
 
-      <h1 className='tinkerit-title'>TinkerIT</h1>
+      <h1 className='tinkerit-title'>Song Library</h1>
 
       <div className="tinkerit-image-container">
-        <img src={TinkerITImage} alt="TinkerIT Overview" className="tinkerit-image" />
+        <img src={SongLibraryImage} alt="TinkerIT Overview" className="tinkerit-image" />
       </div>
 
       <p className="tinkerit-description">
-        Founded in the summer of 2023, TinkerIT is a customer-focused software company dedicated to empowering businesses with modern websites and online stores. As a co-founder, I actively contribute to both the marketing and coding aspects of the company. We've worked on a variety of exciting projects across different industries, and I personally took charge of developing our company website, ensuring it reflects our commitment to innovation and quality.
+        This is a Java-based database project where users can add their favorite songs, rate them, and filter the songs based on their ratings. The UI for the project was created using the SceneBuilder application.
       </p>
 
       <div className='project-buttons'>
         <div className='button-container'>
-        <h2 style={{textAlign: "center"}}>Visit Website</h2>
+        <h2 style={{textAlign: "center"}}>Check the Code</h2>
         <a 
-          href="https://tinkerit.fi"
+          href="https://gitlab.jyu.fi/jkhaimi/ohj2-harjoitustyo"
           target="_blank" 
           rel="noopener noreferrer" 
           className="tinkerit-button"
         >
-          tinkerit.fi
+          gitlab.jyu.fi
         </a>
       </div>
 
@@ -44,4 +45,4 @@ function TinkerIT() {
   );
 }
 
-export default TinkerIT;
+export default SongLibrary;

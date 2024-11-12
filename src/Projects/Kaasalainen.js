@@ -1,5 +1,5 @@
 import React from 'react';
-import './Kaasalainen.css';
+import '../Components/Projects.css';
 import KaasalainenImage from '../Images/kaasalainen.png'; 
 
 function Kaasalainen() {
