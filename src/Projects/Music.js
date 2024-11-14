@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../Components/Projects.css';
 import MusicImage from '../Images/music.png';
 import Sample1 from '../Audio/jkl4.wav';
 import Sample2 from '../Audio/JS1.wav';
 import { useTranslation } from 'react-i18next';
-
+import { NavigationContext } from '../App';
 
 function Music() {
 
+  const { handleNavigationClick } = useContext(NavigationContext);
   const { t } = useTranslation();
 
   return (
@@ -50,18 +51,18 @@ function Music() {
           rel="noopener noreferrer" 
           className="tinkerit-button"
         >
-          Soundcloud
+          soundcloud.com
         </a>
       </div>
 
       <div className='button-container'>
         <h2 style={{textAlign: "center"}}>{t("BACKTO_PROJECTS")}</h2>
-        <a 
-          href="/"
-          className="tinkerit-button"
-        >
-          {t("BACK")}
-        </a>
+        <button
+        className="tinkerit-button"
+        onClick={() => handleNavigationClick('projects')}
+      >
+        {t("BACK")}
+      </button>
       </div>
     </div>
     </div>

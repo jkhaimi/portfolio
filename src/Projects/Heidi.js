@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../Components/Projects.css';
 import { useTranslation } from 'react-i18next';
-
+import { NavigationContext } from '../App';
 
 function Heidi() {
 
+  const { handleNavigationClick } = useContext(NavigationContext);
   const { t } = useTranslation();
 
   return (
@@ -30,12 +31,12 @@ function Heidi() {
 
       <div className='button-container'>
         <h2 style={{textAlign: "center"}}>{t("BACKTO_PROJECTS")}</h2>
-        <a 
-          href="/"
-          className="savo-button"
-        >
-          {t("BACK")}
-        </a>
+        <button
+        className="savo-button"
+        onClick={() => handleNavigationClick('projects')}
+      >
+        {t("BACK")}
+      </button>
       </div>
     </div>
 

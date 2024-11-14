@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../Components/Projects.css';
 import KaasalainenImage from '../Images/kaasalainen.png'; 
 import { useTranslation } from 'react-i18next';
+import { NavigationContext } from '../App';
+
 
 function Kaasalainen() {
 
+  const { handleNavigationClick } = useContext(NavigationContext);
   const { t } = useTranslation();
 
   return (
@@ -33,12 +36,12 @@ function Kaasalainen() {
 
       <div className='button-container'>
         <h2 style={{textAlign: "center"}}>{t("BACKTO_PROJECTS")}</h2>
-        <a 
-          href="/"
-          className="tinkerit-button"
-        >
-          {t("BACK")}
-        </a>
+        <button
+        className="tinkerit-button"
+        onClick={() => handleNavigationClick('projects')}
+      >
+        {t("BACK")}
+      </button>
       </div>
     </div>
 

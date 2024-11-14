@@ -21,6 +21,8 @@ import SongLibrary from './Projects/SongLibrary';
 import PlatformingGame from './Projects/PlatformingGame';
 import './i18n';
 
+export const NavigationContext = React.createContext();
+
 function App() {
   const [activeComponent, setActiveComponent] = useState('projects');
   const [selectedProject, setSelectedProject] = useState(null);
@@ -44,38 +46,39 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <div className="content-wrapper">
-        <Options />
-        <div className="main-container">
-          <div className="main-content">
-            <Navigation onNavigate={handleNavigationClick} activeComponent={activeComponent} />
-            {isMobile && <InfoMobile />}
-            {activeComponent === 'about-me' && <AboutMe />}
-            {activeComponent === 'resume' && <Resume />}
-            {activeComponent === 'projects' && <Projects onNavigate={handleNavigationClick} />}
-            {activeComponent === 'project' && selectedProject && (
-              <>
-                {selectedProject.title === 'TinkerIT' && <TinkerIT />}
-                {(selectedProject.title === 'My Music' || selectedProject.title === 'Tuottamani musiikki') && <Music />}
-                {selectedProject.title === 'Airport Taxi' && <AirportTaxi />}
-                {selectedProject.title === 'Savolainen osakunta' && <SavolainenOsakunta />}
-                {selectedProject.title === 'Eristyspalvelu Kaasalainen' && <Kaasalainen />}
-                {selectedProject.title === 'Tietoturva-asiantuntija Heidi' && <Heidi />}
-                {selectedProject.title === 'StudyTracker' && <StudyTracker />}
-                {selectedProject.title === 'Thai Market Olari' && <ThaiMarketOlari />}
-                {(selectedProject.title === 'Online Store' || selectedProject.title === 'Verkkokauppa') && <OnlineStore />}
-                {(selectedProject.title === 'Song Library' || selectedProject.title === 'Biisikirjasto') && <SongLibrary />}
-                {(selectedProject.title === 'Platforming Game' || selectedProject.title === 'Väistelypeli') && <PlatformingGame />}
-              </>
-            )}
-
+    <NavigationContext.Provider value={{ handleNavigationClick }}>
+      <div className="app">
+        <div className="content-wrapper">
+          <Options />
+          <div className="main-container">
+            <div className="main-content">
+              <Navigation onNavigate={handleNavigationClick} activeComponent={activeComponent} />
+              {isMobile && <InfoMobile />}
+              {activeComponent === 'about-me' && <AboutMe />}
+              {activeComponent === 'resume' && <Resume />}
+              {activeComponent === 'projects' && <Projects onNavigate={handleNavigationClick} />}
+              {activeComponent === 'project' && selectedProject && (
+                <>
+                  {selectedProject.title === 'TinkerIT' && <TinkerIT />}
+                  {(selectedProject.title === 'My Music' || selectedProject.title === 'Tuottamani musiikki') && <Music />}
+                  {selectedProject.title === 'Airport Taxi' && <AirportTaxi />}
+                  {selectedProject.title === 'Savolainen osakunta' && <SavolainenOsakunta />}
+                  {selectedProject.title === 'Eristyspalvelu Kaasalainen' && <Kaasalainen />}
+                  {selectedProject.title === 'Tietoturva-asiantuntija Heidi' && <Heidi />}
+                  {selectedProject.title === 'StudyTracker' && <StudyTracker />}
+                  {selectedProject.title === 'Thai Market Olari' && <ThaiMarketOlari />}
+                  {(selectedProject.title === 'Online Store' || selectedProject.title === 'Verkkokauppa') && <OnlineStore />}
+                  {(selectedProject.title === 'Song Library' || selectedProject.title === 'Biisikirjasto') && <SongLibrary />}
+                  {(selectedProject.title === 'Platforming Game' || selectedProject.title === 'Väistelypeli') && <PlatformingGame />}
+                </>
+              )}
+            </div>
+            {!isMobile && <Info />}
           </div>
-          {!isMobile && <Info />}
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </NavigationContext.Provider>
   );
 }
 

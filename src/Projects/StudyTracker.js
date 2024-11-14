@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../Components/Projects.css';
 import StudyTrackerImage1 from '../Images/studytracker1.png'; 
 import StudyTrackerImage2 from '../Images/studytracker2.png'; 
 import { useTranslation } from 'react-i18next';
+import { NavigationContext } from '../App';
 
 function StudyTracker() {
 
+  const { handleNavigationClick } = useContext(NavigationContext);
   const { t } = useTranslation();
 
   return (
@@ -35,12 +37,12 @@ function StudyTracker() {
 
       <div className='button-container'>
         <h2 style={{textAlign: "center"}}>{t("BACKTO_PROJECTS")}</h2>
-        <a 
-          href="/"
-          className="tinkerit-button"
-        >
-          {t("BACK")}
-        </a>
+        <button
+        className="tinkerit-button"
+        onClick={() => handleNavigationClick('projects')}
+      >
+        {t("BACK")}
+      </button>
       </div>
     </div>
 

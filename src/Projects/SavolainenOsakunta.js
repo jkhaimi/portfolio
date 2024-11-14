@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../Components/Projects.css';
 import SavoImage from '../Images/savo.png'; 
 import SavoText from '../Images/savolainenText.png'; 
 import { useTranslation } from 'react-i18next';
+import { NavigationContext } from '../App';
+
 
 function SavolainenOsakunta() {
 
+  const { handleNavigationClick } = useContext(NavigationContext);
   const { t } = useTranslation();
 
   return (
@@ -35,12 +38,12 @@ function SavolainenOsakunta() {
 
       <div className='button-container'>
         <h2 style={{textAlign: "center"}}>{t("BACKTO_PROJECTS")}</h2>
-        <a 
-          href="/"
-          className="savo-button"
-        >
-          {t("BACK")}
-        </a>
+        <button
+        className="savo-button"
+        onClick={() => handleNavigationClick('projects')}
+      >
+        {t("BACK")}
+      </button>
       </div>
     </div>
 
