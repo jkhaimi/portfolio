@@ -1,25 +1,27 @@
 import React from 'react';
 import '../Components/Projects.css';
-import TinkerITImage from '../Images/TinkerIT.png'; 
 import SongLibraryImage from '../Images/BiisiKirjasto.png'
+import { useTranslation } from 'react-i18next';
+
 
 function SongLibrary() {
+
+  const { t } = useTranslation();
+
   return (
     <div className="tinkerit">
 
-      <h1 className='tinkerit-title'>Song Library</h1>
+      <h1 className='tinkerit-title'>{t('SONGLIBRARY_TITLE')}</h1>
 
       <div className="tinkerit-image-container">
-        <img src={SongLibraryImage} alt="TinkerIT Overview" className="tinkerit-image" />
+        <img src={SongLibraryImage} alt="TinkerIT Overview" className="songlibrary-image" />
       </div>
 
-      <p className="tinkerit-description">
-        This is a Java-based database project where users can add their favorite songs, rate them, and filter the songs based on their ratings. The UI for the project was created using the SceneBuilder application.
-      </p>
+      <p className="tinkerit-description">{t('SONGLIBRARY_TEXT')}</p>
 
       <div className='project-buttons'>
         <div className='button-container'>
-        <h2 style={{textAlign: "center"}}>Check the Code</h2>
+        <h2 style={{textAlign: "center"}}>{t('CHECK_THE_CODE')}</h2>
         <a 
           href="https://gitlab.jyu.fi/jkhaimi/ohj2-harjoitustyo"
           target="_blank" 
@@ -31,12 +33,12 @@ function SongLibrary() {
       </div>
 
       <div className='button-container'>
-        <h2 style={{textAlign: "center"}}>Back to Projects</h2>
+        <h2 style={{textAlign: "center"}}>{t('BACKTO_PROJECTS')}</h2>
         <a 
           href="/"
           className="tinkerit-button"
         >
-          Back
+          {t('BACK')}
         </a>
       </div>
     </div>

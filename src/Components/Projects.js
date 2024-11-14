@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Projects.css';
+import { useTranslation } from 'react-i18next';
 import Lamppu from '../Images/lamppu.webp';
 import Soundcloud from '../Images/SC.webp';
 import StudyTracker from '../Images/Studytracker.png';
@@ -14,20 +15,23 @@ import Game from '../Images/Game.png';
 
 
 function Projects({ onNavigate }) {
+
+  const { t } = useTranslation();
+
   const [filter, setFilter] = useState('All');
 
   const projects = [
-    { id: 1, title: 'TinkerIT', filter: 'TinkerIT', description: 'A software company creating modern websites and online stores for businesses', image: Lamppu, link: '../Projects/TinkerIT'},
-    { id: 2, title: 'My Music', filter: 'Freetime', description: 'Music I have produced', image: Soundcloud, link: 'https://soundcloud.com/user-833201349' },
-    { id: 7, title: 'Airport Taxi', filter: 'TinkerIT', description: "Node middleware application using AWS EC2 instance", image: AirportTaxi },
-    { id: 8, title: 'Savolainen osakunta', filter: 'TinkerIT', description: 'Website for a Savonian student organization', image: SavolainenOsakunta },
-    { id: 10, title: 'Eristyspalvelu Kaasalainen', filter: 'TinkerIT', description: 'One-page website for a Finnish insulation company', image: Kaasalainen },
-    { id: 9, title: 'Tietoturva-asiantuntija Heidi', filter: 'TinkerIT', description: 'Wordpress website for a course platform', image: Lamppu },
-    { id: 3, title: 'StudyTracker', filter: 'Open Source', description: 'A database application for primary schools to create and conduct exams', image: StudyTracker, link: 'https://github.com/tuupsuu/StudyTracker' },
-    { id: 6, title: 'Thai Market Olari', filter: 'TinkerIT', description: 'Website for an asian foodmarket in Espoo', image: ThaiMarketOlari },
-    { id: 5, title: 'Online Store', filter: 'Open Source', description: 'An online store that uses an API to fetch product infomation from a Shopify store to display on the page', image: OnlineStore },
-    { id: 4, title: 'Song Library', filter: 'Open Source', description: 'Database project where you create playlists and rate the songs you have listened to', image: SongLibrary, link: 'https://tinkerit.fi' },
-    { id: 11, title: 'Platforming Game', filter: 'Open Source', description: 'Simple platforming game that I made after my first programming course', image: Game },
+    { id: 1, title: t('TINKERIT'), filter: 'TinkerIT', description: t('TINKERIT_DESCRIPTION'), image: Lamppu },
+    { id: 2, title: t('MUSIC_TITLE'), filter: 'Freetime', description: t('MUSIC_DESCRIPTION'), image: Soundcloud },
+    { id: 7, title: t('AIRPORTTAXI_TITLE'), filter: 'TinkerIT', description: t('AIRPORTTAXI_DESCRIPTION'), image: AirportTaxi },
+    { id: 8, title: t('SAVOLAINEN_TITLE'), filter: 'TinkerIT', description: t('SAVOLAINEN_DESCRIPTION'), image: SavolainenOsakunta },
+    { id: 10, title: t('KAASALAINEN_TITLE'), filter: 'TinkerIT', description: t('KAASALAINEN_DESCRIPTION'), image: Kaasalainen },
+    { id: 9, title: t('HEIDI_TITLE'), filter: 'TinkerIT', description: t('HEIDI_DESCRIPTION'), image: Lamppu },
+    { id: 3, title: t('STUDYTRACKER_TITLE'), filter: 'Open Source', description: t('STUDYTRACKER_DESCRIPTION'), image: StudyTracker },
+    { id: 6, title: t('THAIMARKETOLARI_TITLE'), filter: 'TinkerIT', description: t('THAIMARKETOLARI_DESCRIPTION'), image: ThaiMarketOlari },
+    { id: 5, title: t('ONLINESTORE_TITLE'), filter: 'Open Source', description: t('ONLINESTORE_DESCRIPTION'), image: OnlineStore },
+    { id: 4, title: t('SONGLIBRARY_TITLE'), filter: 'Open Source', description: t('SONGLIBRARY_DESCRIPTION'), image: SongLibrary },
+    { id: 11, title: t('PLATFORMER_TITLE'), filter: 'Open Source', description: t('PLATFORMER_DESCRIPTION'), image: Game },
   ];
 
   const filteredProjects = projects.filter((project) => filter === 'All' || project.filter === filter);
@@ -38,13 +42,13 @@ function Projects({ onNavigate }) {
 
   return (
     <div className="projects">
-      <h3 className='Projects-title'>My Work</h3>
+      <h3 className='Projects-title'>{t('MYWORK')}</h3>
 
       <div className="filter-buttons">
-        <button onClick={() => setFilter('All')} className={filter === 'All' ? 'active' : ''}>All</button>
-        <button onClick={() => setFilter('Open Source')} className={filter === 'Open Source' ? 'active' : ''}>Open Source</button>
-        <button onClick={() => setFilter('TinkerIT')} className={filter === 'TinkerIT' ? 'active' : ''}>TinkerIT</button>
-        <button onClick={() => setFilter('Freetime')} className={filter === 'Freetime' ? 'active' : ''}>Freetime</button>
+        <button onClick={() => setFilter('All')} className={filter === 'All' ? 'active' : ''}>{t('ALL')}</button>
+        <button onClick={() => setFilter('Open Source')} className={filter === 'Open Source' ? 'active' : ''}>{t('OPENSOURCE')}</button>
+        <button onClick={() => setFilter('TinkerIT')} className={filter === 'TinkerIT' ? 'active' : ''}>{t('TINKERIT')}</button>
+        <button onClick={() => setFilter('Freetime')} className={filter === 'Freetime' ? 'active' : ''}>{t('FREETIME')}</button>
       </div>
 
       <div className="project-timeline">

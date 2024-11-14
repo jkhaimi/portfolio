@@ -1,20 +1,23 @@
 import React from 'react';
 import '../Components/Projects.css';
+import { useTranslation } from 'react-i18next';
+
 
 function Heidi() {
+
+  const { t } = useTranslation();
+
   return (
     <div className="tinkerit">
 
-      <h1 className='tinkerit-title'>Tietoturva-asiantuntija Heidi</h1>
-      <h2 className='heidi-title'>Tietoturvaa ja palveluita yrityksille!</h2>
+      <h1 className='tinkerit-title'>{t("HEIDI_TITLE")}</h1>
+      <h2 className='heidi-title'>{t("HEIDI_TITLE2")}</h2>
 
-      <p className="tinkerit-description">
-      In this project, we built a WordPress website utilizing LifterLMS, a powerful learning management system designed for WordPress. The website serves as a platform for the author to create and manage online courses focused on cybersecurity. We ensured the platform is user-friendly and implemented the Stripe payment platform for an easy payment setup.
-        </p>
+      <p className="tinkerit-description">{t("HEIDI_TEXT")}</p>
 
       <div className='project-buttons'>
         <div className='button-container'>
-        <h2 style={{textAlign: "center"}}>Visit Website</h2>
+        <h2 style={{textAlign: "center"}}>{t("VISIT_WEBSITE")}</h2>
         <a 
           href="https://www.tietoturva-asiantuntija.fi/"
           target="_blank" 
@@ -26,12 +29,12 @@ function Heidi() {
       </div>
 
       <div className='button-container'>
-        <h2 style={{textAlign: "center"}}>Back to Projects</h2>
+        <h2 style={{textAlign: "center"}}>{t("BACKTO_PROJECTS")}</h2>
         <a 
           href="/"
           className="savo-button"
         >
-          Back
+          {t("BACK")}
         </a>
       </div>
     </div>

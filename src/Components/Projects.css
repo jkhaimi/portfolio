@@ -494,6 +494,13 @@ h2 {
   border-radius: 50px;
 }
 
+@media (max-width: 750px) {
+  .kaasalainen-image {
+    width: 35%;
+    margin-top: 1em;
+  }
+}
+
 /* Heidi */
 
 .heidi-image {
@@ -532,17 +539,33 @@ h2 {
   width: 40%;
   height: auto;
 }
+@media (max-width: 750px) {
+  .ThaiMarketOlari-image {
+    width: 65%;
+    margin-top: 1em;
+  }
+}
 
 /* OnlineStore */
 
 .onlinestore-image {
   width: 50%;
+  margin-top: 1em;
+}
+
+.songlibrary-image {
+  width: 50%;
+  margin-top: 1.5em;
+}
+
+.platformer-image {
+  width: 50%;
+  margin-top: 1.5em;
 }
 
 @media (max-width: 750px) {
-  .onlinestore-image {
+   .onlinestore-image, .songlibrary-image, .platformer-image {
       width: 75%;
       margin-top: 1em;
   }
 }
-

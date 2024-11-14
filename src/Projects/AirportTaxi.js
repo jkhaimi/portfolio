@@ -1,24 +1,26 @@
 import React from 'react';
 import '../Components/Projects.css';
 import AirportTaxiImage from '../Images/AirportTaxi3.png'; 
+import { useTranslation } from 'react-i18next';
 
 function AirportTaxi() {
+
+  const { t } = useTranslation();
+
   return (
     <div className="tinkerit">
 
-      <h1 className='tinkerit-title'>Airport Taxi</h1>
+      <h1 className='tinkerit-title'>{t("AIRPORTTAXI_TITLE")}</h1>
 
       <div className="tinkerit-image-container">
         <img src={AirportTaxiImage} alt="TinkerIT Overview" className="airporttaxi-image" />
       </div>
 
-        <p className="tinkerit-description">
-        In this project, We developed a Node.js middleware application that processes ride requests from the Airport Taxi company. The middleware receives these requests, manages the data, and forwards it to a service called Movit, which handles routing and passenger transport management. The application is hosted on an AWS EC2 instance, ensuring reliable uptime and scalability.     
-        </p>
+        <p className="tinkerit-description">{t("AIRPORTTAXI_TEXT")}</p>
 
       <div className='project-buttons'>
         <div className='button-container'>
-        <h2 style={{textAlign: "center"}}>Visit Website</h2>
+        <h2 style={{textAlign: "center"}}>{t("VISIT_WEBSITE")}</h2>
         <a 
           href="https://www.airporttaxi.fi/"
           target="_blank" 
@@ -30,12 +32,12 @@ function AirportTaxi() {
       </div>
 
       <div className='button-container'>
-        <h2 style={{textAlign: "center"}}>Back to Projects</h2>
+        <h2 style={{textAlign: "center"}}>{t("BACKTO_PROJECTS")}</h2>
         <a 
           href="/"
           className="tinkerit-button"
         >
-          Back
+          {t("BACK")}
         </a>
       </div>
     </div>

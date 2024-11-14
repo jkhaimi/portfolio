@@ -31,7 +31,7 @@ function Info() {
       <div className="pinned-projects">
         <h4>{t("PINNED_PROJECTS")}</h4>
         <ul>
-          <li><a href="#project1">Project 1</a></li>
+          <li><a href="#project1">TinkeriT</a></li>
           <li><a href="#project2">Project 2</a></li>
           <li><a href="#project3">Project 3</a></li>
         </ul>
@@ -44,7 +44,6 @@ function Info() {
           <FaGithub className="social-icon" />
           <div className="social-details">
             <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <p>500 {t('FOLLOWERS')}</p>
           </div>
           <button className="follow-btn" onClick={() => window.open('https://github.com/jkhaimi', '_blank')}>
             {t("FOLLOW")}
@@ -55,7 +54,6 @@ function Info() {
           <FaInstagram className="social-icon" />
           <div className="social-details">
             <a href="https://www.instagram.com/jessehaimi/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <p>1500 {t('FOLLOWERS')}</p>
           </div>
           <button className="follow-btn" onClick={() => window.open('https://twitter.com/your-profile', '_blank')}>
           {t("FOLLOW")}
@@ -66,10 +64,9 @@ function Info() {
           <FaLinkedin className="social-icon" />
           <div className="social-details">
             <a href="https://www.linkedin.com/in/jesse-haimi-019429256/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <p>800 {t('CONNECTIONS')}</p>
           </div>
           <button className="follow-btn" onClick={() => window.open('https://linkedin.com/in/your-profile', '_blank')}>
-          {t("CONNECT")}
+          {t("FOLLOW")}
           </button>
         </li>
       </ul>

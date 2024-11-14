@@ -5,9 +5,10 @@
     text-align: center;
     position: relative;
     bottom: 0;
-    width: 100%;
-    border-top: 1px solid gray;
+    border-top: 1px solid #808080;
     margin-top: 5em;
+    box-sizing: border-box;
+
   }
   
   .footer-content {

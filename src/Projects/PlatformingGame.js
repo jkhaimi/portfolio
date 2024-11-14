@@ -1,24 +1,26 @@
 import React from 'react';
 import '../Components/Projects.css';
+import { useTranslation } from 'react-i18next';
 import PlatformerImage from '../Images/platformer.png'; 
 
 function PlatformingGame() {
+
+  const { t } = useTranslation();
+
   return (
     <div className="tinkerit">
 
-      <h1 className='tinkerit-title'>TinkerIT</h1>
+      <h1 className='tinkerit-title'>{t("PLATFORMER_TITLE")}</h1>
 
       <div className="tinkerit-image-container">
-        <img src={PlatformerImage} alt="TinkerIT Overview" className="tinkerit-image" />
+        <img src={PlatformerImage} alt="TinkerIT Overview" className="platformer-image" />
       </div>
 
-      <p className="tinkerit-description">
-        For my very first coding project I developed a platformer game using C#. The game features classic platforming mechanics such as jumping and obstacles. The goal of the game is to survive as long as possible and the best results are submitted to a ranking list.
-      </p>
+      <p className="tinkerit-description">{t("PLATFORMER_TEXT")}</p>
 
       <div className='project-buttons'>
         <div className='button-container'>
-        <h2 style={{textAlign: "center"}}>Check the Code</h2>
+        <h2 style={{textAlign: "center"}}>{t("CHECK_THE_CODE")}</h2>
         <a 
           href="https://gitlab.jyu.fi/jkhaimi/ohj1ht"
           target="_blank" 
@@ -30,12 +32,12 @@ function PlatformingGame() {
       </div>
 
       <div className='button-container'>
-        <h2 style={{textAlign: "center"}}>Back to Projects</h2>
+        <h2 style={{textAlign: "center"}}>{t("BACKTO_PROJECTS")}</h2>
         <a 
           href="/"
           className="tinkerit-button"
         >
-          Back
+          {t("BACK")}
         </a>
       </div>
     </div>

@@ -1,24 +1,26 @@
 import React from 'react';
 import '../Components/Projects.css';
 import OnlineStoreImage from '../Images/OnlineStore.jpeg'
+import { useTranslation } from 'react-i18next';
 
 function OnlineStore() {
+
+  const { t } = useTranslation();
+
   return (
     <div className="tinkerit">
 
-      <h1 className='tinkerit-title'>Online Store</h1>
+      <h1 className='tinkerit-title'>{t("ONLINESTORE_TITLE")}</h1>
 
       <div className="tinkerit-image-container">
         <img src={OnlineStoreImage} alt="TinkerIT Overview" className="onlinestore-image" />
       </div>
 
-      <p className="tinkerit-description">
-
-      I developed a Vanilla Javascript Web Store foundation that fetches product data from Shopify stores through public APIs. The website allows users to browse products and view details like names and prices. </p>
+      <p className="tinkerit-description">{t("ONLINESTORE_TEXT")}</p>
 
       <div className='project-buttons'>
         <div className='button-container'>
-        <h2 style={{textAlign: "center"}}>Check the Code</h2>
+        <h2 style={{textAlign: "center"}}>{t("CHECK_THE_CODE")}</h2>
         <a 
           href="https://github.com/jkhaimi/nettikauppa"
           target="_blank" 
@@ -30,12 +32,12 @@ function OnlineStore() {
       </div>
 
       <div className='button-container'>
-        <h2 style={{textAlign: "center"}}>Back to Projects</h2>
+        <h2 style={{textAlign: "center"}}>{t("BACKTO_PROJECTS")}</h2>
         <a 
           href="/"
           className="tinkerit-button"
         >
-          Back
+          {t("BACK")}
         </a>
       </div>
     </div>
