@@ -1,25 +1,28 @@
 import React from 'react';
 import './Resume.css';
+import { useTranslation } from 'react-i18next';
 
 function Resume() {
-  // Function to detect mobile devices
+
+  const { i18n } = useTranslation();
   const isMobile = window.innerWidth <= 750;
+  const resumeFile = i18n.language === 'en' ? '/CV-English.pdf' : '/CV-Suomi.pdf';
 
   return (
     <div className="resume">
-      <h2>My Resume</h2>
+      <h2>{i18n.language === 'en' ? 'My Resume' : 'Ansioluetteloni'}</h2>
       {isMobile ? (
-        // Open the PDF in a new tab on mobile devices
-        <a href="/CV-English.pdf" className="mobile-link" target="_blank" rel="noopener noreferrer">
-          Open My Resume
+        // Avaa PDF uudessa välilehdessä mobiililaitteilla
+        <a href={resumeFile} className="mobile-link" target="_blank" rel="noopener noreferrer">
+          {i18n.language === 'en' ? 'Open My Resume' : 'Avaa ansioluetteloni'}
         </a>
       ) : (
-        // Display iframe for desktop
+        // Näytä iframe tietokoneella
         <iframe
-          src="/CV-English.pdf"
+          src={resumeFile}
           width="70%"
           height="1050em"
-          title="Resume"
+          title={i18n.language === 'en' ? 'Resume' : 'Ansioluettelo'}
           className="CV"
         />
       )}

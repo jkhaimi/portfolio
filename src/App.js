@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Navigation from './Components/Navigation';
 import Options from './Components/Options';
+import OptionsMobile from './Components/OptionsMobile';
 import Info from './Components/Info';
 import Projects from './Components/Projects';
 import AboutMe from './Components/AboutMe'; 
@@ -75,6 +76,7 @@ function App() {
             </div>
             {!isMobile && <Info />}
           </div>
+          {isMobile && <OptionsMobile />}
         </div>
         <Footer />
       </div>

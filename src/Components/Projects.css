@@ -209,6 +209,11 @@
     gap: 0.5em;
   }
 
+  .filter-buttons button {
+    font-size: 0.8em;
+  }
+
+
   .timeline-item {
     max-width: 100%;
     margin-bottom: 2em;

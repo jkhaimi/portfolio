@@ -1,0 +1,37 @@
+.options-mobile {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .options-mobile.hidden {
+    transform: translateY(100%); /* Piilota alaspäin */
+  }
+  
+  .options-mobile.visible {
+    transform: translateY(0); /* Näytä alareunassa */
+  }
+  
+  .language-toggle-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .lang-button-mobile {
+    border: none;
+    background: none;
+    font-size: large;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: x-large;
+  }
+  

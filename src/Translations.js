@@ -85,6 +85,20 @@ const Translations = {
         PLATFORMER_DESCRIPTION: "Simple platforming game that I made after my first programming course",
         PLATFORMER_TEXT: "For my very first coding project I developed a platformer game using C#. The game features classic platforming mechanics such as jumping and obstacles. The goal of the game is to survive as long as possible and the best results are submitted to a ranking list.",
 
+        // About Me
+        ABOUTME_STUDENT_TITLE: "Student Life",
+        ABOUTME_STUDENT_TEXT: "I am a 23-year-old Information and Software Engineering student at the ",
+        ABOUTME_STUDENT_STRONG: "University of Jyväskylä, ",
+        ABOUTME_STUDENT_TEXT2: "set to graduate in the spring. Throughout my studies, I've gained a deep interest in IT and had the chance to study abroad at the University of Jaén in Spain, which further fueled my passion for the field.",
+
+        ABOUTME_WORK_TITLE: "Personal Life",
+        ABOUTME_WORK_TEXT: "With broad work experience, I’ve co-founded a software company called ",
+        ABOUTME_WORK_STRONG: "TinkerIT, ",
+        ABOUTME_WORK_TEXT2: "where we focus on building modern websites and online stores for businesses. I’ve also worked as a research assistant at my university, enhancing my knowledge of technology and its real-world applications.",
+
+        ABOUTME_PERSONAL_TITLE: "Personal Life",
+        ABOUTME_PERSONAL_TEXT: "In my spare time, I play football, go to the gym, and produce music. I have learned useful skills from my hobbies for working life, such as teamwork skills, creativity and persistence. I am enthusiastic, active and positive by nature. I enjoy social situations and believe every interaction can be a lesson.",
+
       }
     },
     fi: {
@@ -92,7 +106,7 @@ const Translations = {
 
         // Navigation bar
         NAV_HOME: "Koti",
-        NAV_ABOUT: "Tietoja minusta",
+        NAV_ABOUT: "Minusta",
         NAV_PROJECTS: "Projektit",
         NAV_RESUME: "Ansioluettelo",
         CONTACT_BUTTON: "Ota yhteyttä",
@@ -100,7 +114,7 @@ const Translations = {
         // Info
         TITLE: "Tieto- ja ohjelmistotekniikan opiskelija",
         TITLE2: "TinkerIT perustajajäsen",
-        INFO_DESCRIPTION: "Olen full-stack ohjelmistokehittäjä, joka asuu Jyväskylässä, Suomessa. Tämä sivusto esittelee joitakin henkilökohtaisia projektejani sekä töitä, joita olen tehnyt verkkosivujen ja verkkokauppojen kehitysyhtiössäni, jossa olen perustajajäsen ja markkinoinnin johtaja.",
+        INFO_DESCRIPTION: "Olen full-stack ohjelmistokehittäjä, joka asuu Jyväskylässä. Tämä sivusto esittelee projektejani, joita olen tehnyt vapaa-ajallani tai verkkosivujen ja verkkokauppojen kehitysyhtiössäni. Yhtiössäni toimin perustajajäsenä ja markkinoinnin johtajana.",
 
         PINNED_PROJECTS: "Kiinnitetyt projektit",
 
@@ -173,6 +187,21 @@ const Translations = {
         PLATFORMER_TITLE: "Väistelypeli",
         PLATFORMER_DESCRIPTION: "Yksinkertainen tasohyppelypeli, jonka tein ensimmäisen ohjelmointikurssini jälkeen",
         PLATFORMER_TEXT: "Ensimmäisenä koodausprojektinani kehitin tasohyppelypelin käyttäen C# ohjelmointikieltä. Peli sisältää klassisia tasohyppelymekaniikkoja, kuten hyppimistä ja esteitä. Pelin tavoitteena on selviytyä mahdollisimman pitkään, ja parhaat tulokset tallennetaan tuloslistalle.",
+      
+        // About Me
+        ABOUTME_STUDENT_TITLE: "Opiskelijaelämä",
+        ABOUTME_STUDENT_TEXT: "Olen 23-vuotias tietotekniikan ja ohjelmistotekniikan opiskelija ",
+        ABOUTME_STUDENT_STRONG: "Jyväskylän yliopistossa, ",
+        ABOUTME_STUDENT_TEXT2: "ja valmistumassa keväällä. Opintojeni aikana olen syventynyt IT-alaan ja päässyt suorittamaan myös opiskelijavaihdon, Espanjassa Jaénin yliopistossa, mikä vahvisti entisestään kiinnostustani alaa kohtaan.",
+    
+        ABOUTME_WORK_TITLE: "Työelämä",
+        ABOUTME_WORK_TEXT: "Monipuolisen työkokemuksen myötä olen ollut mukana perustamassa ohjelmistoyritystä nimeltä ",
+        ABOUTME_WORK_STRONG: "TinkerIT, ",
+        ABOUTME_WORK_TEXT2: "jossa keskitymme modernien verkkosivustojen ja verkkokauppojen kehittämiseen yrityksille. Lisäksi olen työskennellyt tutkimusavustajana yliopistollani, mikä on syventänyt teknologiaosaamistani ja sen soveltamista käytännöntyössä.",
+    
+        ABOUTME_PERSONAL_TITLE: "Vapaa-aika",
+        ABOUTME_PERSONAL_TEXT: "Vapaa-ajallani pelaan jalkapalloa, käyn salilla ja tuotan musiikkia. Harrastuksistani olen oppinut työelämään hyödyllisiä taitoja, kuten tiimityötaitoja, luovuutta ja sinnikkyyttä. Olen luonteeltani innostunut, aktiivinen ja positiivinen. Nautin sosiaalisista tilanteista ja uskon, että jokainen kohtaaminen voi opettaa jotakin."
+    
       }
     }
   };

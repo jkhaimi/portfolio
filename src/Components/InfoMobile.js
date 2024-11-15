@@ -52,7 +52,6 @@ function InfoMobile() {
                   >
                     GitHub
                   </a>
-                  <p>500 {t('FOLLOWERS')}</p>
                 </div>
               </li>
               <li className="social-item">
@@ -65,7 +64,6 @@ function InfoMobile() {
                   >
                     Instagram
                   </a>
-                  <p>1500 {t('FOLLOWERS')}</p>
                 </div>
               </li>
               <li className="social-item">
@@ -78,7 +76,6 @@ function InfoMobile() {
                   >
                     LinkedIn
                   </a>
-                  <p>800 {t('CONNECTIONS')}</p>
                 </div>
               </li>
             </ul>

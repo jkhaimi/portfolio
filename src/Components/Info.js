@@ -28,15 +28,6 @@ function Info() {
         <p>{t('INFO_DESCRIPTION')}</p>
       </div>
 
-      <div className="pinned-projects">
-        <h4>{t("PINNED_PROJECTS")}</h4>
-        <ul>
-          <li><a href="#project1">TinkeriT</a></li>
-          <li><a href="#project2">Project 2</a></li>
-          <li><a href="#project3">Project 3</a></li>
-        </ul>
-      </div>
-
       <div className="social-media">
       <h4>{t("SOCIAL_MEDIA")}</h4>
       <ul>
