@@ -61,6 +61,12 @@
         margin-top: 0;
     }
 
+    .footer-links {
+      display: flex;
+    }
 
-  }
-  
+    .footer-links button {
+      margin: 0;
+      flex-direction: column;
+   }
+  }  
