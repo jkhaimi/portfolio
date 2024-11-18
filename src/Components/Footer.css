@@ -36,10 +36,14 @@
     margin: 1em 0;
   }
   
-  .footer-links a {
+  .footer-links button {
     margin: 0 1em;
     color: whitesmoke;
     text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
   }
   
   .footer-links a:hover {

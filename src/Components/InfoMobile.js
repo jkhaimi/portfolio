@@ -46,7 +46,7 @@ function InfoMobile() {
                 <FaGithub className="social-icon" />
                 <div className="social-details">
                   <a
-                    href="https://github.com/your-profile"
+                    href="https://github.com/jkhaimi"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

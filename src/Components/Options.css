@@ -13,12 +13,25 @@
 .lang-button {
   border: none;
   background: none;
-  font-size: x-large;
   color: whitesmoke;
   cursor: pointer;
   transition: color 0.3s ease;
+  font-size: 28px;
 }
 
 .lang-button:hover {
   color: #007bff;
 }
+
+.mail-icon-button {
+  border: none;
+  color: whitesmoke;
+  background-color: transparent;
+  margin-top: 3em;
+  cursor: pointer;
+}
+
+.mail-icon-button:hover {
+  color: #007bff;
+}
+

@@ -11,7 +11,6 @@ function Resume() {
   return (
     <div className="resume">
       <h2>{i18n.language === 'en' ? 'My Resume' : 'Ansioluetteloni'}</h2>
-      <h3>kissa</h3>
       {isMobile ? (
         // Avaa PDF uudessa välilehdessä mobiililaitteilla
         <a href={resumeFile} className="mobile-link" target="_blank" rel="noopener noreferrer">
