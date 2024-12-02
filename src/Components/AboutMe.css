@@ -6,6 +6,7 @@
 .about-me h2 {
   text-align: center;
   font-size: xx-large;
+  margin-top: 1em; 
 }
 
 .about-me h3 {
@@ -99,6 +100,7 @@
 
 .about-me h2 {
   font-size: xx-large;
+  margin-top: 0;
 }
 
 .about-me h3 {

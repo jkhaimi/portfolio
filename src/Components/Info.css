@@ -34,14 +34,13 @@
 }
 
 .profile-pic {
-  width: 6em;
+  width: 8em;
   height: auto;
-  border-radius: 10%;
+  border-radius: 50%;
   border: 1px solid white;
   background-color: transparent;
   margin-bottom: 1em;
-  background-color: whitesmoke;
-}
+  background-color: whitesmoke;}
 
 .details h3 {
   margin: 0;

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Info.css';
-import JesseImage from '../Images/Jesse.webp';
+// import JesseImage from '../Images/Jesse.webp';
+import JesseImage from '../Images/Jesse1.png';
 import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './InfoMobile.css';
-import JesseImage from '../Images/Jesse.webp';
+// import JesseImage from '../Images/Jesse.webp';
+import JesseImage from '../Images/Jesse1.png';
 import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
@@ -43,43 +44,41 @@ function InfoMobile() {
             <h4>{t('SOCIAL_MEDIA')}</h4>
             <ul>
               <li className="social-item">
-                <FaGithub className="social-icon" />
-                <div className="social-details">
-                  <a
-                    href="https://github.com/jkhaimi"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
-                </div>
+                <a
+                  href="https://github.com/jkhaimi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <FaGithub className="social-icon" />
+                  <div className="social-details">GitHub</div>
+                </a>
               </li>
               <li className="social-item">
-                <FaInstagram className="social-icon" />
-                <div className="social-details">
-                  <a
-                    href="https://www.instagram.com/jessehaimi/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Instagram
-                  </a>
-                </div>
+                <a
+                  href="https://www.instagram.com/jessehaimi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <FaInstagram className="social-icon" />
+                  <div className="social-details">Instagram</div>
+                </a>
               </li>
               <li className="social-item">
-                <FaLinkedin className="social-icon" />
-                <div className="social-details">
-                  <a
-                    href="https://www.linkedin.com/in/jesse-haimi-019429256/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LinkedIn
-                  </a>
-                </div>
+                <a
+                  href="https://www.linkedin.com/in/jesse-haimi-019429256/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <FaLinkedin className="social-icon" />
+                  <div className="social-details">LinkedIn</div>
+                </a>
               </li>
             </ul>
           </div>
+
         </div>
       )}
     </div>

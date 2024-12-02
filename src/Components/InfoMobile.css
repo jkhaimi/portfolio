@@ -25,7 +25,7 @@ background-color: rgba(20, 20, 20, 0.9);
   right: 0.5em;
   width: 4em;
   height: 4em;
-  background-color: whitesmoke;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   z-index: 1000;
@@ -70,7 +70,7 @@ background-color: #0056b3;
 }
 
 .toggle-button:hover {
-  background-color: whitesmoke;
+  background-color: transparent;
 }
 
 
@@ -89,11 +89,11 @@ margin-top: 10%;
 }
 
 .profile-pic {
-width: 6em;
+width: 9em;
 height: auto;
 border-radius: 50%;
 border: 1px solid white;
-background-color: transparent;
+background-color: whitesmoke;
 margin-bottom: 1em;
 }
 
@@ -151,14 +151,20 @@ text-align: center;
   align-items: center;
 }
 
+.social-link {
+  text-align: center;
+}
+
 .social-icon {
   font-size: xx-large;
   margin-bottom: 0.5em;
   margin-right: 0;
+  color: whitesmoke;
 }
 
 .social-details {
   text-align: center;
+  color: whitesmoke;
 }
 
 .social-details a {
