@@ -153,6 +153,7 @@ text-align: center;
 
 .social-link {
   text-align: center;
+  text-decoration: none;
 }
 
 .social-icon {
@@ -165,6 +166,7 @@ text-align: center;
 .social-details {
   text-align: center;
   color: whitesmoke;
+  text-decoration: none;
 }
 
 .social-details a {

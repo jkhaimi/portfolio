@@ -493,6 +493,12 @@ h2 {
   .savo-image2 {
       width: 70%;
   }
+
+  .project-image-8 {
+    width: 40%;
+    margin-right: 0;
+    margin-left: -1em;
+  }
 }
 
 /* Kaasalainen */

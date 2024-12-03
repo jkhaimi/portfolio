@@ -43,7 +43,10 @@ function App() {
   const handleNavigationClick = (component, project = null) => {
     setActiveComponent(component);
     setSelectedProject(project);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  
+    if (component === 'project' && project) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   return (

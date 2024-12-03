@@ -24,7 +24,7 @@
   .footer-socials a {
     margin: 0 1em;
     color: whitesmoke;
-    font-size: 1.5em;
+    font-size: 2em;
     transition: color 0.3s ease;
   }
   
@@ -33,17 +33,18 @@
   }
   
   .footer-links {
-    margin: 1em 0;
+    margin: 1em 0em;
   }
   
   .footer-links button {
-    margin: 0 1em;
     color: whitesmoke;
     text-decoration: none;
     background-color: transparent;
     border: none;
-    font-size: 14px;
+    font-size: large;
     cursor: pointer;
+    margin-right: 1em;
+    margin-left: 1em;
   }
   
   .footer-links a:hover {
@@ -68,5 +69,7 @@
     .footer-links button {
       margin: 0;
       flex-direction: column;
+      margin-right: 0.3em;
+      margin-left: 0.3em;
    }
   }  

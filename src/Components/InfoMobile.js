@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './InfoMobile.css';
-// import JesseImage from '../Images/Jesse.webp';
-import JesseImage from '../Images/Jesse1.png';
+import JesseImage from '../Images/Jesse.webp';
 import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
