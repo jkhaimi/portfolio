@@ -34,7 +34,7 @@ function Info() {
       <li className="social-item">
           <FaGithub className="social-icon" />
           <div className="social-details">
-            <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <span>GitHub</span>
           </div>
           <button className="follow-btn" onClick={() => window.open('https://github.com/jkhaimi', '_blank')}>
             {t("FOLLOW")}
@@ -44,9 +44,9 @@ function Info() {
         <li className="social-item">
           <FaInstagram className="social-icon" />
           <div className="social-details">
-            <a href="https://www.instagram.com/jessehaimi/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <span>Instagram</span>
           </div>
-          <button className="follow-btn" onClick={() => window.open('https://twitter.com/your-profile', '_blank')}>
+          <button className="follow-btn" onClick={() => window.open('https://www.instagram.com/jessehaimi/', '_blank')}>
           {t("FOLLOW")}
           </button>
         </li>
@@ -54,9 +54,9 @@ function Info() {
         <li className="social-item">
           <FaLinkedin className="social-icon" />
           <div className="social-details">
-            <a href="https://www.linkedin.com/in/jesse-haimi-019429256/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span>LinkedIn</span>
           </div>
-          <button className="follow-btn" onClick={() => window.open('https://linkedin.com/in/your-profile', '_blank')}>
+          <button className="follow-btn" onClick={() => window.open('https://www.linkedin.com/in/jesse-haimi-019429256/', '_blank')}>
           {t("FOLLOW")}
           </button>
         </li>
