@@ -153,11 +153,15 @@ function Projects() {
         {projectData.map((project) => (
           <div key={project.id} className={`project-item project-${project.id}`}>
             <div className="project-content">
+            <div className="project-title-container-mobile">
+              <h3 className='projects-mobile-title'>{project.title}</h3>
+              <span className="project-open">{project.open}</span>
+              </div>
               <div className={`project-imagebox project-image-${project.id}`}>
                 <img src={project.image} alt={project.title} className={`project-img project-img-${project.id}`} />
               </div>
               <div className={` project-info-container project-info-container-${project.id}`}>
-                <div className="project-info">
+                <div className={`project-info project-info-${project.id}`}>
                 <div className="project-title-container">
                   <h3>{project.title}</h3> 
                   <span className="project-open">{project.open}</span>

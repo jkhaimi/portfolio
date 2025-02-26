@@ -148,3 +148,161 @@
   color: whitesmoke;
   text-decoration: none;
 }
+
+.projects-mobile-title, .project-title-container-mobile {
+  display: none;
+}
+
+@media (max-width: 750px) {
+
+  .projects h1 {
+    display: none;
+  }
+
+  .project-title-container-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-title-container-mobile span {
+    margin-top: -1em;
+    margin-bottom: 1em;
+  }
+
+  .projects-mobile-title {
+    display: flex;
+    text-align: center;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-title-container {
+    display: none;
+  }
+  
+  .projects {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-content {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4em;
+  }
+
+  .project-imagebox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .project-imagebox img {
+    max-width: 90%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  .project-img {
+    margin-left: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .project-info {
+    max-width: 90%;
+    text-align: center;
+    background-color: #201c1c;
+    border-radius: 20px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1em;
+    height: auto;
+    margin-top: 0.5em;
+  }
+
+  .project-info p {
+    margin-top: 0.5em;
+  }
+
+  .project-technologies {
+    justify-content: center;
+  }
+
+  .project-link {
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-11 {
+    margin-top: -2em;
+  }
+
+  .project-img-11 {
+    margin-top: -7em;
+  }
+
+  .project-info-11 {
+    margin-top: -6.5em;
+  }
+
+  .project-3 {
+    margin-top: -1em;
+  }
+
+  .project-img-3 {
+    margin-top: -2em;
+  }
+
+  .project-info-3 {
+    margin-top: -2em;
+  }
+
+  .project-4 {
+    margin-top: -5em;
+  }
+
+  .project-5 {
+    margin-top: -6em;
+  }
+
+  .project-6 {
+    margin-top: -3em;
+  }
+
+  .project-img-6 {
+    margin-top: -3em;
+  }
+
+  .project-info-6 {
+    margin-top: -3em;
+  }
+
+  .project-7 {
+    margin-top: -6em;
+  }
+
+  .project-8 {
+    margin-top: -4em;
+  }
+
+  .project-9 {
+    margin-top: -6em;
+  }
+
+  .project-10 {
+    margin-top: -6em;
+  }
+
+
+
+}
