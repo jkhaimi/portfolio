@@ -36,7 +36,7 @@ const Translations = {
 
 
         TINKERIT_DESCRIPTION: "A software company creating modern websites and online stores for businesses",
-        TINKERIT_TEXT: "Founded in the summer of 2023, TinkerIT is a customer-focused software company dedicated to empowering businesses with modern websites and online stores. As a co-founder, I actively contribute to both the marketing and coding aspects of the company. We've worked on a variety of exciting projects across different industries, and I personally took charge of developing our company website, ensuring it reflects our commitment to innovation and quality.",
+        TINKERIT_TEXT: "Founded in 2023, TinkerIT is a customer-focused software company dedicated to creating modern websites and online stores for businesses. As a co-founder, I actively contribute to both the marketing and coding aspects of the company. We've worked on a variety of exciting projects across different industries.",
 
         MUSIC_TITLE: "My Music",
         MUSIC_DESCRIPTION: "Music I have produced",
@@ -50,7 +50,7 @@ const Translations = {
 
         AIRPORTTAXI_TITLE: "Airport Taxi",
         AIRPORTTAXI_DESCRIPTION: "Node middleware application using AWS EC2 instance for a Taxi-company",
-        AIRPORTTAXI_TEXT: "In this project, We developed a Node.js middleware application that processes ride requests from the Airport Taxi company. The middleware receives these requests, manages the data, and forwards it to a service called Movit, which handles routing and passenger transport management. The application is hosted on an AWS EC2 instance, ensuring reliable uptime and scalability.",
+        AIRPORTTAXI_TEXT: "A Node.js middleware application that processes ride requests from the Airport Taxi company. The middleware receives these requests, manages the data, and forwards it to a service called Movit, which handles routing and passenger transport management (Private code).",
 
         SAVOLAINEN_TITLE: "Savolainen osakunta",
         SAVOLAINEN_DESCRIPTION: "Website for a Savonian student organization",
@@ -58,7 +58,7 @@ const Translations = {
 
         KAASALAINEN_TITLE: "Eristyspalvelu Kaasalainen",
         KAASALAINEN_DESCRIPTION: "One-page website for a Finnish insulation company",
-        KAASALAINEN_TEXT: "In this project, we developed a clean and straightforward one-page website for a Finnish insulation company. The website is designed to provide all the essential information in an easy-to-navigate layout, including the company's contact details, location, and a section that gives a brief overview of their services.",
+        KAASALAINEN_TEXT: "A clean and straightforward one-page website for a Finnish insulation company. The website is designed to provide all the essential information in an easy-to-navigate layout, including the company's contact details, location, and a section that gives a brief overview of their services (Private code).",
 
         HEIDI_TITLE: "Tietoturva-asiantuntija Heidi",
         HEIDI_TITLE2: "Tietoturvaa ja palveluita yrityksille!",
@@ -67,14 +67,15 @@ const Translations = {
 
         STUDYTRACKER_TITLE: "StudyTracker",
         STUDYTRACKER_DESCRIPTION: "A database application for primary schools to create and conduct exams",
-        STUDYTRACKER_TEXT: "In this project, we developed a microservice-based web application for middle school test management. The application is built using the MERN stack, with MySQL replacing MongoDB as the database. StudyTracker allows teachers to create and manage tests, while students can take tests and have their answers automatically evaluated. The frontend was built using React.js. On the backend, Node.js and Express.js communicate via RESTful APIs.",
+        STUDYTRACKER_TEXT: "A web application for middle school test management. StudyTracker allows teachers to create and manage tests, while students can take tests and have their answers automatically evaluated. The application is built using the MERN stack, with MySQL as the database. The frontend was built using React.",
+
         THAIMARKETOLARI_TITLE: "Thai Market Olari",
         THAIMARKETOLARI_DESCRIPTION: "Website for an asian foodmarket in Espoo",
-        THAIMARKETOLARI_TEXT: "In this project we developed a one-page website For a Thai food shop located in Olari, Espoo. In the website we provide visitors with essential information about the store. Built using React, the website offers a seamless and user-friendly experience.",
+        THAIMARKETOLARI_TEXT: "In this project we developed a one-page website For a Thai food shop located in Olari, Espoo. In the website we provide visitors with essential information about the store. Built using React, the website offers a seamless and user-friendly experience (Private code).",
 
         ONLINESTORE_TITLE: "Online Store",
         ONLINESTORE_DESCRIPTION: "An online store that uses an API to fetch product infomation from a Shopify store to display on the page",
-        ONLINESTORE_TEXT: "I developed a Vanilla Javascript Web Store foundation that fetches product data from Shopify stores through public APIs. The website allows users to browse products and view details like names and prices.",
+        ONLINESTORE_TEXT: "I developed a Vanilla Javascript Web Store foundation that fetches product data from Shopify stores through public APIs. The website allows users to browse products and view details like names and prices (Open source).",
 
         SONGLIBRARY_TITLE: "Song Library",
         SONGLIBRARY_DESCRIPTION: "Database project where you create playlists and rate the songs you have listened to",
@@ -85,6 +86,9 @@ const Translations = {
         PLATFORMER_DESCRIPTION: "Simple platforming game that I made after my first programming course",
         PLATFORMER_TEXT: "For my very first coding project I developed a platformer game using C#. The game features classic platforming mechanics such as jumping and obstacles. The goal of the game is to survive as long as possible and the best results are submitted to a ranking list.",
 
+        NHL_TITLE: "NHL-videogame Database",
+        NHL_TEXT: "A web application for me and my friends to save and display our matches in the NHL-videogame. In the App the user can add new games and see the league table, also each player has a unique player profile where their stats and games are stored.",
+        
         // About Me
         ABOUTME_STUDENT_TITLE: "Student Life",
         ABOUTME_STUDENT_TEXT: "I am a 23-year-old Information and Software Engineering student at the ",
@@ -187,7 +191,9 @@ const Translations = {
         PLATFORMER_TITLE: "Väistelypeli",
         PLATFORMER_DESCRIPTION: "Yksinkertainen tasohyppelypeli, jonka tein ensimmäisen ohjelmointikurssini jälkeen",
         PLATFORMER_TEXT: "Ensimmäisenä koodausprojektinani kehitin tasohyppelypelin käyttäen C# ohjelmointikieltä. Peli sisältää klassisia tasohyppelymekaniikkoja, kuten hyppimistä ja esteitä. Pelin tavoitteena on selviytyä mahdollisimman pitkään, ja parhaat tulokset tallennetaan tuloslistalle.",
-      
+
+        NHL_TITLE: "NHL-videopeli tietokanta",
+        NHL_TEXT: "Verkkosovellus, jonka avulla minä ja ystäväni voimme tallentaa ja näyttää ottelumme NHL-videopelissä. Sovelluksessa käyttäjä voi lisätä uusia pelejä ja nähdä liigataulukon. Lisäksi jokaisella pelaajalla on ainutlaatuinen pelaajaprofiili, johon tallennetaan heidän tilastonsa ja pelinsä.",
         // About Me
         ABOUTME_STUDENT_TITLE: "Opiskelijaelämä",
         ABOUTME_STUDENT_TEXT: "Olen 23-vuotias tietotekniikan ja ohjelmistotekniikan opiskelija ",
