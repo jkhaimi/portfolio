@@ -26,7 +26,7 @@ function ChessGame() {
       // Tarkista, onko peli päättynyt
       if (updatedGame.isGameOver() || updatedGame.isDraw() || possibleMoves.length === 0) {
         setGameOver(true);
-        setWinner(updatedGame.turn() === 'w' ? 'Black' : 'White');
+        setWinner(updatedGame.turn() === 'w' ? 'Jesse' : 'You');
         return updatedGame;
       }
 
@@ -90,7 +90,7 @@ function ChessGame() {
           <div className="game-over">
             <p>Game Over</p>
             <p>Winner: <strong>{winner}</strong></p>
-            <p>Press Enter to restart</p>
+            <p className='chess-restart'>Press Enter to restart</p>
           </div>
         )}
       </div>
