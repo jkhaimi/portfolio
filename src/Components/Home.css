@@ -254,3 +254,60 @@
 .hobby-item:nth-child(5):hover .hobby-icon {
     color: #8A2BE2; /* Reading - violetti */
 }
+
+/* Mobiilinäkymä */
+@media (max-width: 750px) {
+
+    .home-container {
+        max-width: auto;
+    }
+
+    .intro {
+        width: 85%;
+        margin-bottom: 1em;
+    }
+
+    .intro-text {
+        margin-left: 0;
+    }
+
+    .home-image {
+        width: 180px;
+        margin-left: -3em;
+    }
+
+    .experience, .knowledge {
+        flex-direction: column;
+    }
+
+    .experience {
+        align-items: center;
+        gap: 3em;
+    }
+
+    .education, .work {
+        width: 80%;
+    }
+
+    .knowledge {
+        width: 93%;
+        margin-right: auto;
+        margin-left: 1em;
+        gap: 1em;
+        margin-bottom: 2em;
+    }
+
+    .knowledge-container {
+        flex-direction: column; /* Aseta laatikot päällekkäin */
+        align-items: center; /* Keskittää laatikot */
+    }
+
+    .technologies, .hobbies-languages {
+        max-width: none; /* Poista maksimileveys */
+        margin: 1rem 0; /* Lisää väli laatikoiden väliin */
+    }
+
+    .tech-icons, .hobby-icons, .language-icons {
+        grid-template-columns: repeat(3, 1fr); /* 3 kuvaketta per rivi mobiilissa */
+    }
+}

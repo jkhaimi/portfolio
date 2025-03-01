@@ -32,13 +32,6 @@ function Navigation({ onNavigate, activeComponent }) {
             {t('NAV_ABOUT')}
           </a>
           <a 
-            href="#resume" 
-            onClick={(e) => { e.preventDefault(); onNavigate('resume'); }} 
-            className={activeComponent === 'resume' ? 'active' : ''}
-          >
-            {t('NAV_RESUME')}
-          </a>
-          <a 
             href="#chess" 
             onClick={(e) => { e.preventDefault(); onNavigate('chess'); }} 
             className={activeComponent === 'chess' ? 'active' : ''}
