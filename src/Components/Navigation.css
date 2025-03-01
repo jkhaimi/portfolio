@@ -24,3 +24,10 @@
     border-bottom: 1px solid whitesmoke;
     padding-bottom: 1em;
   }
+
+  @media (max-width: 750px) {
+    .site-links {
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+  }
