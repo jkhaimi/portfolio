@@ -16,7 +16,7 @@ import ChessGame from './Components/ChessGame';
 export const NavigationContext = React.createContext();
 
 function App() {
-  const [activeComponent, setActiveComponent] = useState('home');
+  const [activeComponent, setActiveComponent] = useState('chess');
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
 
   useEffect(() => {

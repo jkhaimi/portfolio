@@ -26,6 +26,19 @@ const Translations = {
 
         JYUJOB_TITLE: "Reseach assistant",
         JYUJOB_TIME: "June 2023 - August 2023",
+
+        TECHNOLOGIES: "Technology knowledge",
+        HOBBYS: "Hobbies and Language knowledge",
+
+        FOOTBALL: "Football",
+        MUSICPRODUCTION: "Music production",
+        CHESS: "Chess",
+        GYM: "Gym",
+        READING: "Reading",
+
+        FINNISH: "Finnish",
+        ENGLISH: "English",
+        SPANISH: "Spanish",
         
         // Info
         TITLE: "Information Technology student",
@@ -145,6 +158,38 @@ const Translations = {
         FOLLOW: "Seuraa",
         CONNECTIONS: "yhteyttä",
         CONNECT: "Yhdistä",
+
+        // Home
+
+        EDUCATION: "Koulutus",
+        JYU: "Tieto-ja ohjelmistotekniikan kandidaatintutkinto",
+        JYU2: "Jyväskylän yliopisto",
+        JYU_TIME: "Syyskuu 2021 - Toukokuu 2025",
+
+        LUMO: "Ylioppilas",
+        LUMO2: "Lumon lukio, Vantaa",
+        LUMO_TIME: "Elokuu 2017 - Joulukuu 2020",
+
+        EXPERIENCE: "Työkokemus",
+
+        TINKERIT_TITLE: "Perustajajäsen ja Markkinointivastaava",
+        TINKERIT_TIME: "Heinäkuu 2023 -",
+
+        JYUJOB_TITLE: "Tutkimusavustaja",
+        JYUJOB_TIME: "Kesäkuu 2023 - Elokuu 2023",
+
+        TECHNOLOGIES: "Käyttämäni teknologiat",
+        HOBBYS: "Harrastukset ja kielitaito",
+
+        FOOTBALL: "Jalkapallo",
+        MUSICPRODUCTION: "Musiikkituotanto",
+        CHESS: "Shakki",
+        GYM: "Sali",
+        READING: "Lukeminen",
+
+        FINNISH: "Suomi",
+        ENGLISH: "Englanti",
+        SPANISH: "Espanja",
 
 
         // Projects

@@ -60,7 +60,7 @@ const Home = () => {
         <section className="knowledge">
       {/* Teknologiat ja ikonit */}
       <div className="technologies home-box">
-        <h2>Teknologiat</h2>
+        <h2>{t("TECHNOLOGIES")}</h2>
         <div className="tech-icons">
           <div className="tech-item">
             <TbBrandCSharp size={40} className="tech-icon" />
@@ -106,39 +106,39 @@ const Home = () => {
       </div>
 
     <div className="hobbies-languages home-box">
-    <h2>Harrastukset ja Kielitaito</h2>
+    <h2>{t("HOBBYS")}</h2>
     <div className="hobby-icons">
         <div className="hobby-item">
-        <span className="tooltip">Football</span>
+        <span className="tooltip">{t("FOOTBALL")}</span>
         <FaFutbol size={40} className="hobby-icon" />
         </div>
         <div className="hobby-item">
-        <span className="tooltip">Music Production</span>
+        <span className="tooltip">{t("MUSICPRODUCTION")}</span>
         <FaMusic size={40} className="hobby-icon" />
         </div>
         <div className="hobby-item">
-        <span className="tooltip">Chess</span>
+        <span className="tooltip">{t("CHESS")}</span>
         <FaChessKnight size={40} className="hobby-icon" />
         </div>
         <div className="hobby-item">
-        <span className="tooltip">Gym</span>
+        <span className="tooltip">{t("GYM")}</span>
         <FaDumbbell size={40} className="hobby-icon" />
         </div>
         <div className="hobby-item">
-        <span className="tooltip">Reading</span>
+        <span className="tooltip">{t("READING")}</span>
         <FaBook size={40} className="hobby-icon" />
         </div>
       <div className="language-item">
         <img src={require("../Images/finnish2.png")} alt="Finnish" className="language-icon" />
-        <span className="tooltip">Suomi</span>
+        <span className="tooltip">{t("FINNISH")}</span>
       </div>
       <div className="language-item">
         <img src={require("../Images/english2.png")} alt="English" className="language-icon" />
-        <span className="tooltip">Englanti</span>
+        <span className="tooltip">{t("ENGLISH")}</span>
       </div>
       <div className="language-item">
         <img src={require("../Images/spanish2.png")} alt="Spanish" className="language-icon" />
-        <span className="tooltip">Espanja</span>
+        <span className="tooltip">{t("SPANISH")}</span>
       </div>
     </div>
     
