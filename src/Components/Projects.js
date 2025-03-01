@@ -177,7 +177,7 @@ function Projects() {
                   className="project-link" 
                   onClick={() => window.open(project.url, "_blank")} 
                 >
-                  {project.link}
+                  <strong>{project.link}</strong>
                 </div>
               </div>
             </div>

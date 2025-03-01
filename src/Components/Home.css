@@ -1,0 +1,256 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  .home-box {
+    width: 5em;
+    background-color: rebeccapurple;
+  }
+  
+  /* Esittely */
+  .intro {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #201c1c;
+    width: 90%;
+    padding: 1em;
+    border-radius: 20px;
+  }
+  
+  .intro-text {
+    max-width: 100%;
+    margin-left: 25%;
+  }
+
+  .intro-text-title {
+    font-style: italic;
+  }
+  
+  .home-image {
+    position: relative;
+    width: 200px;
+    height: auto;
+    margin-bottom: -1em;
+    margin-left: 5em;
+  }
+  
+  /* Koulutus ja työkokemus */
+  .experience, .knowledge {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+  }
+  
+  .education, .work {
+    background-color: #201c1c;
+    padding: 1.5rem;
+    border-radius: 20px;
+    width: 40%;
+    text-align: left;
+  }
+
+  .education-item, .work-item {
+  }
+
+  .experience h2 {
+    text-align: center;
+  }
+
+  .education-title, .work-title {
+    font-weight: bold;
+    /* color: rgb(98, 44, 152); */
+  }
+
+  .education-school, .work-place {
+    color: rgb(194, 72, 222);
+  }
+
+  .education-time, .work-time {
+    color: gray;
+  }
+
+
+  /* Teknologiat */
+  .technologies {
+    width: 90%;
+    background-color: #201c1c;
+    padding: 1em;
+    border-radius: 20px;
+    margin-left: 3.3em;
+  }
+  
+  .tech-icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 kuvaketta per rivi */
+  }
+  
+  .tech-item {
+    position: relative;
+  }
+  
+  .tech-icon {
+    color: gray;
+    transition: color 0.3s, transform 0.3s;
+    margin-bottom: 2em;
+  }
+  
+  .tech-item:hover .tech-icon {
+    color: #61DBFB;
+    transform: scale(1.1);
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tech-item:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    border-radius: 10px;
+  }
+  
+  /* Harrastukset ja kielitaidot */
+.hobbies-languages {
+    width: 90%;
+    max-width: 50%;
+    background-color: #201c1c;
+    padding: 1em;
+    border-radius: 20px;  
+    margin-right: 3.3em;  
+}
+
+.hobby-icons, .language-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 5 kuvaketta per rivi */
+    gap: 2rem; /* Väli kuvakkeiden välillä */
+}
+
+.hobby-item, .language-item {
+    position: relative;
+    margin-bottom: -1em;
+}
+
+.hobby-item:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    border-radius: 10px;
+  }
+
+  .language-item:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    border-radius: 10px;
+  }
+
+.hobby-icon, .language-icon {
+    color: gray;
+    transition: color 0.3s, transform 0.3s;
+    margin-bottom: 2em;
+}
+
+.hobby-item:hover .hobby-icon, .language-item:hover .language-icon {
+    color: #61DBFB; /* Voit muuttaa väriä halutessasi */
+    transform: scale(1.1);
+}
+
+  /* Teknologiat */
+  .tech-item:hover .tech-icon {
+    color: #67217a; /* React */
+}
+
+.tech-item:nth-child(2):hover .tech-icon {
+    color: #F89820; /* Java */
+}
+
+.tech-item:nth-child(3):hover .tech-icon {
+    color: #306998; /* Python */
+}
+
+.tech-item:nth-child(4):hover .tech-icon {
+    color: #F7DF1E; /* JavaScript */
+}
+
+.tech-item:nth-child(5):hover .tech-icon {
+    color: #61DBFB; /* React */
+}
+
+.tech-item:nth-child(6):hover .tech-icon {
+    color: #8CC84B; /* Node.js */
+}
+
+.tech-item:nth-child(7):hover .tech-icon {
+    color: #F29111; /* SQL / NoSQL */
+}
+
+.tech-item:nth-child(8):hover .tech-icon {
+    color: #FF9900; /* AWS */
+}
+
+.tech-item:nth-child(9):hover .tech-icon {
+    color: #2496ED; /* Docker */
+}
+
+.tech-item:nth-child(10):hover .tech-icon {
+    color: whitesmoke; /* Github */
+}
+
+/* Language */
+
+.language-item {
+    position: relative;
+}
+
+.language-icon {
+    width: 40px; /* Voit säätää kokoa tarpeen mukaan */
+    transition: filter 0.3s; /* Sujuva siirtymä suodattimelle */
+    filter: grayscale(100%);
+}
+
+.language-item:hover .language-icon {
+    filter: none;
+}
+
+/* Harrastukset */
+.hobby-item:hover .hobby-icon {
+    color: #3B5998; /* Football - sininen */
+}
+
+.language-item:hover .language-icon-hover {
+    display: block; /* Näytä värillinen kuva hover-tilassa */
+    transform: scale(1.1); /* Skaalaa värillistä kuvaa hover-tilassa */
+}
+
+.hobby-item:nth-child(2):hover .hobby-icon {
+    color: #FF4500; /* Music - oranssi */
+}
+
+.hobby-item:nth-child(3):hover .hobby-icon {
+    color: #FFD700; /* Chess - kultainen */
+}
+
+.hobby-item:nth-child(4):hover .hobby-icon {
+    color: #4CAF50; /* Gym - vihreä */
+}
+
+.hobby-item:nth-child(5):hover .hobby-icon {
+    color: #8A2BE2; /* Reading - violetti */
+}

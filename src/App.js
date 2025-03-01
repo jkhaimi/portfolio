@@ -4,17 +4,19 @@ import Navigation from './Components/Navigation';
 import Options from './Components/Options';
 import OptionsMobile from './Components/OptionsMobile';
 import Info from './Components/Info';
+import Home from './Components/Home';
 import Projects from './Components/Projects';
 import AboutMe from './Components/AboutMe'; 
 import Resume from './Components/Resume';
 import InfoMobile from './Components/InfoMobile';
 import Footer from './Components/Footer';
 import './i18n';
+import ChessGame from './Components/ChessGame';
 
 export const NavigationContext = React.createContext();
 
 function App() {
-  const [activeComponent, setActiveComponent] = useState('projects');
+  const [activeComponent, setActiveComponent] = useState('home');
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
 
   useEffect(() => {
@@ -41,9 +43,11 @@ function App() {
             <div className="main-content">
               <Navigation onNavigate={handleNavigationClick} activeComponent={activeComponent} />
               {isMobile && <InfoMobile />}
+              {activeComponent === 'home' && <Home/>}
+              {activeComponent === 'projects' && <Projects/>}
               {activeComponent === 'about-me' && <AboutMe />}
               {activeComponent === 'resume' && <Resume />}
-              {activeComponent === 'projects' && <Projects/>}
+              {activeComponent === 'chess' && <ChessGame/>}
             </div>
             {/* {!isMobile && <Info />} */}
           </div>

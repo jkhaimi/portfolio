@@ -9,6 +9,24 @@ const Translations = {
         NAV_RESUME: "Resume",
         CONTACT_BUTTON: "Get in Touch",
 
+        // Home
+        EDUCATION: "Education",
+        JYU: "Bachelor’s degree in information and software engineering",
+        JYU2: "University of Jyväskylä",
+        JYU_TIME: "September 2021 - May 2025",
+
+        LUMO: "Highschool Graduate",
+        LUMO2: "Lumon lukio, Vantaa",
+        LUMO_TIME: "August 2017 - December 2020",
+
+        EXPERIENCE: "Experience",
+
+        TINKERIT_TITLE: "CO-founder and Marketing Manager",
+        TINKERIT_TIME: "July 2023 -",
+
+        JYUJOB_TITLE: "Reseach assistant",
+        JYUJOB_TIME: "June 2023 - August 2023",
+        
         // Info
         TITLE: "Information Technology student",
         TITLE2: "TinkerIT Co-founder",
@@ -143,7 +161,7 @@ const Translations = {
 
 
         TINKERIT_DESCRIPTION: "Ohjelmistoyritys, joka luo moderneja verkkosivustoja ja verkkokauppoja yrityksille",
-        TINKERIT_TEXT: "TinkerIT perustettiin kesällä 2023 tarkoituksella olla asiakaskeskeinen ohjelmistoyritys, joka keskittyy modernien verkkosivustojen ja verkkokauppojen kehittämiseen yrityksille. Yrityksen perustajajäsenenä olen osallistunut sekä markkinointiin että koodaukseen. Olemme toteuttaneet monia mielenkiintoisia projekteja eri toimialoilla, ja vastasin itse yrityksemme verkkosivuston kehittämisestä varmistaen, että se heijastaa sitoutumistamme innovaatioon ja laatuun.",
+        TINKERIT_TEXT: "TinkerIT perustettiin kesällä 2023 tarkoituksella olla asiakaskeskeinen ohjelmistoyritys, joka keskittyy modernien verkkosivustojen ja verkkokauppojen kehittämiseen yrityksille. Yrityksen perustajajäsenenä olen osallistunut sekä markkinointiin että koodaukseen. Olemme toteuttaneet monia mielenkiintoisia projekteja eri toimialoilla.",
 
         MUSIC_TITLE: "Tuottamani musiikki",
         MUSIC_DESCRIPTION: "Musiikkia, jota olen tuottanut",
@@ -174,7 +192,7 @@ const Translations = {
         
         STUDYTRACKER_TITLE: "StudyTracker",
         STUDYTRACKER_DESCRIPTION: "Tietokantasovellus peruskouluille kokeiden suorittamista ja luomista varten",
-        STUDYTRACKER_TEXT: "Tässä projektissa kehitimme mikropalvelupohjaisen verkkosovelluksen yläkoulujen koehallintaa varten. Sovellus on rakennettu MERN-stackilla, mutta MySQL korvaa MongoDB:n tietokantana. StudyTracker mahdollistaa opettajille kokeiden luomisen ja hallinnan, kun taas oppilaat voivat suorittaa kokeita ja saada vastauksensa automaattisesti arvioitua. Frontend on rakennettu React.js:llä ja backend Node.js:llä ja Express.js:llä, jotka kommunikoivat RESTful API:en kautta.",
+        STUDYTRACKER_TEXT: "Tässä projektissa kehitimme verkkosovelluksen yläkoulujen koehallintaa varten. Sovellus on rakennettu MERN-stackilla, mutta MySQL toimii tietokantana. StudyTracker mahdollistaa opettajille kokeiden luomisen ja hallinnan, kun taas oppilaat voivat suorittaa kokeita ja saada vastauksensa automaattisesti arvioitua. Frontend on rakennettu React.js:llä.",
         
         THAIMARKETOLARI_TITLE: "Thai Market Olari",
         THAIMARKETOLARI_DESCRIPTION: "Verkkosivusto espoolaiselle aasialaiselle ruokakaupalle",
@@ -194,6 +212,7 @@ const Translations = {
 
         NHL_TITLE: "NHL-videopeli tietokanta",
         NHL_TEXT: "Verkkosovellus, jonka avulla minä ja ystäväni voimme tallentaa ja näyttää ottelumme NHL-videopelissä. Sovelluksessa käyttäjä voi lisätä uusia pelejä ja nähdä liigataulukon. Lisäksi jokaisella pelaajalla on ainutlaatuinen pelaajaprofiili, johon tallennetaan heidän tilastonsa ja pelinsä.",
+
         // About Me
         ABOUTME_STUDENT_TITLE: "Opiskelijaelämä",
         ABOUTME_STUDENT_TEXT: "Olen 23-vuotias tietotekniikan ja ohjelmistotekniikan opiskelija ",
