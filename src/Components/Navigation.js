@@ -31,13 +31,13 @@ function Navigation({ onNavigate, activeComponent }) {
           >
             {t('NAV_ABOUT')}
           </a>
-          <a 
+          {/* <a 
             href="#chess" 
             onClick={(e) => { e.preventDefault(); onNavigate('chess'); }} 
             className={activeComponent === 'chess' ? 'active' : ''}
           >
             Shakkipeli
-          </a>
+          </a> */}
         </nav>
     </div>
   );
