@@ -13,6 +13,7 @@ import OnlineStore from '../Images/nettikauppa.png';
 import SongLibrary from '../Images/BiisiKirjasto.png';
 import Game from '../Images/Game.png';
 import NHL from '../Images/NHL.png';
+import JYU from '../Images/JYU-RuokailuApp.png';
 // import { RiSkipLeftLine } from "react-icons/ri";
 
 // const projects = [
@@ -45,8 +46,18 @@ function Projects() {
       image: TinkerIT,
       description: t('TINKERIT_TEXT'), 
       technologies: ["React", "JavaScript", "CSS", "Node.js", "SquareSpace"],
-      link: "Visit our website",
+      link: t('VISIT_OURWEBSITE'),
       url: "https://tinkerit.fi/"
+    },
+    { 
+      id: 12,
+      title: t('JYU_RUOKAILUAPP_TITLE'), 
+      image: JYU,
+      description: t('JYU_RUOKAILUAPP_TEXT'), 
+      technologies: ["PostreSQL", "React", "JavaScript", "Node.js", "AWS"],
+      link: t('VISIT_APP'),
+      url: "https://jyu-ruokailu-app-kappa.vercel.app/",
+      open: "Open source"
     },
     { 
       id: 2,
@@ -54,7 +65,7 @@ function Projects() {
       image: Music,
       description: t('MUSIC_TEXT'), 
       technologies: ["FL Studio 20", "Logic Pro"],
-      link: "Check out my Music",
+      link: t("CHECKOUT_MUSIC"),
       url: "https://soundcloud.com/jkhaimi"
     },
     { 
@@ -63,7 +74,7 @@ function Projects() {
       image: NHL,
       description: t('NHL_TEXT'), 
       technologies: ["React", "JavaScript", "Node.js", "AWS"],
-      link: "View code",
+      link: t("VIEW_CODE"),
       url: "https://github.com/jkhaimi/NHL-scoreDB",
       open: "Open source"
     },
@@ -73,7 +84,7 @@ function Projects() {
       image: AirportTaxi,
       description: t('AIRPORTTAXI_TEXT'), 
       technologies: ["Node.js", "AWS"], 
-      link: "Visit website",
+      link: t("VISIT_WEBSITE"),
       url: "https://www.airporttaxi.fi/"
     },
     { 
@@ -82,7 +93,7 @@ function Projects() {
       image: Savolainen,
       description: t('SAVOLAINEN_TEXT'), 
       technologies: ["SquareSpace"],
-      link: "Visit website",
+      link: t("VISIT_WEBSITE"),
       url: "https://savolainenosakunta.fi/"
     },
     { 
@@ -91,7 +102,7 @@ function Projects() {
       image: Kaasalainen,
       description: t('KAASALAINEN_TEXT'), 
       technologies: ["React", "CSS"],
-      link: "Visit website",
+      link: t("VISIT_WEBSITE"),
       url: "https://eristys.fi/"
     },
     { 
@@ -100,7 +111,7 @@ function Projects() {
       image: StudyTracker,
       description: t('STUDYTRACKER_TEXT'), 
       technologies: ["Docker", "MySQL", "React", "CSS"], 
-      link: "View code",
+      link: t("VIEW_CODE"),
       url: "https://github.com/tuupsuu/StudyTracker",
       open: "Open source"
     },
@@ -110,7 +121,7 @@ function Projects() {
       image: ThaiMarketOlari,
       description: t('THAIMARKETOLARI_TEXT'), 
       technologies: ["Docker", "MySQL", "React", "CSS"],
-      link: "Visit website",
+      link: t("VISIT_WEBSITE"),
       url: "https://thaimarketolari.fi/"
     },
     { 
@@ -119,7 +130,7 @@ function Projects() {
       image: OnlineStore,
       description: t('ONLINESTORE_TEXT'), 
       technologies: ["JavaScript", "HTML", "CSS"],
-      link: "View code",
+      link: t("VIEW_CODE"),
       url: "https://github.com/jkhaimi/nettikauppa",
       open: "Open source"
     },
@@ -129,7 +140,7 @@ function Projects() {
       image: SongLibrary,
       description: t('SONGLIBRARY_TEXT'), 
       technologies: ["Java", "SceneBuilder"],
-      link: "View code",
+      link: t("VIEW_CODE"),
       url: "https://github.com/jkhaimi/ohjelmointi-2-harjoitustyo",
       open: "Open source"
     },
@@ -139,7 +150,7 @@ function Projects() {
       image: Game,
       description: t('PLATFORMER_TEXT'), 
       technologies: ["C#"],
-      link: "View code",
+      link: t("VIEW_CODE"),
       url: "https://github.com/jkhaimi/ohjelmointi-1-harjoitustyo",
       open: "Open source"
     }

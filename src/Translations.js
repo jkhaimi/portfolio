@@ -35,6 +35,7 @@ const Translations = {
         CHESS: "Chess",
         GYM: "Gym",
         READING: "Reading",
+        CODING: "Coding",
 
         FINNISH: "Finnish",
         ENGLISH: "English",
@@ -61,6 +62,10 @@ const Translations = {
         FREETIME: "Freetime",
 
         VISIT_WEBSITE: "Visit website",
+        VISIT_OURWEBSITE: "Visit our website",
+        VISIT_APP: "Visit App",
+        VIEW_CODE: "View code",
+        CHECKOUT_MUSIC: "Check out my Music",
         CHECK_THE_CODE: "Check the Code",
         BACKTO_PROJECTS: "Back to Projects",
         BACK: "Back",
@@ -68,6 +73,9 @@ const Translations = {
 
         TINKERIT_DESCRIPTION: "A software company creating modern websites and online stores for businesses",
         TINKERIT_TEXT: "Founded in 2023, TinkerIT is a customer-focused software company dedicated to creating modern websites and online stores for businesses. As a co-founder, I actively contribute to both the marketing and coding aspects of the company. We've worked on a variety of exciting projects across different industries.",
+
+        JYU_RUOKAILUAPP_TITLE: "JYU-RuokailuApp",
+        JYU_RUOKAILUAPP_TEXT: "A web application for students of the University of Jyväskylä to see the menus of the different student restaurants we have located on our campus. The users can also filter and rate the meals they have eaten.",
 
         MUSIC_TITLE: "My Music",
         MUSIC_DESCRIPTION: "Music I have produced",
@@ -186,6 +194,7 @@ const Translations = {
         CHESS: "Shakki",
         GYM: "Sali",
         READING: "Lukeminen",
+        CODING: "Koodaaminen",
 
         FINNISH: "Suomi",
         ENGLISH: "Englanti",
@@ -203,6 +212,11 @@ const Translations = {
         CHECK_THE_CODE: "Tarkastele koodia",
         BACKTO_PROJECTS: "Takaisin projekteihin",
         BACK: "Takaisin",
+
+        VISIT_OURWEBSITE: "Vieraile nettisivullamme",
+        VISIT_APP: "Käy sovelluksessa",
+        VIEW_CODE: "Tarkastele koodia",
+        CHECKOUT_MUSIC: "Kuuntele musiikkiani",
 
 
         TINKERIT_DESCRIPTION: "Ohjelmistoyritys, joka luo moderneja verkkosivustoja ja verkkokauppoja yrityksille",

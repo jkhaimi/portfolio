@@ -206,11 +206,11 @@
 }
 
 .tech-item:nth-child(9):hover .tech-icon {
-    color: #2496ED; /* Docker */
+  color: whitesmoke; /* Github */
 }
 
 .tech-item:nth-child(10):hover .tech-icon {
-    color: whitesmoke; /* Github */
+    color: #2496ED; /* Docker */
 }
 
 /* Language */
@@ -255,8 +255,24 @@
     color: #8A2BE2; /* Reading - violetti */
 }
 
+.hobby-item:nth-child(6):hover .hobby-icon {
+  color: rgb(231, 222, 222); /* Reading - violetti */
+}
+
+.hobby-item-mobile {
+  display: none;
+}
+
 /* Mobiilinäkymä */
 @media (max-width: 750px) {
+
+  .tech-icon-mobile {
+    display: none;
+  }
+
+  .hobby-item-mobile {
+    display: block;
+  }
 
     .home-container {
         max-width: auto;

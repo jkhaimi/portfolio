@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import profilePic from "../Images/Jesse2.png";
 import { FaReact, FaNodeJs, FaPython, FaDatabase, FaJsSquare, FaJava, FaAws, FaGithub, FaDocker } from "react-icons/fa";
-import { FaFutbol, FaMusic, FaChessKnight, FaDumbbell, FaBook  } from "react-icons/fa";
+import { FaFutbol, FaMusic, FaChessKnight, FaDumbbell, FaBook, FaCode } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
 import { useTranslation } from "react-i18next";
 
@@ -95,12 +95,12 @@ const Home = () => {
             <span className="tooltip">AWS</span>
           </div>
           <div className="tech-item">
-            <FaDocker size={40} className="tech-icon" />
-            <span className="tooltip">Docker</span>
-          </div>
-          <div className="tech-item">
             <FaGithub size={40} className="tech-icon" />
             <span className="tooltip">Github</span>
+          </div>
+          <div className="tech-item">
+            <FaDocker size={40} className="tech-icon tech-icon-mobile" />
+            <span className="tooltip">Docker</span>
           </div>
         </div>
       </div>
@@ -127,6 +127,10 @@ const Home = () => {
         <div className="hobby-item">
         <span className="tooltip">{t("READING")}</span>
         <FaBook size={40} className="hobby-icon" />
+        </div>
+        <div className="hobby-item hobby-item-mobile">
+        <span className="tooltip">{t("CODING")}</span>
+        <FaCode size={40} className="hobby-icon" />
         </div>
       <div className="language-item">
         <img src={require("../Images/finnish2.png")} alt="Finnish" className="language-icon" />
