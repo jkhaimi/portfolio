@@ -59,7 +59,7 @@ const Translations = {
         ALL: "All",
         OPENSOURCE: "Open Source",
         TINKERIT: "TinkerIT",
-        FREETIME: "Freetime",
+        OTHER: "Other",
 
         VISIT_WEBSITE: "Visit website",
         VISIT_OURWEBSITE: "Visit our website",
@@ -127,6 +127,10 @@ const Translations = {
 
         NHL_TITLE: "NHL-videogame Database",
         NHL_TEXT: "A web application for me and my friends to save and display our matches in the NHL-videogame. In the App the user can add new games and see the league table, also each player has a unique player profile where their stats and games are stored.",
+
+        AGECOUNTER_TITLE: "Age Counter",
+        AGECOUNTER_TEXT: "A simple Javascript age calculator that calculates the user's age based on their Finnish personal identity code (HETU).",
+
         
         // About Me
         ABOUTME_STUDENT_TITLE: "Student Life",
@@ -206,7 +210,7 @@ const Translations = {
         ALL: "Kaikki",
         OPENSOURCE: "Avoin lähdekoodi",
         TINKERIT: "TinkerIT",
-        FREETIME: "Vapaa-aika",
+        OTHER: "Muut",
 
         VISIT_WEBSITE: "Käy nettisivulla",
         CHECK_THE_CODE: "Tarkastele koodia",
@@ -271,6 +275,9 @@ const Translations = {
 
         NHL_TITLE: "NHL-videopeli tietokanta",
         NHL_TEXT: "Verkkosovellus, jonka avulla minä ja ystäväni voimme tallentaa ja näyttää ottelumme NHL-videopelissä. Sovelluksessa käyttäjä voi lisätä uusia pelejä ja nähdä liigataulukon. Lisäksi jokaisella pelaajalla on ainutlaatuinen pelaajaprofiili, johon tallennetaan heidän tilastonsa ja pelinsä.",
+
+        AGECOUNTER_TITLE: "Ikälaskuri",
+        AGECOUNTER_TEXT: "Yksinkertainen JavaScript-ikälaskuri, joka laskee käyttäjän iän suomalaisen henkilötunnuksen (HETU) perusteella.",
 
         // About Me
         ABOUTME_STUDENT_TITLE: "Opiskelijaelämä",

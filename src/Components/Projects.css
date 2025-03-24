@@ -7,6 +7,23 @@
   color: whitesmoke;
 }
 
+.filter-buttons {
+  margin-bottom: 2em;
+}
+
+.filter-buttons button {
+  background-color: transparent;
+  color: whitesmoke;
+  border: none;
+  font-size: large;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.filter-buttons button.active {
+  border-bottom: 2px solid whitesmoke;
+}
+
 .project-list {
   display: flex;
   flex-direction: column;
@@ -79,11 +96,11 @@
 }
 
 .project-12 {
-  margin-bottom: 1em;
+  margin-bottom: -4em;
 }
 
 .project-img-12 { 
-  width: 20em;
+  width: 18em;
   border: 3px solid #4caf50;
   border-radius: 40px;
 }
@@ -175,6 +192,11 @@
 
   .projects h1 {
     display: none;
+  }
+
+  .filter-buttons button {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
   }
 
   .project-title-container-mobile {
@@ -274,7 +296,7 @@
   }
 
   .project-2 {
-    margin-bottom: 2em;
+    margin-bottom: 3em;
   }
 
   .project-3 {
@@ -310,7 +332,8 @@
   }
 
   .project-7 {
-    margin-top: -6em;
+    margin-top: -3em;
+    margin-bottom: 3em;
   }
 
   .project-8 {
@@ -326,7 +349,7 @@
   }
 
   .project-12 {
-    margin-bottom: -1em;
+    margin-bottom: 1em;
     margin-top: 1em;
   }
   
@@ -334,6 +357,11 @@
     width: 12em;
     border: 3px solid #4caf50;
     border-radius: 40px;
+  }
+
+  .project-13 {
+    margin-bottom: -4em;
+    margin-top: -5em;
   }
 
 }

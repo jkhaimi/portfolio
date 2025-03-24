@@ -220,8 +220,8 @@
 }
 
 .language-icon {
-    width: 40px; /* Voit säätää kokoa tarpeen mukaan */
-    transition: filter 0.3s; /* Sujuva siirtymä suodattimelle */
+    width: 40px; 
+    transition: filter 0.3s;
     filter: grayscale(100%);
 }
 
@@ -231,12 +231,12 @@
 
 /* Harrastukset */
 .hobby-item:hover .hobby-icon {
-    color: #3B5998; /* Football - sininen */
+    color: #3B5998; 
 }
 
 .language-item:hover .language-icon-hover {
-    display: block; /* Näytä värillinen kuva hover-tilassa */
-    transform: scale(1.1); /* Skaalaa värillistä kuvaa hover-tilassa */
+    display: block; 
+    transform: scale(1.1); 
 }
 
 .hobby-item:nth-child(2):hover .hobby-icon {
@@ -256,7 +256,7 @@
 }
 
 .hobby-item:nth-child(6):hover .hobby-icon {
-  color: rgb(231, 222, 222); /* Reading - violetti */
+  color: rgb(231, 222, 222); /* Koodaus - violetti */
 }
 
 .hobby-item-mobile {

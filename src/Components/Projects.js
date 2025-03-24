@@ -14,30 +14,14 @@ import SongLibrary from '../Images/BiisiKirjasto.png';
 import Game from '../Images/Game.png';
 import NHL from '../Images/NHL.png';
 import JYU from '../Images/JYU-RuokailuApp.png';
+import Agecounter from '../Images/Agecounter.png';
 // import { RiSkipLeftLine } from "react-icons/ri";
-
-// const projects = [
-//   { id: 1, title: t('TINKERIT'), filter: 'TinkerIT', description: t('TINKERIT_DESCRIPTION'), technologies: "Kissa", image: Lamppu },
-//   { id: 2, title: t('MUSIC_TITLE'), filter: 'Freetime', description: t('MUSIC_DESCRIPTION'), image: Soundcloud },
-//   { id: 7, title: t('AIRPORTTAXI_TITLE'), filter: 'TinkerIT', description: t('AIRPORTTAXI_DESCRIPTION'), image: AirportTaxi },
-//   { id: 8, title: t('SAVOLAINEN_TITLE'), filter: 'TinkerIT', description: t('SAVOLAINEN_DESCRIPTION'), image: SavolainenOsakunta },
-//   { id: 10, title: t('KAASALAINEN_TITLE'), filter: 'TinkerIT', description: t('KAASALAINEN_DESCRIPTION'), image: Kaasalainen },
-//   { id: 9, title: t('HEIDI_TITLE'), filter: 'TinkerIT', description: t('HEIDI_DESCRIPTION'), image: Lamppu },
-//   { id: 3, title: t('STUDYTRACKER_TITLE'), filter: 'Open Source', description: t('STUDYTRACKER_DESCRIPTION'), image: StudyTracker },
-//   { id: 6, title: t('THAIMARKETOLARI_TITLE'), filter: 'TinkerIT', description: t('THAIMARKETOLARI_DESCRIPTION'), image: ThaiMarketOlari },
-//   { id: 5, title: t('ONLINESTORE_TITLE'), filter: 'Open Source', description: t('ONLINESTORE_DESCRIPTION'), image: OnlineStore },
-//   { id: 4, title: t('SONGLIBRARY_TITLE'), filter: 'Open Source', description: t('SONGLIBRARY_DESCRIPTION'), image: SongLibrary },
-//   { id: 11, title: t('PLATFORMER_TITLE'), filter: 'Open Source', description: t('PLATFORMER_DESCRIPTION'), image: Game },
-// ];
-
-
-
 
 function Projects() {
 
   const { t } = useTranslation();
 
-  // const filteredProjects = projects.filter((project) => filter === 'All' || project.filter === filter);
+  const [filter, setFilter] = useState('All');
 
   const projectData = [
     { 
@@ -47,7 +31,8 @@ function Projects() {
       description: t('TINKERIT_TEXT'), 
       technologies: ["React", "JavaScript", "CSS", "Node.js", "SquareSpace"],
       link: t('VISIT_OURWEBSITE'),
-      url: "https://tinkerit.fi/"
+      url: "https://tinkerit.fi/",
+      category: "TinkerIT"
     },
     { 
       id: 12,
@@ -57,16 +42,8 @@ function Projects() {
       technologies: ["PostreSQL", "React", "JavaScript", "Node.js", "AWS"],
       link: t('VISIT_APP'),
       url: "https://jyu-ruokailu-app-kappa.vercel.app/",
-      open: "Open source"
-    },
-    { 
-      id: 2,
-      title: t('MUSIC_TITLE'), 
-      image: Music,
-      description: t('MUSIC_TEXT'), 
-      technologies: ["FL Studio 20", "Logic Pro"],
-      link: t("CHECKOUT_MUSIC"),
-      url: "https://soundcloud.com/jkhaimi"
+      open: "Open source",
+      category: "Open source"
     },
     { 
       id: 11,
@@ -76,7 +53,18 @@ function Projects() {
       technologies: ["React", "JavaScript", "Node.js", "AWS"],
       link: t("VIEW_CODE"),
       url: "https://github.com/jkhaimi/NHL-scoreDB",
-      open: "Open source"
+      open: "Open source",
+      category: "Open source"
+    },
+    { 
+      id: 2,
+      title: t('MUSIC_TITLE'), 
+      image: Music,
+      description: t('MUSIC_TEXT'), 
+      technologies: ["FL Studio 20", "Logic Pro"],
+      link: t("CHECKOUT_MUSIC"),
+      url: "https://soundcloud.com/jkhaimi",
+      category: "Other"
     },
     { 
       id: 3,
@@ -85,7 +73,19 @@ function Projects() {
       description: t('AIRPORTTAXI_TEXT'), 
       technologies: ["Node.js", "AWS"], 
       link: t("VISIT_WEBSITE"),
-      url: "https://www.airporttaxi.fi/"
+      url: "https://www.airporttaxi.fi/",
+      category: "TinkerIT"
+    },
+    { 
+      id: 13,
+      title: t('AGECOUNTER_TITLE'), 
+      image: Agecounter,
+      description: t('AGECOUNTER_TEXT'), 
+      technologies: ["JavaScript, CSS"],
+      link: t('VIEW_CODE'),
+      url: "https://github.com/jkhaimi/ikalaskuri",
+      open: "Open source",
+      category: "Open source"
     },
     { 
       id: 4,
@@ -94,7 +94,8 @@ function Projects() {
       description: t('SAVOLAINEN_TEXT'), 
       technologies: ["SquareSpace"],
       link: t("VISIT_WEBSITE"),
-      url: "https://savolainenosakunta.fi/"
+      url: "https://savolainenosakunta.fi/",
+      category: "TinkerIT"
     },
     { 
       id: 5,
@@ -103,7 +104,8 @@ function Projects() {
       description: t('KAASALAINEN_TEXT'), 
       technologies: ["React", "CSS"],
       link: t("VISIT_WEBSITE"),
-      url: "https://eristys.fi/"
+      url: "https://eristys.fi/",
+      category: "TinkerIT"
     },
     { 
       id: 6,
@@ -113,7 +115,8 @@ function Projects() {
       technologies: ["Docker", "MySQL", "React", "CSS"], 
       link: t("VIEW_CODE"),
       url: "https://github.com/tuupsuu/StudyTracker",
-      open: "Open source"
+      open: "Open source",
+      category: "Open source"
     },
     { 
       id: 7,
@@ -122,7 +125,8 @@ function Projects() {
       description: t('THAIMARKETOLARI_TEXT'), 
       technologies: ["Docker", "MySQL", "React", "CSS"],
       link: t("VISIT_WEBSITE"),
-      url: "https://thaimarketolari.fi/"
+      url: "https://thaimarketolari.fi/",
+      category: "TinkerIT"
     },
     { 
       id: 8,
@@ -132,7 +136,8 @@ function Projects() {
       technologies: ["JavaScript", "HTML", "CSS"],
       link: t("VIEW_CODE"),
       url: "https://github.com/jkhaimi/nettikauppa",
-      open: "Open source"
+      open: "Open source",
+      category: "Open source"
     },
     { 
       id: 9,
@@ -142,7 +147,8 @@ function Projects() {
       technologies: ["Java", "SceneBuilder"],
       link: t("VIEW_CODE"),
       url: "https://github.com/jkhaimi/ohjelmointi-2-harjoitustyo",
-      open: "Open source"
+      open: "Open source",
+      category: "Open source"
     },
     { 
       id: 10,
@@ -152,31 +158,64 @@ function Projects() {
       technologies: ["C#"],
       link: t("VIEW_CODE"),
       url: "https://github.com/jkhaimi/ohjelmointi-1-harjoitustyo",
-      open: "Open source"
+      open: "Open source",
+      category: "Open source"
     }
   ];
 
+  const filteredProjects = projectData.filter((project) => {
+    if (filter === 'All') return true;
+    if (filter === 'TinkerIT' && project.category === 'TinkerIT') return true;
+    if (filter === 'Open source' && project.category === 'Open source') return true;
+    return filter === 'Other' && project.category !== 'TinkerIT' && project.category !== 'Open source';
+  });
 
-   return (
+  return (
     <div className="projects">
       <h1>{t("MYWORK")}</h1>
+      <div className="filter-buttons">
+        <button 
+          onClick={() => setFilter('All')} 
+          className={filter === 'All' ? 'active' : ''}
+        >
+          {t("ALL")}
+        </button>
+        <button 
+          onClick={() => setFilter('TinkerIT')} 
+          className={filter === 'TinkerIT' ? 'active' : ''}
+        >
+          {t("TINKERIT")}
+        </button>
+        <button 
+          onClick={() => setFilter('Open source')} 
+          className={filter === 'Open source' ? 'active' : ''}
+        >
+          {"Open source"}
+        </button>
+        <button 
+          onClick={() => setFilter('Other')} 
+          className={filter === 'Other' ? 'active' : ''}
+        >
+          {t("OTHER")}
+        </button>
+      </div>
       <div className="project-list">
-        {projectData.map((project) => (
+        {filteredProjects.map((project) => (
           <div key={project.id} className={`project-item project-${project.id}`}>
             <div className="project-content">
-            <div className="project-title-container-mobile">
-              <h3 className='projects-mobile-title'>{project.title}</h3>
-              <span className="project-open">{project.open}</span>
+              <div className="project-title-container-mobile">
+                <h3 className='projects-mobile-title'>{project.title}</h3>
+                <span className="project-open">{project.open}</span>
               </div>
               <div className={`project-imagebox project-image-${project.id}`}>
                 <img src={project.image} alt={project.title} className={`project-img project-img-${project.id}`} />
               </div>
               <div className={` project-info-container project-info-container-${project.id}`}>
                 <div className={`project-info project-info-${project.id}`}>
-                <div className="project-title-container">
-                  <h3>{project.title}</h3> 
-                  <span className="project-open">{project.open}</span>
-                </div>
+                  <div className="project-title-container">
+                    <h3>{project.title}</h3> 
+                    <span className="project-open">{project.open}</span>
+                  </div>
                   <p>{project.description}</p>
                   <div className="project-technologies">
                     {project.technologies.map((tech, techIndex) => (
@@ -197,6 +236,6 @@ function Projects() {
       </div>
     </div>
   );
-};
+}
 
 export default Projects;
