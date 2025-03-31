@@ -195,12 +195,12 @@
   }
 
   .filter-buttons {
-    width: 95%;
+    width: 100%;
   }
 
   .filter-buttons button {
-    margin-left: 0.2em;
-    margin-right: 0.2em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
   }
 
   .project-title-container-mobile {
