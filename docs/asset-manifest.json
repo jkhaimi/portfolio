@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.c30a4b8d.css",
+    "main.js": "/portfolio/static/js/main.33818802.js",
+    "static/js/845.185071e5.chunk.js": "/portfolio/static/js/845.185071e5.chunk.js",
+    "static/media/eristys.png": "/portfolio/static/media/eristys.5822a444b58b35500def.png",
+    "static/media/savolainen.png": "/portfolio/static/media/savolainen.50d5ee92a429654cba90.png",
+    "static/media/Jesse2.png": "/portfolio/static/media/Jesse2.cb5b8c86ee9f9717ff94.png",
+    "static/media/thaimarketolari.png": "/portfolio/static/media/thaimarketolari.3fb8b3b51f66f27a5409.png",
+    "static/media/music.png": "/portfolio/static/media/music.d156ed52315cfe6bd446.png",
+    "static/media/nettikauppa.png": "/portfolio/static/media/nettikauppa.1efdcba40b5e1a27c085.png",
+    "static/media/BiisiKirjasto.png": "/portfolio/static/media/BiisiKirjasto.e3ae51d3436a65b7fa9a.png",
+    "static/media/personal.jpg": "/portfolio/static/media/personal.3dc1289da96263ffa4f4.jpg",
+    "static/media/work.jpeg": "/portfolio/static/media/work.776371388f1022427d55.jpeg",
+    "static/media/Jesse.webp": "/portfolio/static/media/Jesse.7a334f30759d89ab81e8.webp",
+    "static/media/tinkerit2.png": "/portfolio/static/media/tinkerit2.c1bd287a8002c2499ef2.png",
+    "static/media/student.webp": "/portfolio/static/media/student.5b4cea6004386ba50b2f.webp",
+    "static/media/NHL.png": "/portfolio/static/media/NHL.10da7020eb78de9b18f6.png",
+    "static/media/Game.png": "/portfolio/static/media/Game.ad56aab0625f5ad059d8.png",
+    "static/media/spanish2.png": "/portfolio/static/media/spanish2.4b9d507d5e6c8082fa00.png",
+    "static/media/JYU-RuokailuApp.png": "/portfolio/static/media/JYU-RuokailuApp.f4b2319f8f7a2dc5d94d.png",
+    "static/media/Agecounter.png": "/portfolio/static/media/Agecounter.31789564255a0a2ac6de.png",
+    "static/media/english2.png": "/portfolio/static/media/english2.47c7399c49dba8e028b7.png",
+    "static/media/Studytracker2.png": "/portfolio/static/media/Studytracker2.c2349f4ab54a73743781.png",
+    "static/media/AirportTaxi.webp": "/portfolio/static/media/AirportTaxi.ee534fc6881ce643a10f.webp",
+    "index.html": "/portfolio/index.html",
+    "main.c30a4b8d.css.map": "/portfolio/static/css/main.c30a4b8d.css.map",
+    "main.33818802.js.map": "/portfolio/static/js/main.33818802.js.map",
+    "845.185071e5.chunk.js.map": "/portfolio/static/js/845.185071e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c30a4b8d.css",
+    "static/js/main.33818802.js"
+  ]
+}
