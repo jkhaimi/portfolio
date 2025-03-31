@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import profilePic from "../Images/Jesse2.png";
+import profilePic from "../Images/Jesse2.webp";
 import { FaReact, FaNodeJs, FaPython, FaDatabase, FaJsSquare, FaJava, FaAws, FaGithub, FaDocker } from "react-icons/fa";
 import { FaFutbol, FaMusic, FaChessKnight, FaDumbbell, FaBook, FaCode } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
