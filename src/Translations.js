@@ -15,17 +15,24 @@ const Translations = {
         JYU2: "University of Jyväskylä",
         JYU_TIME: "September 2021 - May 2025",
 
+        JYU_2: "Master's degree in information and software engineering",
+        JYU2_2: "University of Jyväskylä",
+        JYU_TIME_2: "September 2025 - May 2027",
+
         LUMO: "Highschool Graduate",
         LUMO2: "Lumon lukio, Vantaa",
         LUMO_TIME: "August 2017 - December 2020",
 
         EXPERIENCE: "Experience",
 
+        SAFKASTOCK_TITLE: "Co-founder and Lead Developer",
+        SAFKASTOCK_TIME: "September 2025 -",
+
         TINKERIT_TITLE: "CO-founder and Marketing Manager",
         TINKERIT_TIME: "July 2023 -",
 
-        JYUJOB_TITLE: "Reseach assistant",
-        JYUJOB_TIME: "June 2023 - August 2023",
+        JYUJOB_TITLE: "Generative AI Researcher",
+        JYUJOB_TIME: "June 2025 - August 2025",
 
         TECHNOLOGIES: "Technology knowledge",
         HOBBYS: "Hobbies and Language knowledge",
@@ -43,7 +50,7 @@ const Translations = {
         
         // Info
         TITLE: "Information Technology student",
-        TITLE2: "TinkerIT Co-founder",
+        TITLE2: "TinkerIT & SafkaStock Co-founder",
         INFO_DESCRIPTION: "I’m a full-stack Software Engineer based in Jyväskylä, Finland. This site showcases some of my personal projects, as well as work I've done through my web and e-commerce development company, where I’m a co-founder and head of marketing.",
 
         PINNED_PROJECTS: "Pinned Projects",
@@ -165,7 +172,7 @@ const Translations = {
 
         // Info
         TITLE: "Tieto- ja ohjelmistotekniikan opiskelija",
-        TITLE2: "TinkerIT perustajajäsen",
+        TITLE2: "TinkerIT ja SafkaStock perustajajäsen",
         INFO_DESCRIPTION: "Olen full-stack ohjelmistokehittäjä, joka asuu Jyväskylässä. Tämä sivusto esittelee projektejani, joita olen tehnyt vapaa-ajallani tai verkkosivujen ja verkkokauppojen kehitysyhtiössäni. Yhtiössäni toimin perustajajäsenä ja markkinoinnin johtajana.",
 
         PINNED_PROJECTS: "Kiinnitetyt projektit",

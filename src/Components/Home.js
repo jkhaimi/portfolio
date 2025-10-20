@@ -26,6 +26,12 @@ const Home = () => {
         <div className="education home-box">
           <h2>{t("EDUCATION")}</h2>
 
+          <div className="education-item">
+            <p className="education-title">{t("JYU_2")}</p> 
+            <p className="education-school">{t("JYU2_2")}</p>
+            <span className="education-time">{t("JYU_TIME_2")}</span>
+        </div>
+
         <div className="education-item">
             <p className="education-title">{t("JYU")}</p> 
             <p className="education-school">{t("JYU2")}</p>
@@ -43,17 +49,24 @@ const Home = () => {
           <h2>{t("EXPERIENCE")}</h2>
 
           <div className="work-item">
-            <p className="work-title">{t("TINKERIT_TITLE")}</p> 
-            <p className="work-place">{t("TINKERIT")}</p>
-            <span className="work-time">{t("TINKERIT_TIME")}</span>
+            <p className="work-title">{t("SAFKASTOCK_TITLE")}</p> 
+            <p className="work-place">SafkaStock</p>
+            <span className="work-time">{t("SAFKASTOCK_TIME")}</span>
             </div>
+
 
         <div className="work-item">
             <p className="work-title">{t("JYUJOB_TITLE")}</p> 
             <p className="work-place">{t("JYU2")}</p>
             <span className="work-time">{t("JYUJOB_TIME")}</span>
         </div>
-        
+
+          <div className="work-item">
+            <p className="work-title">{t("TINKERIT_TITLE")}</p> 
+            <p className="work-place">{t("TINKERIT")}</p>
+            <span className="work-time">{t("TINKERIT_TIME")}</span>
+            </div>
+
         </div>
       </section>
 
