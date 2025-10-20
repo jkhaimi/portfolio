@@ -15,7 +15,7 @@ function Navigation({ onNavigate, activeComponent }) {
             onClick={(e) => { e.preventDefault(); onNavigate('home'); }} 
             className={activeComponent === 'home' ? 'active' : ''}
           >
-            {t('Koti')}
+            {t('NAV_HOME')}
           </a>
           <a 
             href="/" 

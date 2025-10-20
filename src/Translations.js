@@ -19,8 +19,8 @@ const Translations = {
         JYU2_2: "University of Jyväskylä",
         JYU_TIME_2: "September 2025 - May 2027",
 
-        LUMO: "Highschool Graduate",
-        LUMO2: "Lumon lukio, Vantaa",
+        LUMO: "High school Graduate",
+        LUMO2: "Lumo High school, Vantaa",
         LUMO_TIME: "August 2017 - December 2020",
 
         EXPERIENCE: "Experience",
@@ -146,9 +146,9 @@ const Translations = {
         
         // About Me
         ABOUTME_STUDENT_TITLE: "Student Life",
-        ABOUTME_STUDENT_TEXT: "I am a 23-year-old Information and Software Engineering student at the ",
+        ABOUTME_STUDENT_TEXT: "I am a 24-year-old Information and Software Engineering student at the ",
         ABOUTME_STUDENT_STRONG: "University of Jyväskylä, ",
-        ABOUTME_STUDENT_TEXT2: "set to graduate in the spring. Throughout my studies, I've gained a deep interest in IT and had the chance to study abroad at the University of Jaén in Spain, which further fueled my passion for the field.",
+        ABOUTME_STUDENT_TEXT2: "set to complete my master studies in spring 2027. Throughout my studies, I've gained a deep interest in IT and had the chance to study abroad at the University of Jaén in Spain, which further fueled my passion for the field.",
 
         ABOUTME_WORK_TITLE: "Personal Life",
         ABOUTME_WORK_TEXT: "With broad work experience, I’ve co-founded a software company called ",
@@ -298,9 +298,9 @@ const Translations = {
 
         // About Me
         ABOUTME_STUDENT_TITLE: "Opiskelijaelämä",
-        ABOUTME_STUDENT_TEXT: "Olen 23-vuotias tietotekniikan ja ohjelmistotekniikan opiskelija ",
+        ABOUTME_STUDENT_TEXT: "Olen 24-vuotias tietotekniikan ja ohjelmistotekniikan opiskelija ",
         ABOUTME_STUDENT_STRONG: "Jyväskylän yliopistossa, ",
-        ABOUTME_STUDENT_TEXT2: "ja valmistumassa keväällä. Opintojeni aikana olen syventynyt IT-alaan ja päässyt suorittamaan myös opiskelijavaihdon, Espanjassa Jaénin yliopistossa, mikä vahvisti entisestään kiinnostustani alaa kohtaan.",
+        ABOUTME_STUDENT_TEXT2: "joka valmistuu maisteriksi keväällä 2027. Opintojeni aikana olen syventynyt IT-alaan ja päässyt suorittamaan myös opiskelijavaihdon, Espanjassa Jaénin yliopistossa, mikä vahvisti entisestään kiinnostustani alaa kohtaan.",
     
         ABOUTME_WORK_TITLE: "Työelämä",
         ABOUTME_WORK_TEXT: "Monipuolisen työkokemuksen myötä olen ollut mukana perustamassa ohjelmistoyritystä nimeltä ",
