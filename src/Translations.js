@@ -190,17 +190,24 @@ const Translations = {
         JYU2: "Jyväskylän yliopisto",
         JYU_TIME: "Syyskuu 2021 - Toukokuu 2025",
 
+        JYU_2: "Tieto-ja ohjelmistotekniikan maisteritutkinto",
+        JYU2_2: "Jyväskylän yliopisto",
+        JYU_TIME_2: "Syyskyy 2025 - Toukokuu 2027",
+
         LUMO: "Ylioppilas",
         LUMO2: "Lumon lukio, Vantaa",
         LUMO_TIME: "Elokuu 2017 - Joulukuu 2020",
 
         EXPERIENCE: "Työkokemus",
 
-        TINKERIT_TITLE: "Perustajajäsen ja Markkinointivastaava",
+        TINKERIT_TITLE: "Perustajajäsen ja markkinointivastaava",
         TINKERIT_TIME: "Heinäkuu 2023 -",
 
-        JYUJOB_TITLE: "Tutkimusavustaja",
-        JYUJOB_TIME: "Kesäkuu 2023 - Elokuu 2023",
+        SAFKASTOCK_TITLE: "Perustajajäsen ja tekninen johtaja",
+        SAFKASTOCK_TIME: "Syyskuu 2025 -",
+
+        JYUJOB_TITLE: "Generatiivisen tekoälyn tutkija",
+        JYUJOB_TIME: "Kesäkuu 2025 - Elokuu 2025",
 
         TECHNOLOGIES: "Käyttämäni teknologiat",
         HOBBYS: "Harrastukset ja kielitaito",
@@ -242,6 +249,8 @@ const Translations = {
         SAFKASTOCK_TEXT: "Perustettu vuonna 2025, SafkaStock on älykäs varastonhallintajärjestelmä, joka on suunniteltu pienyrityksille. Järjestelmä auttaa seuraamaan raaka-aineita, hallitsemaan varastotasoja ja automatisoimaan ostotilauksia tekoälyn tuottamien oivallusten avulla. Yhtenä perustajista olen ollut vahvasti mukana sekä tuotteen kehityksessä että hallinnollisissa tehtävissä.",
 
         TRAVELJOURNAL_TEXT: "Verkkosovellus, joka on toteutettu kokonaan tekoälyn avulla tutkimustarkoituksessa, liittyen generatiivisen tekoälyn käyttöön ohjelmistokehityksen elinkaaressa. Projekti toteutettiin DeepSeek-reasoner mallilla käyttäen PERN-teknologiapinoa.",
+
+        JYU_RUOKAILUAPP_TEXT: "Verkkosovellus Jyväskylän yliopiston opiskelijoille, jonka avulla he voivat tarkastella kampuksella sijaitsevien eri opiskelijaravintoloiden ruokalistoja. Käyttäjät voivat myös suodattaa ja arvioida aterioita, joita he ovat syöneet.",
 
         MUSIC_TITLE: "Tuottamani musiikki",
         MUSIC_DESCRIPTION: "Musiikkia, jota olen tuottanut",

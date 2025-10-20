@@ -6,7 +6,7 @@ function Resume() {
 
   const { i18n } = useTranslation();
   const isMobile = window.innerWidth <= 750;
-  const resumeFile = i18n.language === 'en' ? 'https://jkhaimi.github.io/portfolio/JesseHaimi_CV_English.pdf' : 'https://jkhaimi.github.io/portfolio/JesseHaimi_CV_Suomi.pdf';
+  const resumeFile = i18n.language === 'en' ? 'https://jkhaimi.github.io/portfolio/JesseHaimi-CV-English.pdf' : 'https://jkhaimi.github.io/portfolio/JesseHaimi-CV-Suomi.pdf';
 
   return (
     <div className="resume">
