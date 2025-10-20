@@ -35,7 +35,7 @@ const Translations = {
         JYUJOB_TIME: "June 2025 - August 2025",
 
         TECHNOLOGIES: "Technology knowledge",
-        HOBBYS: "Hobbies and Language knowledge",
+        HOBBYS: "Hobbies and Language skills",
 
         FOOTBALL: "Football",
         MUSICPRODUCTION: "Music production",
