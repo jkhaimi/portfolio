@@ -20,6 +20,10 @@
   margin-right: 0.5em;
 }
 
+.filter-buttons button:hover {
+  cursor: pointer;
+}
+
 .filter-buttons button.active {
   border-bottom: 2px solid whitesmoke;
 }
@@ -103,6 +107,10 @@
   width: 18em;
   border: 3px solid #4caf50;
   border-radius: 40px;
+}
+
+.project-img-14 {
+  width: 28em;
 }
 
 .project-info-container {
@@ -361,8 +369,6 @@
   
   .project-img-12 { 
     width: 12em;
-    border: 3px solid #4caf50;
-    border-radius: 40px;
   }
 
   .project-13 {

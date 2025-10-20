@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import { useTranslation } from 'react-i18next';
-import TinkerIT from '../Images/tinkerit2.png';
+import TinkerIT from '../Images/tinkerit.png';
+import SafkaStock from '../Images/safkastock.png';
+import TravelJournal from '../Images/traveljournal.png';
 import Music from '../Images/music.png';
 import AirportTaxi from '../Images/AirportTaxi.webp';
 import Savolainen from '../Images/savolainen.png';
@@ -24,6 +26,7 @@ function Projects() {
   const [filter, setFilter] = useState('All');
 
   const projectData = [
+
     { 
       id: 1,
       title: "TinkerIT", 
@@ -32,6 +35,16 @@ function Projects() {
       technologies: ["React", "JavaScript", "CSS", "Node.js", "SquareSpace"],
       link: t('VISIT_OURWEBSITE'),
       url: "https://tinkerit.fi/",
+      category: "Other"
+    },
+    { 
+      id: 14,
+      title: "SafkaStock", 
+      image: SafkaStock,
+      description: t('SAFKASTOCK_TEXT'), 
+      technologies: ["PostgreSQL", "Express", "Node.js", "React", "REST API"],
+      link: t('WEBSITE_SOON'),
+      url: "mailto:jesse.haimi@icloud.com",
       category: "TinkerIT"
     },
     { 
@@ -55,6 +68,16 @@ function Projects() {
       url: "https://github.com/jkhaimi/NHL-scoreDB",
       open: "Open source",
       category: "Open source"
+    },
+    { 
+      id: 15,
+      title: "Travel Journal", 
+      image: TravelJournal,
+      description: t('TRAVELJOURNAL_TEXT'), 
+      technologies: ["PostgreSQL", "Express", "Node.js", "React", "REST API"],
+      link: t('VIEW_CODE'),
+      url: "https://github.com/jkhaimi/GENIUS-DeepSeek",
+      category: "Open Source"
     },
     { 
       id: 2,

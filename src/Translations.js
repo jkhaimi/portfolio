@@ -62,6 +62,7 @@ const Translations = {
         OTHER: "Other",
 
         VISIT_WEBSITE: "Visit website",
+        WEBSITE_SOON: "Inquire about the project",
         VISIT_OURWEBSITE: "Visit our website",
         VISIT_APP: "Visit App",
         VIEW_CODE: "View code",
@@ -73,6 +74,10 @@ const Translations = {
 
         TINKERIT_DESCRIPTION: "A software company creating modern websites and online stores for businesses",
         TINKERIT_TEXT: "Founded in 2023, TinkerIT is a customer-focused software company dedicated to creating modern websites and online stores for businesses. As a co-founder, I actively contribute to both the marketing and coding aspects of the company. We've worked on a variety of exciting projects across different industries.",
+
+        SAFKASTOCK_TEXT: "Founded in 2025, SafkaStock is a smart inventory management platform designed for small businesses. The system helps businesses track ingredients, manage stock levels, and automate purchase orders with AI-powered insights. As a co-founder, I’ve been deeply involved in both product development and administrative tasks.",
+
+        TRAVELJOURNAL_TEXT: "A web app made with entirely with AI for researching purposes conserning the usage of Generative AI in the Software development lifecycle. The project was made with the DeepSeek-reasoner model using PERN-stack.",
 
         JYU_RUOKAILUAPP_TITLE: "JYU-RuokailuApp",
         JYU_RUOKAILUAPP_TEXT: "A web application for students of the University of Jyväskylä to see the menus of the different student restaurants we have located on our campus. The users can also filter and rate the meals they have eaten.",
@@ -213,6 +218,7 @@ const Translations = {
         OTHER: "Muut",
 
         VISIT_WEBSITE: "Käy nettisivulla",
+        WEBSITE_SOON: "Kysy projektista",
         CHECK_THE_CODE: "Tarkastele koodia",
         BACKTO_PROJECTS: "Takaisin projekteihin",
         BACK: "Takaisin",
@@ -225,6 +231,10 @@ const Translations = {
 
         TINKERIT_DESCRIPTION: "Ohjelmistoyritys, joka luo moderneja verkkosivustoja ja verkkokauppoja yrityksille",
         TINKERIT_TEXT: "TinkerIT perustettiin kesällä 2023 tarkoituksella olla asiakaskeskeinen ohjelmistoyritys, joka keskittyy modernien verkkosivustojen ja verkkokauppojen kehittämiseen yrityksille. Yrityksen perustajajäsenenä olen osallistunut sekä markkinointiin että koodaukseen. Olemme toteuttaneet monia mielenkiintoisia projekteja eri toimialoilla.",
+
+        SAFKASTOCK_TEXT: "Perustettu vuonna 2025, SafkaStock on älykäs varastonhallintajärjestelmä, joka on suunniteltu pienyrityksille. Järjestelmä auttaa seuraamaan raaka-aineita, hallitsemaan varastotasoja ja automatisoimaan ostotilauksia tekoälyn tuottamien oivallusten avulla. Yhtenä perustajista olen ollut vahvasti mukana sekä tuotteen kehityksessä että hallinnollisissa tehtävissä.",
+
+        TRAVELJOURNAL_TEXT: "Verkkosovellus, joka on toteutettu kokonaan tekoälyn avulla tutkimustarkoituksessa, liittyen generatiivisen tekoälyn käyttöön ohjelmistokehityksen elinkaaressa. Projekti toteutettiin DeepSeek-reasoner mallilla käyttäen PERN-teknologiapinoa.",
 
         MUSIC_TITLE: "Tuottamani musiikki",
         MUSIC_DESCRIPTION: "Musiikkia, jota olen tuottanut",
