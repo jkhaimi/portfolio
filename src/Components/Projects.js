@@ -1,262 +1,452 @@
-import React, { useState } from 'react';
-import './Projects.css';
-import { useTranslation } from 'react-i18next';
-import TinkerIT from '../Images/tinkerit.png';
-import SafkaStock from '../Images/safkastock.png';
-import TravelJournal from '../Images/traveljournal.png';
-import Music from '../Images/music.png';
-import AirportTaxi from '../Images/AirportTaxi.webp';
-import Savolainen from '../Images/savolainen.png';
-import Kaasalainen from '../Images/eristys.png';
-import StudyTracker from '../Images/Studytracker2.png';
-import ThaiMarketOlari from '../Images/thaimarketolari.png';
-// import ThaiMarketOlari from '../Images/thaimarketolari2.png'; // Palatsi kuva
-import OnlineStore from '../Images/nettikauppa.png';
-import SongLibrary from '../Images/BiisiKirjasto.png';
-import Game from '../Images/Game.png';
-import NHL from '../Images/NHL.png';
-import JYU from '../Images/JYU-RuokailuApp.png';
-import Agecounter from '../Images/Agecounter.png';
-// import { RiSkipLeftLine } from "react-icons/ri";
+import React, { useState, useEffect } from "react";
+import "./Projects.css";
+import { useTranslation } from "react-i18next";
 
-function Projects() {
+import TinkerIT from "../Images/tinkerit4.png";
+import TinkerITSivu1 from "../Images/tinkerit-sivu1.webp";
+import TinkerITSivu2 from "../Images/tinkerit-sivu2.webp";
+import TinkerITSivu3 from "../Images/tinkerit-sivu3.webp";
+import TinkerITSivu4 from "../Images/tinkerit-sivu4.webp";
 
-  const { t } = useTranslation();
+import SafkaStock from "../Images/safkastock4.png";
+import SafkaStockSivu1 from "../Images/safkastock1.webp"
+import SafkaStockSivu2 from "../Images/safkastock2.webp"
+import SafkaStockSivu4 from "../Images/safkastock4.webp"
+import SafkaStockSivu5 from "../Images/safkastock5.webp"
 
-  const [filter, setFilter] = useState('All');
+import Music from "../Images/music1.png";
 
-  const projectData = [
+import AirportTaxi from "../Images/AirportTaxi.webp";
+import Movit1 from "../Images/movit1.webp";
+import Movit2 from "../Images/movit2.webp";
+import Movit3 from "../Images/movit3.webp";
 
-    { 
-      id: 1,
-      title: "TinkerIT", 
-      image: TinkerIT,
-      description: t('TINKERIT_TEXT'), 
-      technologies: ["React", "JavaScript", "CSS", "Node.js", "SquareSpace"],
-      link: t('VISIT_OURWEBSITE'),
-      url: "https://tinkerit.fi/",
-      category: "Other"
-    },
-    { 
-      id: 14,
-      title: "SafkaStock", 
-      image: SafkaStock,
-      description: t('SAFKASTOCK_TEXT'), 
-      technologies: ["PostgreSQL", "Express", "Node.js", "React", "REST API"],
-      link: t('WEBSITE_SOON'),
-      url: "mailto:jesse.haimi@icloud.com",
-      category: "TinkerIT"
-    },
-    { 
-      id: 12,
-      title: t('JYU_RUOKAILUAPP_TITLE'), 
-      image: JYU,
-      description: t('JYU_RUOKAILUAPP_TEXT'), 
-      technologies: ["PostreSQL", "React", "JavaScript", "Node.js", "AWS"],
-      link: t('VISIT_APP'),
-      url: "https://jyu-ruokailu-app-kappa.vercel.app/",
-      open: "Open source",
-      category: "Open source"
-    },
-    { 
-      id: 11,
-      title: t('NHL_TITLE'), 
-      image: NHL,
-      description: t('NHL_TEXT'), 
-      technologies: ["React", "JavaScript", "Node.js", "AWS"],
-      link: t("VIEW_CODE"),
-      url: "https://github.com/jkhaimi/NHL-scoreDB",
-      open: "Open source",
-      category: "Open source"
-    },
-    { 
-      id: 15,
-      title: "Travel Journal", 
-      image: TravelJournal,
-      description: t('TRAVELJOURNAL_TEXT'), 
-      technologies: ["PostgreSQL", "Express", "Node.js", "React", "REST API"],
-      link: t('VIEW_CODE'),
-      url: "https://github.com/jkhaimi/GENIUS-DeepSeek",
-      category: "Open Source"
-    },
-    { 
-      id: 2,
-      title: t('MUSIC_TITLE'), 
-      image: Music,
-      description: t('MUSIC_TEXT'), 
-      technologies: ["FL Studio 20", "Logic Pro"],
-      link: t("CHECKOUT_MUSIC"),
-      url: "https://soundcloud.com/jkhaimi",
-      category: "Other"
-    },
-    { 
-      id: 3,
-      title: t('AIRPORTTAXI_TITLE'), 
-      image: AirportTaxi,
-      description: t('AIRPORTTAXI_TEXT'), 
-      technologies: ["Node.js", "AWS"], 
-      link: t("VISIT_WEBSITE"),
-      url: "https://www.airporttaxi.fi/",
-      category: "TinkerIT"
-    },
-    { 
-      id: 13,
-      title: t('AGECOUNTER_TITLE'), 
-      image: Agecounter,
-      description: t('AGECOUNTER_TEXT'), 
-      technologies: ["JavaScript, CSS"],
-      link: t('VIEW_CODE'),
-      url: "https://github.com/jkhaimi/ikalaskuri",
-      open: "Open source",
-      category: "Open source"
-    },
-    { 
-      id: 4,
-      title: t('SAVOLAINEN_TITLE'), 
-      image: Savolainen,
-      description: t('SAVOLAINEN_TEXT'), 
-      technologies: ["SquareSpace"],
-      link: t("VISIT_WEBSITE"),
-      url: "https://savolainenosakunta.fi/",
-      category: "TinkerIT"
-    },
-    { 
-      id: 5,
-      title: t('KAASALAINEN_TITLE'), 
-      image: Kaasalainen,
-      description: t('KAASALAINEN_TEXT'), 
-      technologies: ["React", "CSS"],
-      link: t("VISIT_WEBSITE"),
-      url: "https://eristys.fi/",
-      category: "TinkerIT"
-    },
-    { 
-      id: 6,
-      title: t('STUDYTRACKER_TITLE'), 
-      image: StudyTracker,
-      description: t('STUDYTRACKER_TEXT'), 
-      technologies: ["Docker", "MySQL", "React", "CSS"], 
-      link: t("VIEW_CODE"),
-      url: "https://github.com/tuupsuu/StudyTracker",
-      open: "Open source",
-      category: "Open source"
-    },
-    { 
-      id: 7,
-      title: t('THAIMARKETOLARI_TITLE'), 
-      image: ThaiMarketOlari,
-      description: t('THAIMARKETOLARI_TEXT'), 
-      technologies: ["Docker", "MySQL", "React", "CSS"],
-      link: t("VISIT_WEBSITE"),
-      url: "https://thaimarketolari.fi/",
-      category: "TinkerIT"
-    },
-    { 
-      id: 8,
-      title: t('ONLINESTORE_TITLE'), 
-      image: OnlineStore,
-      description: t('ONLINESTORE_TEXT'), 
-      technologies: ["JavaScript", "HTML", "CSS"],
-      link: t("VIEW_CODE"),
-      url: "https://github.com/jkhaimi/nettikauppa",
-      open: "Open source",
-      category: "Open source"
-    },
-    { 
-      id: 9,
-      title: t('SONGLIBRARY_TITLE'), 
-      image: SongLibrary,
-      description: t('SONGLIBRARY_TEXT'), 
-      technologies: ["Java", "SceneBuilder"],
-      link: t("VIEW_CODE"),
-      url: "https://github.com/jkhaimi/ohjelmointi-2-harjoitustyo",
-      open: "Open source",
-      category: "Open source"
-    },
-    { 
-      id: 10,
-      title: t('PLATFORMER_TITLE'), 
-      image: Game,
-      description: t('PLATFORMER_TEXT'), 
-      technologies: ["C#"],
-      link: t("VIEW_CODE"),
-      url: "https://github.com/jkhaimi/ohjelmointi-1-harjoitustyo",
-      open: "Open source",
-      category: "Open source"
+import Kajastus from "../Images/kajastus.webp";
+import Kajastus1 from "../Images/kajastus1.webp";
+import Kajastus2 from "../Images/kajastus2.webp";
+import Kajastus3 from "../Images/kajastus3.webp";
+import Kajastus4 from "../Images/kajastus4.webp";
+
+import NHL from "../Images/nhl1.png";
+import NHLSivu1 from "../Images/nhl1.webp";
+import NHLSivu2 from "../Images/nhl2.webp";
+import NHLSivu3 from "../Images/nhl3.webp";
+import NHLSivu4 from "../Images/nhl4.webp";
+
+import JYU from "../Images/jyu1.png";
+import JYUSivu1 from "../Images/jyu1.webp";
+import JYUSivu2 from "../Images/jyu2.webp";
+import JYUSivu3 from "../Images/jyu3.webp";
+import JYUSivu4 from "../Images/jyu4.webp";
+
+import Harvia from "../Images/harvia.png";
+import Harvia2 from "../Images/harvia2.webp";
+import Harvia3 from "../Images/harvia3.webp";
+import Harvia4 from "../Images/harvia4.webp";
+import Harvia5 from "../Images/harvia5.webp";
+
+import Beat1 from "../Audio/jkl4.wav";
+import Beat2 from "../Audio/JS1.wav";
+import Beat3 from "../Audio/JS2.wav";
+import Beat4 from "../Audio/ap6.wav";
+
+import Unity from "../Images/unity.webp";
+import Game1 from "../Images/game1.webp";
+import Game2 from "../Images/game2.webp";
+import Game3 from "../Images/game3.webp";
+
+function AudioCard({ track, currentlyPlaying, setCurrentlyPlaying }) {
+  const audioRef = React.useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [progress, setProgress] = useState(0);
+
+  const togglePlay = () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    // Pause other playing audio
+    if (currentlyPlaying && currentlyPlaying !== audio) {
+      currentlyPlaying.pause();
     }
-  ];
 
-  const filteredProjects = projectData.filter((project) => {
-    if (filter === 'All') return true;
-    if (filter === 'TinkerIT' && project.category === 'TinkerIT') return true;
-    if (filter === 'Open source' && project.category === 'Open source') return true;
-    return filter === 'Other' && project.category !== 'TinkerIT' && project.category !== 'Open source';
-  });
+    if (audio.paused) {
+      audio.play();
+      setCurrentlyPlaying(audio);
+      setIsPlaying(true);
+    } else {
+      audio.pause();
+      setIsPlaying(false);
+    }
+  };
+
+  const handleTimeUpdate = () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const percent = (audio.currentTime / audio.duration) * 100;
+    setProgress(percent || 0);
+  };
+
+  // ✅ Clickable progress bar
+  const handleSeek = (e) => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const rect = e.currentTarget.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const percent = clickX / rect.width;
+
+    audio.currentTime = percent * audio.duration;
+  };
 
   return (
-    <div className="projects">
-      <h1>{t("MYWORK")}</h1>
-      <div className="filter-buttons">
-        <button 
-          onClick={() => setFilter('All')} 
-          className={filter === 'All' ? 'active' : ''}
-        >
-          {t("ALL")}
-        </button>
-        <button 
-          onClick={() => setFilter('TinkerIT')} 
-          className={filter === 'TinkerIT' ? 'active' : ''}
-        >
-          {t("TINKERIT")}
-        </button>
-        <button 
-          onClick={() => setFilter('Open source')} 
-          className={filter === 'Open source' ? 'active' : ''}
-        >
-          {"Open source"}
-        </button>
-        <button 
-          onClick={() => setFilter('Other')} 
-          className={filter === 'Other' ? 'active' : ''}
-        >
-          {t("OTHER")}
-        </button>
+    <div className="audio-card">
+      <div className="audio-title">{track.name}</div>
+
+      <button className="audio-play-btn" onClick={togglePlay}>
+        {isPlaying ? "❚❚" : "▶"}
+      </button>
+
+      <div className="audio-progress" onClick={handleSeek}>
+        <div
+          className="audio-progress-bar"
+          style={{ width: `${progress}%` }}
+        />
       </div>
+
+      <audio
+        ref={audioRef}
+        src={track.src}
+        onTimeUpdate={handleTimeUpdate}
+        onEnded={() => {
+          setIsPlaying(false);
+          setProgress(0);
+        }}
+      />
+    </div>
+  );
+}
+
+function Projects() {
+  const { t } = useTranslation();
+  const [activeProject, setActiveProject] = useState(null);
+  const [currentImage, setCurrentImage] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
+  const [currentlyPlaying, setCurrentlyPlaying] = useState(null);
+
+
+  const projectData = [
+    {
+      id: 1,
+      title: "TinkerIT",
+      icon: TinkerIT,
+      screenshots: [TinkerITSivu1, TinkerITSivu2, TinkerITSivu3, TinkerITSivu4],
+      description: t("TINKERIT_TEXT"),
+      technologies: ["React", "JavaScript", "CSS", "Node.js", "SquareSpace"],
+      linkText: t("VISIT_OURWEBSITE"),
+      url: "https://tinkerit.fi/",
+    },
+    {
+      id: 2,
+      title: "SafkaStock",
+      icon: SafkaStock,
+      screenshots: [SafkaStockSivu1, SafkaStockSivu2, SafkaStockSivu4, SafkaStockSivu5],
+      description: t("SAFKASTOCK_TEXT"),
+      technologies: ["GPT API", "Azure Document Intelligence", "PERN"],
+      linkText: t("WEBSITE_SOON"),
+      url: "mailto:jesse.haimi@icloud.com",
+    },
+    {
+      id: 3,
+      title: t("JYU_RUOKAILUAPP_TITLE"),
+      type: "mobile",
+      icon: JYU,
+      screenshots: [JYUSivu1, JYUSivu2, JYUSivu3, JYUSivu4],
+      description: t("JYU_RUOKAILUAPP_TEXT"),
+      technologies: ["PostgreSQL", "React", "Node.js", "AWS"],
+      linkText: t("VISIT_APP"),
+      url: "https://jyu-ruokailu-app-kappa.vercel.app/",
+    },
+    {
+      id: 4,
+      title: t("NHL_TITLE"),
+      type: "mobile",
+      icon: NHL,
+      screenshots: [NHLSivu1, NHLSivu2, NHLSivu3, NHLSivu4],
+      description: t("NHL_TEXT"),
+      technologies: ["React", "Node.js", "AWS"],
+      linkText: t("VIEW_CODE"),
+      url: "https://github.com/jkhaimi/NHL-scoreDB",
+    },
+    {
+      id: 5,
+      title: "OurHarvia",
+      type: "mobile",
+      icon: Harvia,
+      screenshots: [Harvia4, Harvia2, Harvia5, Harvia3],
+      description: t("OURHARVIA_TEXT"),
+      technologies: ["ElevenLabs", "PostgreSQL", "TypeScript", "Tailwind"],
+      linkText: t("VIEW_CODE"),
+      url: "https://github.com/jkhaimi/OurHarvia",
+    },
+    {
+      id: 6,
+      title: t("MUSIC_TITLE"),
+      type: "audio",
+      icon: Music,
+      tracks: [
+        { src: Beat1, name: "Trappin" },
+        { src: Beat2, name: "Motion" },
+        { src: Beat3, name: "Rockin" },
+        { src: Beat4, name: "Chillin" },
+      ],
+      description: t("MUSIC_TEXT"),
+      technologies: ["FL Studio", "Logic Pro"],
+      linkText: t("CHECKOUT_MUSIC"),
+      url: "https://soundcloud.com/jkhaimi",
+    },    
+    {
+      id: 7,
+      title: t("AIRPORTTAXI_TITLE"),
+      icon: AirportTaxi,
+      screenshots: [Movit1, Movit2, Movit3],
+      description: t("AIRPORTTAXI_TEXT"),
+      technologies: ["Node.js", "AWS"],
+      linkText: t("VISIT_WEBSITE"),
+      url: "https://www.airporttaxi.fi/",
+    },
+    {
+      id: 9,
+      title: t("KAJASTUS_TITLE"),
+      icon: Kajastus,
+      screenshots: [Kajastus1, Kajastus2, Kajastus3, Kajastus4],
+      description: t("KAJASTUS_TEXT"),
+      technologies: ["SquareSpace"],
+      linkText: t("VISIT_WEBSITE"),
+      url: "https://www.tikkurilankajastus.fi/",
+    },
+    {
+      id: 10,
+      title: t("GAME_TITLE"),
+      icon: Unity,
+      screenshots: [Game1, Game2, Game3],
+      description: t("GAME_TEXT"),
+      technologies: ["Unity"],
+      linkText: t("VIEW_CODE"),
+      url: "https://github.com/jkhaimi/1v1-Game",
+    },
+  ];
+  
+  const openProject = (project) => {
+    setActiveProject(project);
+    setCurrentImage(0);
+  };
+
+  const closeProject = () => setActiveProject(null);
+
+  const getCarouselItems = () => {
+    if (!activeProject) return [];
+    return activeProject.type === "audio"
+      ? activeProject.tracks
+      : activeProject.screenshots;
+  };
+  
+
+  const nextImage = () => {
+    setCurrentImage((prev) => {
+      const items = getCarouselItems();
+      if (!items.length) return 0;
+  
+      const maxIndex = isMobile ? items.length - 1 : items.length - 2;
+      return prev >= maxIndex ? 0 : prev + 1;
+    });
+  };
+  
+  const prevImage = () => {
+    setCurrentImage((prev) => {
+      const items = getCarouselItems();
+      if (!items.length) return 0;
+  
+      const maxIndex = isMobile ? items.length - 1 : items.length - 2;
+      return prev <= 0 ? maxIndex : prev - 1;
+    });
+  };
+  
+  
+  useEffect(() => {
+    if (!activeProject) return;
+  
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        closeProject();
+      }
+  
+      if (e.key === "ArrowRight") {
+        nextImage();
+      }
+  
+      if (e.key === "ArrowLeft") {
+        prevImage();
+      }
+    };
+  
+    window.addEventListener("keydown", handleKeyDown);
+  
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [activeProject, nextImage, prevImage]);
+
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 750);
+    };
+  
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  
+  return (
+    <div className="projects" id="projects">
+      <h1>{t("MYWORK")}</h1>
+
+      {/* PROJECT LIST */}
       <div className="project-list">
-        {filteredProjects.map((project) => (
-          <div key={project.id} className={`project-item project-${project.id}`}>
-            <div className="project-content">
-              <div className="project-title-container-mobile">
-                <h3 className='projects-mobile-title'>{project.title}</h3>
-                <span className="project-open">{project.open}</span>
-              </div>
-              <div className={`project-imagebox project-image-${project.id}`}>
-                <img src={project.image} alt={project.title} className={`project-img project-img-${project.id}`} />
-              </div>
-              <div className={` project-info-container project-info-container-${project.id}`}>
-                <div className={`project-info project-info-${project.id}`}>
-                  <div className="project-title-container">
-                    <h3>{project.title}</h3> 
-                    <span className="project-open">{project.open}</span>
-                  </div>
-                  <p>{project.description}</p>
-                  <div className="project-technologies">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span key={techIndex} className="technology-box">{tech}</span>
-                    ))}
-                  </div>
-                </div>
-                <div 
-                  className="project-link" 
-                  onClick={() => window.open(project.url, "_blank")} 
-                >
-                  <strong>{project.link}</strong>
-                </div>
-              </div>
-            </div>
+        {projectData.map((project) => (
+          <div
+            key={project.id}
+            className="project-row"
+            onClick={() => openProject(project)}
+          >
+            <img
+              src={project.icon}
+              alt={project.title}
+              className="project-row-icon"
+            />
+            <span className="project-row-title">{project.title}</span>
           </div>
         ))}
       </div>
+
+      {/* MODAL */}
+      {activeProject && (
+        <div className="project-modal-overlay" onClick={closeProject}>
+          <div
+            className="project-modal"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button className="modal-close" onClick={closeProject}>
+              ✕
+            </button>
+
+            {/* HEADER */}
+            <div className="modal-header">
+              <div className="modal-title">
+              <img
+                src={activeProject.icon}
+                alt={activeProject.title}
+                className="modal-icon"
+              />
+              <h2>{activeProject.title}</h2>
+              </div>
+            </div>
+
+            {/* CAROUSEL / AUDIO */}
+            {activeProject.type === "audio" ? (
+            <div className="carousel audio-carousel">
+              {activeProject.tracks.length > 1 && (
+                <button className="carousel-btn left" onClick={prevImage}>
+                  ‹
+                </button>
+              )}
+
+              <div className="carousel-window">
+                <div
+                  className="carousel-track"
+                  style={{
+                    transform: `translateX(-${currentImage * (isMobile ? 100 : 50)}%)`,
+                  }}
+                >
+                  {activeProject.tracks.map((track, index) => (
+                    <div className="carousel-slide audio-slide" key={index}>
+                      <AudioCard
+                        track={track}
+                        currentlyPlaying={currentlyPlaying}
+                        setCurrentlyPlaying={setCurrentlyPlaying}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {activeProject.tracks.length > 1 && (
+                <button className="carousel-btn right" onClick={nextImage}>
+                  ›
+                </button>
+              )}
+            </div>
+          ) : (
+
+              <div
+                className={`carousel ${
+                  activeProject.type === "mobile" ? "carousel-mobile" : ""
+                }`}
+              >
+                {getCarouselItems().length > (isMobile ? 1 : 2) && (
+                  <button className="carousel-btn left" onClick={prevImage}>
+                    ‹
+                  </button>
+                )}
+
+                <div className="carousel-window">
+                  <div
+                    className="carousel-track"
+                    style={{
+                      transform: `translateX(-${currentImage * (isMobile ? 107.5 : 50)}%)`,
+                    }}
+                  >
+                    {activeProject.screenshots.map((img, index) => (
+                      <div className="carousel-slide" key={index}>
+                        <img src={img} alt={`${activeProject.title} ${index + 1}`} />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {getCarouselItems().length > (isMobile ? 1 : 2) && (
+                  <button className="carousel-btn right" onClick={nextImage}>
+                    ›
+                  </button>
+                )}
+              </div>
+            )}
+
+
+            {/* DESCRIPTION */}
+            <p className="modal-description">
+              {activeProject.description}
+            </p>
+
+            {/* TECHNOLOGIES */}
+            <div className="tech-list">
+              {activeProject.technologies.map((tech, i) => (
+                <span key={i}>{tech}</span>
+              ))}
+            </div>
+
+            {/* LINK */}
+            <a
+              href={activeProject.url}
+              target="_blank"
+              rel="noreferrer"
+              className="modal-link"
+            >
+              {activeProject.linkText}
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

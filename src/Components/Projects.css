@@ -1,379 +1,430 @@
 .projects {
-  width: 100%;
-  text-align: center;
-}
-
-.projects h1 {
-  color: whitesmoke;
-}
-
-.filter-buttons {
-  margin-bottom: 2em;
-}
-
-.filter-buttons button {
-  background-color: transparent;
-  color: whitesmoke;
-  border: none;
-  font-size: large;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-}
-
-.filter-buttons button:hover {
-  cursor: pointer;
-}
-
-.filter-buttons button.active {
-  border-bottom: 2px solid whitesmoke;
-}
-
-.project-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
-}
-
-.project-item {
-  padding: 1.5em;
-  border-radius: 10px;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  gap: 1.5em;
+  text-align: center;
   color: whitesmoke;
+  margin-top: 5em;
 }
 
-.project-11 {
-  margin-top: -8em;
-  margin-bottom: -8em;
+.projects h1 {
+  margin-bottom: 2em;
 }
 
-.project-content {
+/* =========================
+   PROJECT LIST (ICON + NAME)
+   ========================= */
+
+.project-list {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  width: 92%;
+  /* background-color: red; */
+}
+
+.project-row {
+  background: #1e1e1e;
+  border-radius: 14px;
+  height: 8em;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  width: 100%;
-  
+  gap: 1em;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
-.project-imagebox {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+.project-row:hover {
+  background: #2a2a2a;
+  transform: translateY(-4px);
 }
 
-.project-img {
-  max-width: 35em;
+/* =========================
+  ICON NORMALIZATION
+  ========================= */
+
+.project-row-icon {
+  width: 50%;
+  height: 50%;
   object-fit: contain;
-  border-radius: 10px;
-  margin-left: -1em;
-}
-
-.project-img-3 {
-  width: 30em;
-  scale: 0.8;
-}
-
-.project-img-4 {
-  width: 40em;
-}
-
-.project-6 {
-  margin-top: -2em;
-}
-
-.project-img-6 {
-  width: 30em;
-  scale: 0.7;
-}
-
-.project-11 {
-  margin-top: -4em;
-}
-
-.project-img-11 {
-  scale: 0.7;
-  border: 3px solid #444;
+  object-position: center;
   border-radius: 50px;
-}
-
-.project-12 {
-  margin-bottom: -4em;
-}
-
-.project-img-12 { 
-  width: 18em;
-  border: 3px solid #4caf50;
-  border-radius: 40px;
-}
-
-.project-img-14 {
-  width: 28em;
-}
-
-.project-info-container {
-  height: 23em;
-}
-
-
-
-.project-info {
-  flex: 2;
-  height: 17em;
-  max-width: 40em;
-  text-align: left;
-  background-color: #201c1c;
-  margin-left: 1em;
-  border-radius: 20px;
-}
-
-.project-title-container {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-}
-
-.project-open {
-  color: green;
-  font-size: x-large;
-  font-weight: bold;
-}
-
-.project-info h3 {
-  font-size: xx-large;
+  flex-shrink: 0;
   margin-left: 0.5em;
 }
 
-.project-info p {
-  margin-left: 1em;
-  margin-right: 1em;
-  line-height: 1.5em;
-  margin-top: -1em;
+.project-row-title {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1.2;
+  margin-left: -1.5em;
 }
 
-.project-technologies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  margin-top: 0.5em;
-  margin-left: 1em;
-}
+/* =========================
+   MODAL OVERLAY
+   ========================= */
 
-.technology-box {
-  background: #444;
-  padding: 0.5em 1em;
-  border-radius: 20px;
-  font-size: 0.9em;
-}
-
-.project-link {
-  height: 5em;
-  background-color: #201c1c;
-  border-radius: 20px;
-  text-align: center;
+.project-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1em;
-  width: 40em;
-  margin-left: 1em;
-  z-index: 999;
+  z-index: 1000;
 }
 
-.project-link:hover {
-  background-color: rgb(98, 44, 152);
+/* =========================
+   MODAL CONTAINER (SMALLER)
+   ========================= */
+
+   .project-modal {
+    background: #151515;
+    width: 90%;
+    max-width: 720px; /* smaller */
+    border-radius: 18px;
+    padding: 1.6em;
+    position: relative;
+    max-height: 85vh;
+    overflow-y: auto;
+  
+    animation: fadeIn 0.25s ease;
+  }
+  
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* CLOSE BUTTON */
+
+.modal-close {
+  position: absolute;
+  top: 2em;
+  right: 1.5em;
+  background: transparent;
+  color: whitesmoke;
+  border: none;
+  font-size: 1.5em;
   cursor: pointer;
 }
 
-.project-link a {
-  color: whitesmoke;
-  text-decoration: none;
+/* =========================
+   MODAL HEADER (ICON + TITLE)
+   ========================= */
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1.5em;
 }
 
-.projects-mobile-title, .project-title-container-mobile {
-  display: none;
+.modal-title {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  
 }
 
-@media (max-width: 750px) {
+.modal-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
 
-  .projects h1 {
-    display: none;
-  }
+/* =========================
+   CAROUSEL (2-UP SLIDING)
+   ========================= */
 
-  .filter-buttons {
-    width: 100%;
-    margin: 0;
-  }
-
-  .filter-buttons button {
-    margin-left: 0em;
-    margin-right: 0em;
-    font-size: medium;
-  }
-
-  .project-title-container-mobile {
+   .carousel {
+    position: relative;
+    margin-bottom: 1.5em;
     display: flex;
-    flex-direction: column;
-  }
-
-  .project-title-container-mobile span {
-    margin-top: -1em;
-    margin-bottom: 1em;
-  }
-
-  .projects-mobile-title {
-    display: flex;
-    text-align: center;
-    font-size: xx-large;
     align-items: center;
     justify-content: center;
-  }
-
-  .project-title-container {
-    display: none;
   }
   
-  .projects {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-content {
-    max-width: 100%;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 4em;
-  }
-
-  .project-imagebox {
-    display: flex;
-    justify-content: center;
+  .carousel-window {
+    overflow: hidden;
     width: 100%;
   }
-
-  .project-imagebox img {
-    max-width: 90%;
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.4s ease;
+  }
+  
+  /* EACH SLIDE IS 50% */
+  .carousel-slide {
+    min-width: 47.5%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0.4em;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    max-height: 15em;
     object-fit: contain;
     border-radius: 10px;
   }
-
-  .project-img {
-    margin-left: 0.2em;
-    margin-bottom: 1em;
+  
+  /* ARROWS */
+  
+  .carousel-btn {
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.2em 0.6em;
+    z-index: 2;
+  }
+  
+  .carousel-btn.left {
+    margin-right: 0.5em;
+  }
+  
+  .carousel-btn.right {
+    margin-left: 0.5em;
   }
 
-  .project-info {
-    max-width: 90%;
-    text-align: center;
-    background-color: #201c1c;
-    border-radius: 20px;
-    padding: 1em;
+/* =========================
+   MOBILE APP CAROUSEL
+   ========================= */
+
+   .carousel-mobile .carousel-slide {
+    min-width: 47.5%; /* closer together */
+    padding: 0 0.25em;
+  }
+  
+  .carousel-mobile .carousel-slide img {
+    max-width: 7em;
+    border-radius: 22px;
+  
+    /* phone-like frame */
+    border: 2px solid #444;
+    background: #000;
+  
+    /* subtle depth */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  }
+
+/* =========================
+   AUDIO GRID
+   ========================= */
+
+   .audio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2em;
+    margin-bottom: 1.5em;
+  }
+  
+  /* =========================
+     AUDIO CARD
+     ========================= */
+
+  .audio-carousel .audio-slide {
+  min-width: 47.5%;
+  padding: 0 0.5em;
+  }
+
+  @media (max-width: 750px) {
+    .audio-carousel .audio-slide {
+      min-width: 92.5%;
+    }
+  }
+  
+  .audio-card {
+    background: #1e1e1e;
+    border-radius: 14px;
+    padding: 1.2em;
+    width: 10em;
+    height: 10em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 1em;
-    height: auto;
+  }
+  
+  .audio-title {
+    font-size: 0.9em;
     margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+  }
+  
+  .audio-play-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    background: #8f7aff;
+    color: black;
+    font-size: 1.4em;
+    cursor: pointer;
+    margin-bottom: 1.5em;
+  }
+  
+  .audio-play-btn:hover {
+    background: rgb(194, 72, 222);
+  }
+  
+  /* =========================
+     AUDIO PROGRESS
+     ========================= */
+  
+    .audio-progress {
+    width: 100%;
+    height: 6px;
+    background: #2b2b2b;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .audio-progress-bar {
+    height: 100%;
+    background: #8f7aff;
+    transition: width 0.1s linear;
+  }
+    
+  
+  
+/* =========================
+   DESCRIPTION
+   ========================= */
+
+.modal-description {
+  line-height: 1.6;
+  margin-bottom: 1.4em;
+  margin-top: 2.5em;
+  text-align: left;
+}
+
+/* =========================
+   TECHNOLOGIES
+   ========================= */
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 1.8em;
+  justify-content: center;
+}
+
+.tech-list span {
+  background: #2b2b2b;
+  padding: 0.45em 0.9em;
+  border-radius: 20px;
+  font-size: 0.85em;
+}
+
+/* =========================
+   VISIT BUTTON
+   ========================= */
+
+.modal-link {
+  display: inline-block;
+  width: 80%;
+  margin-top: 1em;
+  padding: 0.8em 2.2em;
+  background: #8f7aff;
+  color: black;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.modal-link:hover {
+  background: rgb(194, 72, 222);
+}
+
+/* =========================
+   MOBILE TWEAKS
+   ========================= */
+
+@media (max-width: 750px) {
+  .projects {
+    padding: 3em 1em;
+    margin-top: 0;
   }
 
-  .project-info p {
-    margin-top: 0.5em;
+  .project-row {
+    padding: 0.9em 1.2em;
+    width: 95%;
+    margin-left: -0.8em;
   }
 
-  .project-technologies {
+  .project-row-icon {
+    margin-left: 0;
+  }
+
+  .project-row-title {
+    margin-left: -0.5em;
+  }
+
+  .carousel-slide {
+    min-width: 100%;
+  }
+
+  .carousel-slide img {
+    width: 12em;
+  }
+
+  .carousel-mobile .carousel-slide {
+    min-width: 102.5%; /* closer together */
+  }
+
+  .modal-header {
     justify-content: center;
   }
 
-  .project-link {
-    width: 92%;
-    display: flex;
+  .modal-header h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
   }
 
-  .project-11 {
-    margin-top: -2em;
-  }
-
-  .project-img-11 {
-    margin-top: -7em;
-  }
-
-  .project-info-11 {
-    margin-top: -6.5em;
-  }
-
-  .project-2 {
-    margin-bottom: 3em;
-  }
-
-  .project-3 {
-    margin-top: -1em;
-  }
-
-  .project-img-3 {
-    margin-top: -2em;
-  }
-
-  .project-info-3 {
-    margin-top: -2em;
-  }
-
-  .project-4 {
-    margin-top: -5em;
-  }
-
-  .project-5 {
-    margin-top: -6em;
-  }
-
-  .project-6 {
-    margin-top: -3em;
-  }
-
-  .project-img-6 {
-    margin-top: -3em;
-  }
-
-  .project-info-6 {
-    margin-top: -3em;
-  }
-
-  .project-7 {
-    margin-top: -3em;
-    margin-bottom: 3em;
-  }
-
-  .project-8 {
-    margin-top: -4em;
-  }
-
-  .project-9 {
-    margin-top: -6em;
-  }
-
-  .project-10 {
-    margin-top: -6em;
-  }
-
-  .project-12 {
-    margin-bottom: 1em;
-    margin-top: 1em;
+  .modal-icon {
+    position: absolute;
+    left: 2em;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
   }
   
-  .project-img-12 { 
-    width: 12em;
-  }
 
-  .project-13 {
-    margin-bottom: -4em;
-    margin-top: -5em;
+  .modal-description {
+    max-width: 95%;
+    margin-left: 0.5em;
   }
-
 }
+
+@media (max-width: 900px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}
+

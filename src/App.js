@@ -1,61 +1,66 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import Navigation from './Components/Navigation';
-import Options from './Components/Options';
-import OptionsMobile from './Components/OptionsMobile';
-import Info from './Components/Info';
-import Home from './Components/Home';
-import Projects from './Components/Projects';
-import AboutMe from './Components/AboutMe'; 
-import Resume from './Components/Resume';
-import InfoMobile from './Components/InfoMobile';
-import Footer from './Components/Footer';
-import './i18n';
-import ChessGame from './Components/ChessGame';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-export const NavigationContext = React.createContext();
+import "./App.css";
+import "./i18n";
+
+import Options from "./Components/Options";
+import OptionsMobile from "./Components/OptionsMobile";
+import InfoMobile from "./Components/InfoMobile";
+import Footer from "./Components/Footer";
+
+import Home from "./Components/Home";
+import Projects from "./Components/Projects";
+import Resume from "./Components/Resume";
+import ChessGame from "./Components/ChessGame";
 
 function App() {
-  const [activeComponent, setActiveComponent] = useState('home');
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 750);
     };
-    window.addEventListener('resize', handleResize);
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleNavigationClick = (component, project = null) => {
-    setActiveComponent(component);
-  }
-
   return (
-    <NavigationContext.Provider value={{ handleNavigationClick }}>
+    <Router>
       <div className="app">
         <div className="content-wrapper">
-          <Options />
+          {/* Desktop only */}
+          {!isMobile && <Options />}
+
           <div className="main-container">
             <div className="main-content">
-              <Navigation onNavigate={handleNavigationClick} activeComponent={activeComponent} />
               {isMobile && <InfoMobile />}
-              {activeComponent === 'home' && <Home/>}
-              {activeComponent === 'projects' && <Projects/>}
-              {activeComponent === 'about-me' && <AboutMe />}
-              {activeComponent === 'resume' && <Resume />}
-              {activeComponent === 'chess' && <ChessGame/>}
+
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <>
+                      <Home />
+                      <Projects />
+                    </>
+                  }
+                />
+
+                <Route path="/resume" element={<Resume />} />
+                <Route path="/chess" element={<ChessGame />} />
+              </Routes>
             </div>
-            {/* {!isMobile && <Info />} */}
           </div>
+
+          {/* Mobile only */}
           {isMobile && <OptionsMobile />}
         </div>
+
         <Footer />
       </div>
-    </NavigationContext.Provider>
+    </Router>
   );
 }
 

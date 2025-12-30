@@ -9,6 +9,20 @@ const Translations = {
         NAV_RESUME: "Resume",
         CONTACT_BUTTON: "Get in Touch",
 
+        // Contact
+
+        CONTACT_TITLE: "Contact",
+        CONTACT_TEXT: "Have any questions or feedback? Fill the form, or",
+        CONTACT_EMAIL_LINK: "email me",
+        CONTACT_NAME: "Name",
+        CONTACT_EMAIL: "Email *",
+        CONTACT_MESSAGE: "Message *",
+        CONTACT_SEND: "Send message",
+        CONTACT_SENDING: "Sending...",
+        CONTACT_SUCCESS: "Message sent successfully !",
+        CONTACT_ERROR: "Something went wrong :/",
+        CONTACT_ANONYMOUS: "Anonymous",
+
         // Home
         EDUCATION: "Education",
         JYU: "Bachelor’s degree in information and software engineering",
@@ -86,6 +100,8 @@ const Translations = {
 
         TRAVELJOURNAL_TEXT: "A web app made with entirely with AI for researching purposes conserning the usage of Generative AI in the Software development lifecycle. The project was made with the DeepSeek-reasoner model using PERN-stack.",
 
+        OURHARVIA_TEXT: "OurHarvia is a concept application developed during the Junction hackathon that makes the MyHarvia app more interactive and commercially engaging through gamified sauna challenges, leaderboards, and hands-free voice control.",
+
         JYU_RUOKAILUAPP_TITLE: "JYU-RuokailuApp",
         JYU_RUOKAILUAPP_TEXT: "A web application for students of the University of Jyväskylä to see the menus of the different student restaurants we have located on our campus. The users can also filter and rate the meals they have eaten.",
 
@@ -108,13 +124,10 @@ const Translations = {
         SAVOLAINEN_TEXT: "In this project, we developed a fully functional website using SquareSpace. The website is designed to meet the needs of the student organization, featuring multiple pages, including a dedicated webstore.",
 
         KAASALAINEN_TITLE: "Eristyspalvelu Kaasalainen",
-        KAASALAINEN_DESCRIPTION: "One-page website for a Finnish insulation company",
         KAASALAINEN_TEXT: "A clean and straightforward one-page website for a Finnish insulation company. The website is designed to provide all the essential information in an easy-to-navigate layout, including the company's contact details, location, and a section that gives a brief overview of their services (Private code).",
 
-        HEIDI_TITLE: "Tietoturva-asiantuntija Heidi",
-        HEIDI_TITLE2: "Tietoturvaa ja palveluita yrityksille!",
-        HEIDI_DESCRIPTION: "Wordpress website for a course platform",
-        HEIDI_TEXT: "In this project, we built a WordPress website utilizing LifterLMS, a powerful learning management system designed for WordPress. The website serves as a platform for the author to create and manage online courses focused on cybersecurity. We ensured the platform is user-friendly and implemented the Stripe payment platform for an easy payment setup.",
+        KAJASTUS_TITLE: "Tikkurilan Kajastus",
+        KAJASTUS_TEXT: "A website developed for a weightlifting club based in Tikkurila. I was responsible for the full design and development of the site, as well as handling customer communication throughout the project. The website presents the club’s activities, competition results, and essential information in a clear and accessible format.",
 
         STUDYTRACKER_TITLE: "StudyTracker",
         STUDYTRACKER_DESCRIPTION: "A database application for primary schools to create and conduct exams",
@@ -137,12 +150,14 @@ const Translations = {
         PLATFORMER_DESCRIPTION: "Simple platforming game that I made after my first programming course",
         PLATFORMER_TEXT: "For my very first coding project I developed a platformer game using C#. The game features classic platforming mechanics such as jumping and obstacles. The goal of the game is to survive as long as possible and the best results are submitted to a ranking list.",
 
-        NHL_TITLE: "NHL-videogame Database",
+        NHL_TITLE: "NHL Database",
         NHL_TEXT: "A web application for me and my friends to save and display our matches in the NHL-videogame. In the App the user can add new games and see the league table, also each player has a unique player profile where their stats and games are stored.",
 
         AGECOUNTER_TITLE: "Age Counter",
         AGECOUNTER_TEXT: "A simple Javascript age calculator that calculates the user's age based on their Finnish personal identity code (HETU).",
 
+        GAME_TITLE: "1v1 Game",
+        GAME_TEXT: "A mobile 1v1 minigame built with Unity using 16x16 pixel art. The game features multiple fast-paced head-to-head minigames designed for local competitive play. The project focuses on responsive controls, simple mechanics, and a retro-inspired visual style.",
         
         // About Me
         ABOUTME_STUDENT_TITLE: "Student Life",
@@ -150,7 +165,7 @@ const Translations = {
         ABOUTME_STUDENT_STRONG: "University of Jyväskylä, ",
         ABOUTME_STUDENT_TEXT2: "set to complete my master studies in spring 2027. Throughout my studies, I've gained a deep interest in IT and had the chance to study abroad at the University of Jaén in Spain, which further fueled my passion for the field.",
 
-        ABOUTME_WORK_TITLE: "Personal Life",
+        ABOUTME_WORK_TITLE: "Work Life",
         ABOUTME_WORK_TEXT: "With broad work experience, I’ve co-founded a software company called ",
         ABOUTME_WORK_STRONG: "TinkerIT, ",
         ABOUTME_WORK_TEXT2: "where we focus on building modern websites and online stores for businesses. I’ve also worked as a research assistant at my university, enhancing my knowledge of technology and its real-world applications.",
@@ -182,6 +197,20 @@ const Translations = {
         FOLLOW: "Seuraa",
         CONNECTIONS: "yhteyttä",
         CONNECT: "Yhdistä",
+
+        // Yhteyden otto
+
+        CONTACT_TITLE: "Yhteydenotto",
+        CONTACT_TEXT: "Onko kysyttävää tai palautetta? Täytä lomake tai",
+        CONTACT_EMAIL_LINK: "lähetä sähköpostia",
+        CONTACT_NAME: "Nimi",
+        CONTACT_EMAIL: "Sähköposti *",
+        CONTACT_MESSAGE: "Viesti *",
+        CONTACT_SEND: "Lähetä viesti",
+        CONTACT_SENDING: "Lähetetään...",
+        CONTACT_SUCCESS: "Viesti lähetetty !",
+        CONTACT_ERROR: "Jotain meni pieleen :/",
+        CONTACT_ANONYMOUS: "Nimetön",
 
         // Home
 
@@ -250,6 +279,8 @@ const Translations = {
 
         TRAVELJOURNAL_TEXT: "Verkkosovellus, joka on toteutettu kokonaan tekoälyn avulla tutkimustarkoituksessa, liittyen generatiivisen tekoälyn käyttöön ohjelmistokehityksen elinkaaressa. Projekti toteutettiin DeepSeek-reasoner mallilla käyttäen PERN-teknologiapinoa.",
 
+        OURHARVIA_TEXT: "OurHarvia on Junction-hackathonissa kehitetty konseptisovellus, joka tekee MyHarvia-sovelluksesta vuorovaikutteisemman ja kaupallisesti kiinnostavamman lisäämällä pelillisiä sauna-haasteita, tulostauluja sekä handsfree-ääniohjauksen saunaan.",
+
         JYU_RUOKAILUAPP_TEXT: "Verkkosovellus Jyväskylän yliopiston opiskelijoille, jonka avulla he voivat tarkastella kampuksella sijaitsevien eri opiskelijaravintoloiden ruokalistoja. Käyttäjät voivat myös suodattaa ja arvioida aterioita, joita he ovat syöneet.",
 
         MUSIC_TITLE: "Tuottamani musiikki",
@@ -273,11 +304,9 @@ const Translations = {
         KAASALAINEN_TITLE: "Eristyspalvelu Kaasalainen",
         KAASALAINEN_DESCRIPTION: "Yksisivuinen verkkosivusto suomalaiselle eristysalan yritykselle",
         KAASALAINEN_TEXT: "Tässä projektissa kehitimme selkeän ja yksinkertaisen yksisivuisen verkkosivuston suomalaiselle eristysyritykselle. Verkkosivusto tarjoaa kaikki olennaiset tiedot helposti navigoitavassa muodossa, mukaan lukien yrityksen yhteystiedot, sijainnin ja palvelukuvauksen.",
-        
-        HEIDI_TITLE: "Tietoturva-asiantuntija Heidi",
-        HEIDI_TITLE2: "Tietoturvaa ja palveluita yrityksille!",
-        HEIDI_DESCRIPTION: "Wordpress-verkkosivusto, joka toimii kurssialustana",
-        HEIDI_TEXT: "Tässä projektissa rakensimme WordPress-verkkosivuston hyödyntäen LifterLMS-järjestelmää, joka on tehokas oppimisalustaratkaisu WordPressille. Verkkosivusto toimii alustana, jossa kirjoittaja voi luoda ja hallinnoida verkkokursseja, jotka keskittyvät tietoturvaan. Varmistimme, että alusta on käyttäjäystävällinen, ja toteutimme Stripe-maksualustan helppoa maksujärjestelmää varten.",
+
+        KAJASTUS_TITLE: "Tikkurilan Kajastus",
+        KAJASTUS_TEXT: "Tikkurilassa toimivalle painonnostoseuralle toteutettu verkkosivusto. Vastasin projektissa sivuston suunnittelusta ja kehityksestä kokonaisuudessaan sekä asiakasviestinnästä koko projektin ajan. Sivusto esittelee seuran toimintaa, kilpailutuloksia ja keskeistä tietoa selkeässä ja helposti lähestyttävässä muodossa.",
         
         STUDYTRACKER_TITLE: "StudyTracker",
         STUDYTRACKER_DESCRIPTION: "Tietokantasovellus peruskouluille kokeiden suorittamista ja luomista varten",
@@ -299,11 +328,15 @@ const Translations = {
         PLATFORMER_DESCRIPTION: "Yksinkertainen tasohyppelypeli, jonka tein ensimmäisen ohjelmointikurssini jälkeen",
         PLATFORMER_TEXT: "Ensimmäisenä koodausprojektinani kehitin tasohyppelypelin käyttäen C# ohjelmointikieltä. Peli sisältää klassisia tasohyppelymekaniikkoja, kuten hyppimistä ja esteitä. Pelin tavoitteena on selviytyä mahdollisimman pitkään, ja parhaat tulokset tallennetaan tuloslistalle.",
 
-        NHL_TITLE: "NHL-videopeli tietokanta",
+        NHL_TITLE: "NHL tietokanta",
         NHL_TEXT: "Verkkosovellus, jonka avulla minä ja ystäväni voimme tallentaa ja näyttää ottelumme NHL-videopelissä. Sovelluksessa käyttäjä voi lisätä uusia pelejä ja nähdä liigataulukon. Lisäksi jokaisella pelaajalla on ainutlaatuinen pelaajaprofiili, johon tallennetaan heidän tilastonsa ja pelinsä.",
 
         AGECOUNTER_TITLE: "Ikälaskuri",
         AGECOUNTER_TEXT: "Yksinkertainen JavaScript-ikälaskuri, joka laskee käyttäjän iän suomalaisen henkilötunnuksen (HETU) perusteella.",
+
+        GAME_TITLE: "1v1-peli",
+        GAME_TEXT: "Unityllä toteutettu mobiili kaksintaistelupeli, joka käyttää 16x16-pikseligrafiikkaa. Peli sisältää useita nopeatempoisia kaksinpelejä, jotka on suunniteltu paikalliseen kilpailulliseen pelaamiseen. Projektissa on keskitytty selkeisiin mekaniikkoihin, responsiivisiin ohjauksiin ja retrohenkiseen visuaaliseen tyyliin.",
+
 
         // About Me
         ABOUTME_STUDENT_TITLE: "Opiskelijaelämä",

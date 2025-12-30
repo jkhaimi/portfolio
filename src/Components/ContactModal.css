@@ -1,0 +1,214 @@
+.contact-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  /* FULL WIDTH BOTTOM SHEET */
+  .contact-modal {
+    width: 100%;
+    background: #151515;
+    padding: 2em;
+    animation: slideUp 0.35s ease;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .contact-modal h2 {
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 1.25em;
+  }
+
+  .contact-modal p {
+    color: whitesmoke;
+    margin-top: -0.1em;
+  }
+
+  .contact-mail-link {
+    color: #8f7aff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .contact-mail-link:hover {
+    color: rgb(194, 72, 222);
+  }
+  
+  
+  /* FORM */
+  .contact-modal form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25%;
+    gap: 0.9em;
+    width: 50%;
+  }
+  
+  .contact-modal input,
+  .contact-modal textarea {
+    background: #1e1e1e;
+    border: none;
+    border-radius: 12px;
+    padding: 1em;
+    color: whitesmoke;
+    font-size: 1em;
+  }
+  
+  .contact-modal textarea {
+    min-height: 140px;
+    resize: none;
+  }
+  
+  /* SEND BUTTON */
+  .contact-modal button {
+    margin-top: 0.6em;
+    background: #8f7aff;
+    border: none;
+    border-radius: 30px;
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s ease, background 0.2s ease;
+  }
+  
+  .contact-modal button.disabled,
+  .contact-modal button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  
+  .contact-modal button:not(:disabled):hover {
+    background: rgb(194, 72, 222);
+  }
+  
+  /* FEEDBACK */
+  .success {
+    color: #4caf50;
+    text-align: center;
+    margin-top: 0.6em;
+  }
+  
+  .error {
+    color: #f44336;
+    text-align: center;
+    margin-top: 0.6em;
+  }
+
+/* =========================
+   TOP TOAST NOTIFICATION
+   ========================= */
+
+   .contact-toast {
+    position: fixed;
+    top: 1.2em;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    opacity: 0;
+  
+    padding: 1em 1.6em;
+    border-radius: 12px;
+    font-weight: 500;
+    z-index: 3000;
+  
+    transition: transform 0.35s ease, opacity 0.35s ease;
+  }
+  
+  /* SHOW */
+  .contact-toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  
+  /* HIDE */
+  .contact-toast.hide {
+    transform: translateX(-50%) translateY(-20px);
+    opacity: 0;
+  }
+  
+  /* SUCCESS */
+  .contact-toast.success {
+    background: #4caf50;
+    color: black;
+  }
+  
+  /* ERROR */
+  .contact-toast.error {
+    background: #f44336;
+    color: white;
+  }
+  
+  
+  @keyframes toastSlide {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -20px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  }
+  
+  
+  @media (max-width: 750px) {
+    /* Bottom sheet spacing */
+    .contact-modal {
+      padding: 1.5em 1.25em 2em;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+  
+    /* FORM LAYOUT */
+    .contact-modal form {
+      width: 100%;
+      margin-left: 0;
+      gap: 1em;
+    }
+  
+    /* INPUTS */
+    .contact-modal input,
+    .contact-modal textarea {
+      font-size: 1rem;
+      padding: 1.1em;
+    }
+  
+    .contact-modal textarea {
+      min-height: 160px;
+    }
+  
+    /* BUTTON */
+    .contact-modal button {
+      padding: 1.1em;
+      font-size: 1rem;
+    }
+  
+    /* TEXT */
+    .contact-modal p {
+      font-size: 0.95rem;
+      text-align: center;
+    }
+  
+    .contact-modal h2 {
+      font-size: 1.4rem;
+    }
+  
+    /* TOAST */
+    .contact-toast {
+      width: calc(100% - 2em);
+      text-align: center;
+    }
+  }
+  

@@ -1,44 +1,34 @@
-import React from 'react';
-import './Navigation.css'; 
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./Navigation.css";
+import { useTranslation } from "react-i18next";
 
-function Navigation({ onNavigate, activeComponent }) {
-
+function Navigation() {
   const { t } = useTranslation();
 
   return (
-    <div className='Navigation'>
-        <h3>Jesse Haimi</h3>
-        <nav className="site-links">
-        <a 
-            href="/" 
-            onClick={(e) => { e.preventDefault(); onNavigate('home'); }} 
-            className={activeComponent === 'home' ? 'active' : ''}
-          >
-            {t('NAV_HOME')}
-          </a>
-          <a 
-            href="/" 
-            onClick={(e) => { e.preventDefault(); onNavigate('projects'); }} 
-            className={activeComponent === 'projects' ? 'active' : ''}
-          >
-            {t('NAV_PROJECTS')}
-          </a>
-          <a 
-            href="#about-me" 
-            onClick={(e) => { e.preventDefault(); onNavigate('about-me'); }} 
-            className={activeComponent === 'about-me' ? 'active' : ''}
-          >
-            {t('NAV_ABOUT')}
-          </a>
-          {/* <a 
-            href="#chess" 
-            onClick={(e) => { e.preventDefault(); onNavigate('chess'); }} 
-            className={activeComponent === 'chess' ? 'active' : ''}
-          >
-            Shakkipeli
-          </a> */}
-        </nav>
+    <div className="Navigation">
+      <h3>Jesse Haimi</h3>
+
+      <nav className="site-links">
+        <NavLink to="/" end>
+          {t("NAV_HOME")}
+        </NavLink>
+
+        <NavLink to="/projects">
+          {t("NAV_PROJECTS")}
+        </NavLink>
+
+        <NavLink to="/about">
+          {t("NAV_ABOUT")}
+        </NavLink>
+
+        {/*
+        <NavLink to="/chess">
+          Shakkipeli
+        </NavLink>
+        */}
+      </nav>
     </div>
   );
 }

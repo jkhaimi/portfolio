@@ -1,37 +1,52 @@
 .options {
-  padding: 20px;
-  border-right: 1px solid gray;
+  width: 80px;
+  border-right: 1px solid #333;
+
+  /* Makes it follow scroll */
+  position: sticky;
+  top: 0;
+
+  /* Full viewport height */
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
 }
 
-.language-toggle {
+.options-inner {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 25em;
+  gap: 2.5em;
+
+  /* Vertically center relative to viewport */
+  height: 100%;
 }
 
+/* Language */
 .lang-button {
   border: none;
   background: none;
   color: whitesmoke;
   cursor: pointer;
-  transition: color 0.3s ease;
   font-size: 28px;
+  transition: color 0.2s ease;
 }
 
 .lang-button:hover {
   color: rgb(194, 72, 222);
 }
 
+/* Mail */
 .mail-icon-button {
   border: none;
+  background: none;
   color: whitesmoke;
-  background-color: transparent;
-  margin-top: 3em;
   cursor: pointer;
+  transition: color 0.2s ease;
 }
 
 .mail-icon-button:hover {
   color: rgb(194, 72, 222);
 }
-

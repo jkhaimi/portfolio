@@ -5,13 +5,14 @@
     gap: 2rem;
     text-align: center;
     color: whitesmoke;
+    margin-top: 5em;
   }
 
   .home-box {
-    width: 5em;
-    background-color: rebeccapurple;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   }
-  
+
+
   /* Esittely */
   .intro {
     display: flex;
@@ -21,6 +22,7 @@
     width: 90%;
     padding: 1em;
     border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   }
   
   .intro-text {
@@ -44,16 +46,20 @@
   .experience, .knowledge {
     display: flex;
     justify-content: center;
-    gap: 4rem;
-    width: 100%;
+    gap: 2.5rem;
+    width: 92%;
+  }
+
+  .home-box h2 {
+    margin-bottom: 1.5em;
   }
   
   .education, .work {
     background-color: #201c1c;
     padding: 1.5rem;
     border-radius: 20px;
-    width: 40%;
     text-align: left;
+    width: 50%;
   }
 
   .education-item, .work-item {
@@ -76,14 +82,16 @@
     color: gray;
   }
 
+  .technologies, .hobbies-languages {
+    width: 55%;
+  }
+
 
   /* Teknologiat */
   .technologies {
-    width: 90%;
     background-color: #201c1c;
     padding: 1em;
     border-radius: 20px;
-    margin-left: 3.3em;
   }
   
   .tech-icons {
@@ -130,12 +138,9 @@
   
   /* Harrastukset ja kielitaidot */
 .hobbies-languages {
-    width: 90%;
-    max-width: 50%;
     background-color: #201c1c;
     padding: 1em;
     border-radius: 20px;  
-    margin-right: 3.3em;  
 }
 
 .hobby-icons, .language-icons {
@@ -276,6 +281,7 @@
 
     .home-container {
         max-width: auto;
+        margin-top: 3em;
     }
 
     .intro {
@@ -303,11 +309,14 @@
     }
 
     .education, .work {
-        width: 80%;
+        width: auto;
+    }
+
+    .work {
+      width: 85%;
     }
 
     .knowledge {
-        width: 93%;
         margin-right: auto;
         margin-left: 1em;
         gap: 1em;
@@ -320,7 +329,8 @@
     }
 
     .technologies, .hobbies-languages {
-        max-width: none; /* Poista maksimileveys */
+      max-width: none;
+        width: 90%; /* Poista maksimileveys */
         margin: 1rem 0; /* Lisää väli laatikoiden väliin */
     }
 
