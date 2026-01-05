@@ -62,7 +62,7 @@ function ProjectBlock({ project, reverse, onContactClick }) {
             {project.steps.map((s, i) => (
                 <img
                 key={i}
-                src={project.steps[step].image}
+                src={s.image}
                 loading="lazy"
                 decoding="async"              
                 alt={project.title}
