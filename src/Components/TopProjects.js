@@ -62,7 +62,9 @@ function ProjectBlock({ project, reverse, onContactClick }) {
             {project.steps.map((s, i) => (
                 <img
                 key={i}
-                src={s.image}
+                src={project.steps[step].image}
+                loading="lazy"
+                decoding="async"              
                 alt={project.title}
                 onClick={() => setImageOpen(true)}
                 />
@@ -119,6 +121,8 @@ function ProjectBlock({ project, reverse, onContactClick }) {
         <div className="image-modal" onClick={() => setImageOpen(false)}>
             <img
             src={project.steps[step].image}
+            loading="eager"
+            decoding="async"
             alt={project.title}
             className={project.type === "mobile" ? "image-modal-mobile" : ""}
             onClick={() => setImageOpen(false)}

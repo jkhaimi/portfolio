@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.94b70616.css",
-    "main.js": "/portfolio/static/js/main.275495d1.js",
+    "main.css": "/portfolio/static/css/main.2f1a07c4.css",
+    "main.js": "/portfolio/static/js/main.7d09ef25.js",
     "static/js/845.7b0e1b98.chunk.js": "/portfolio/static/js/845.7b0e1b98.chunk.js",
     "static/media/JS1.wav": "/portfolio/static/media/JS1.03a4cdc871c76ca2308c.wav",
     "static/media/JS2.wav": "/portfolio/static/media/JS2.6f9b73c4cade84304b96.wav",
@@ -25,7 +25,6 @@
     "static/media/Jesse2.webp": "/portfolio/static/media/Jesse2.38e739903c5554251233.webp",
     "static/media/Jesse.webp": "/portfolio/static/media/Jesse.7a334f30759d89ab81e8.webp",
     "static/media/safkastock2.webp": "/portfolio/static/media/safkastock2.fb5811fa8c5429f23e4d.webp",
-    "static/media/safkastock4.png": "/portfolio/static/media/safkastock4.1417228c310eaa347a02.png",
     "static/media/game1.webp": "/portfolio/static/media/game1.867f7197a53e0c89bf1f.webp",
     "static/media/harvia3.webp": "/portfolio/static/media/harvia3.05d6360d5159eccab8ed.webp",
     "static/media/music1.png": "/portfolio/static/media/music1.51eeeeca61209fbc7de8.png",
@@ -35,8 +34,6 @@
     "static/media/jyu1.png": "/portfolio/static/media/jyu1.cda4259f7167ab1b4100.png",
     "static/media/harvia4.webp": "/portfolio/static/media/harvia4.a0d7873d49a8c3b69c0f.webp",
     "static/media/nhl3.webp": "/portfolio/static/media/nhl3.240434180ba4801d8195.webp",
-    "static/media/tinkerit4.png": "/portfolio/static/media/tinkerit4.b55b4d67100be0eb0032.png",
-    "static/media/harvia.png": "/portfolio/static/media/harvia.0e54f33ffeb0935d3906.png",
     "static/media/kajastus.webp": "/portfolio/static/media/kajastus.ca761c9c62dd6326219b.webp",
     "static/media/nhl4.webp": "/portfolio/static/media/nhl4.bb08e7e1e9c2846dadce.webp",
     "static/media/nhl1.webp": "/portfolio/static/media/nhl1.2b4c51c230b4e1246670.webp",
@@ -51,12 +48,12 @@
     "static/media/unity.webp": "/portfolio/static/media/unity.1954efe1067c3e50b320.webp",
     "static/media/AirportTaxi.webp": "/portfolio/static/media/AirportTaxi.ee534fc6881ce643a10f.webp",
     "index.html": "/portfolio/index.html",
-    "main.94b70616.css.map": "/portfolio/static/css/main.94b70616.css.map",
-    "main.275495d1.js.map": "/portfolio/static/js/main.275495d1.js.map",
+    "main.2f1a07c4.css.map": "/portfolio/static/css/main.2f1a07c4.css.map",
+    "main.7d09ef25.js.map": "/portfolio/static/js/main.7d09ef25.js.map",
     "845.7b0e1b98.chunk.js.map": "/portfolio/static/js/845.7b0e1b98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94b70616.css",
-    "static/js/main.275495d1.js"
+    "static/css/main.2f1a07c4.css",
+    "static/js/main.7d09ef25.js"
   ]
 }

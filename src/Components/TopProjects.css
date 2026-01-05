@@ -4,7 +4,9 @@
 
    .top-projects {
     margin: 3em auto;
-    max-width: 1230px;
+    max-width: fit-content;
+    margin-left: 5.25em;
+    margin-right: 5.5em;
     color: whitesmoke;
   }
   
@@ -250,6 +252,10 @@
      ========================= */
   
   @media (max-width: 900px) {
+    .top-projects {
+      margin: 0;
+    }
+    
     .top-project {
       grid-template-columns: 1fr;
       padding: 2em 1.4em;
@@ -292,9 +298,4 @@
       justify-content: center;
     }
   }
-  
-  /* =========================
-     SAFETY NET
-     ========================= */
-
   

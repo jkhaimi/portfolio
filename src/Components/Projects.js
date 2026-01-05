@@ -2,18 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./Projects.css";
 import { useTranslation } from "react-i18next";
 
-import TinkerIT from "../Images/tinkerit4.png";
-import TinkerITSivu1 from "../Images/tinkerit-sivu1.webp";
-import TinkerITSivu2 from "../Images/tinkerit-sivu2.webp";
-import TinkerITSivu3 from "../Images/tinkerit-sivu3.webp";
-import TinkerITSivu4 from "../Images/tinkerit-sivu4.webp";
-
-import SafkaStock from "../Images/safkastock4.png";
-import SafkaStockSivu1 from "../Images/safkastock1.webp"
-import SafkaStockSivu2 from "../Images/safkastock2.webp"
-import SafkaStockSivu4 from "../Images/safkastock4.webp"
-import SafkaStockSivu5 from "../Images/safkastock5.webp"
-
 import Music from "../Images/music1.png";
 
 import AirportTaxi from "../Images/AirportTaxi.webp";
@@ -38,12 +26,6 @@ import JYUSivu1 from "../Images/jyu1.webp";
 import JYUSivu2 from "../Images/jyu2.webp";
 import JYUSivu3 from "../Images/jyu3.webp";
 import JYUSivu4 from "../Images/jyu4.webp";
-
-import Harvia from "../Images/harvia.png";
-import Harvia2 from "../Images/harvia2.webp";
-import Harvia3 from "../Images/harvia3.webp";
-import Harvia4 from "../Images/harvia4.webp";
-import Harvia5 from "../Images/harvia5.webp";
 
 import Beat1 from "../Audio/jkl4.wav";
 import Beat2 from "../Audio/JS1.wav";
