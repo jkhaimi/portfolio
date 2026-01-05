@@ -168,7 +168,7 @@
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: #8f7aff;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
   }
   
   .top-project-text p {
@@ -181,7 +181,7 @@
      ========================= */
   
   .top-project-footer {
-    margin-top: 1em;
+    margin-top: -1em;
   }
   
   .top-tech-list {
