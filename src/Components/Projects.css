@@ -5,6 +5,7 @@
   text-align: center;
   color: whitesmoke;
   margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .projects h1 {
@@ -364,6 +365,11 @@
   .projects {
     padding: 3em 1em;
     margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .projects h1 {
+    margin-bottom: 1.25em;
   }
 
   .project-row {
