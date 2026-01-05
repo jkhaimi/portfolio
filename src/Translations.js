@@ -92,6 +92,44 @@ const Translations = {
         BACKTO_PROJECTS: "Back to Projects",
         BACK: "Back",
 
+        // Top Projects
+
+        TOP_PROJECTS_TITLE: "Top Projects",
+
+        STEP_WHAT: "What",
+        STEP_WHY: "Why",
+        STEP_HOW: "How",
+        STEP_RESULT: "Result",
+
+        TINKERIT_WHAT: "TinkerIT is a software company I co-founded to design and develop modern websites and online stores for businesses across different industries.",
+        
+        TINKERIT_PROBLEM: "Many small and medium-sized businesses struggle with outdated websites that fail to communicate their brand clearly or convert visitors into customers.",
+        
+        TINKERIT_SOLUTION: "We focused on clean design, clear messaging, and scalable technical solutions while working closely with clients to understand their business needs.",
+        
+        TINKERIT_RESULT: "Since founding TinkerIT, we have designed and developed over 10 websites and online stores for businesses across different industries, helping clients strengthen their digital presence and achieve real business impact.",
+
+        
+
+        SAFKASTOCK_WHAT: "SafkaStock is an inventory management platform designed to help small businesses efficiently track ingredients, stock levels, and purchasing needs.",
+        
+        SAFKASTOCK_PROBLEM: "Manual inventory tracking is time-consuming and error-prone, often leading to waste, shortages, and poor purchasing decisions.",
+        
+        SAFKASTOCK_SOLUTION: "We built a smart system using AI-powered insights to automate stock monitoring and purchasing recommendations, reducing manual work for businesses.",
+        
+        SAFKASTOCK_RESULT: "SafkaStock has already secured early-stage funding and is currently being tested with multiple pilot customers. With strong real-world feedback, the platform is now approaching a public-ready launch.",
+        
+
+        OURHARVIA_WHAT: "OurHarvia is a concept mobile application created during the Junction hackathon to explore how Harvia’s MyHarvia app could become more social, interactive, and commercially engaging.",
+
+        OURHARVIA_PROBLEM: "The main challenge was to design and build a unique, working application within a strict 40-hour time limit. Our team of four strangers had to quickly define a strong concept, divide roles based on individual strengths, and collaborate efficiently under intense time pressure.",
+
+        OURHARVIA_SOLUTION: "We introduced gamified sauna challenges, leaderboards, and hands-free voice control using ElevenLabs to enhance usability and create a more immersive sauna experience.",
+
+        OURHARVIA_RESULT: "OurHarvia placed 5th in the Junction hackathon and provided valuable hands-on experience in building a functional application within a 40-hour timeframe.",
+
+        // Other Projects
+        PROJECTS_TITLE: "Other Projects",
 
         TINKERIT_DESCRIPTION: "A software company creating modern websites and online stores for businesses",
         TINKERIT_TEXT: "Founded in 2023, TinkerIT is a customer-focused software company dedicated to creating modern websites and online stores for businesses. As a co-founder, I actively contribute to both the marketing and coding aspects of the company. We've worked on a variety of exciting projects across different industries.",
@@ -252,6 +290,56 @@ const Translations = {
         ENGLISH: "Englanti",
         SPANISH: "Espanja",
 
+        // Top Projects
+        TOP_PROJECTS_TITLE: "Huippu Projektit",
+        STEP_WHAT: "Mitä",
+        STEP_WHY: "Miksi",
+        STEP_HOW: "Miten",
+        STEP_RESULT: "Tulos",
+
+        TINKERIT_WHAT:
+        "TinkerIT on ohjelmistoyritys, jossa olen perustajajäsenenä. Suunnittelemme ja toteutamme moderneja verkkosivustoja ja verkkokauppoja eri toimialojen yrityksille.",
+        
+        TINKERIT_PROBLEM:
+        "Monilla pienillä ja keskisuurilla yrityksillä on vanhentuneet verkkosivut, jotka eivät viesti brändiä selkeästi tai tue liiketoiminnan kasvua.",
+        
+        TINKERIT_SOLUTION:
+        "Keskityimme selkeään muotoiluun, ymmärrettävään viestintään ja skaalautuviin teknisiin ratkaisuihin, työskennellen tiiviissä yhteistyössä asiakkaiden kanssa.",
+        
+        TINKERIT_RESULT:
+        "Olemme toteuttaneet yli 10 verkkosivustoa ja verkkokauppaa eri toimialojen yrityksille, parantaen asiakkaidemme digitaalista näkyvyyttä sekä tuottanut konkreettista liiketoimintahyötyä.",
+        
+        
+        
+        SAFKASTOCK_WHAT:
+        "SafkaStock on inventaario-optimointijärjestelmä, joka on suunniteltu auttamaan pieniä yrityksiä seuraamaan raaka-aineita, varastotasoja ja hankintoja tehokkaammin.",
+        
+        SAFKASTOCK_PROBLEM:
+        "Manuaalinen varastonhallinta on aikaa vievää ja altistaa virheille, mikä johtaa usein hävikkiin, raaka-aineiden puutteisiin ja heikkoihin ostopäätöksiin.",
+        
+        SAFKASTOCK_SOLUTION:
+        "Rakensimme älykkään järjestelmän, joka hyödyntää tekoälypohjaisia analyysejä varastojen seurantaan ja ostosuositusten automatisointiin.",
+        
+        SAFKASTOCK_RESULT:
+        "SafkaStock on saanut jo varhaisen vaiheen rahoitusta ja on tällä hetkellä useiden pilottiasiakkaiden testikäytössä. Julkaisukelpoinen versio on parhaillaan viimeistelyvaiheessa.",
+        
+        
+        
+        OURHARVIA_WHAT:
+        "OurHarvia on Junction-hackathonissa kehitetty konseptisovellus, jonka tavoitteena oli tutkia, miten Harvian MyHarvia-sovellusta voitaisiin tehdä sosiaalisemmaksi, interaktiivisemmaksi ja kaupallisesti kiinnostavammaksi.",
+        
+        OURHARVIA_PROBLEM: "Suurin haaste oli keksiä ja toteuttaa ainutlaatuinen toimiva sovellus tiukassa 40 tunnin aikarajassa. Neljän toisilleen tuntemattoman tiimin jäsenen tuli nopeasti määritellä vahva idea, jakaa vastuut omien vahvuuksien mukaan ja työskennellä tehokkaasti kovan paineen alla.",
+        
+        OURHARVIA_SOLUTION:
+        "Toimme sovellukseen pelillistettyjä haasteita, tulostauluja sekä ElevenLabsin avulla toteutetun hands-free-ääniohjauksen, joka parantaa käyttökokemusta saunassa.",
+        
+        OURHARVIA_RESULT:
+        "OurHarvia sijoittui Junction-hackathonissa viidenneksi ja tarjosi arvokasta kokemusta toimivan sovelluksen kehittämisestä 40 tunnin aikarajassa.",
+        
+        
+        
+        PROJECTS_TITLE: "Muita Projekteja",
+        
 
         // Projects
         MYWORK: "Projektini",

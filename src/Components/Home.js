@@ -12,17 +12,10 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <section className="intro">
-        <div className="intro-text">
-          <h1>Jesse Haimi</h1>
-          <p className="intro-text-title">{t('TITLE')}</p>
-          <p className="intro-text-title">{t('TITLE2')}</p>
-        </div>
-        <img src={profilePic} alt="Jesse Haimi" className="home-image" />
-      </section>
+
 
       {/* Koulutus ja työkokemus vierekkäin */}
-      <section className="experience">
+      {/* <section className="experience">
         <div className="education home-box">
           <h2>{t("EDUCATION")}</h2>
 
@@ -68,7 +61,7 @@ const Home = () => {
             </div>
 
         </div>
-      </section>
+      </section> */}
 
         <section className="knowledge">
       {/* Teknologiat ja ikonit */}

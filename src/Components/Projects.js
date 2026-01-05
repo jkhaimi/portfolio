@@ -136,26 +136,26 @@ function Projects() {
 
 
   const projectData = [
-    {
-      id: 1,
-      title: "TinkerIT",
-      icon: TinkerIT,
-      screenshots: [TinkerITSivu1, TinkerITSivu2, TinkerITSivu3, TinkerITSivu4],
-      description: t("TINKERIT_TEXT"),
-      technologies: ["React", "JavaScript", "CSS", "Node.js", "SquareSpace"],
-      linkText: t("VISIT_OURWEBSITE"),
-      url: "https://tinkerit.fi/",
-    },
-    {
-      id: 2,
-      title: "SafkaStock",
-      icon: SafkaStock,
-      screenshots: [SafkaStockSivu1, SafkaStockSivu2, SafkaStockSivu4, SafkaStockSivu5],
-      description: t("SAFKASTOCK_TEXT"),
-      technologies: ["GPT API", "Azure Document Intelligence", "PERN"],
-      linkText: t("WEBSITE_SOON"),
-      url: "mailto:jesse.haimi@icloud.com",
-    },
+    // {
+    //   id: 1,
+    //   title: "TinkerIT",
+    //   icon: TinkerIT,
+    //   screenshots: [TinkerITSivu1, TinkerITSivu2, TinkerITSivu3, TinkerITSivu4],
+    //   description: t("TINKERIT_TEXT"),
+    //   technologies: ["React", "JavaScript", "CSS", "Node.js", "SquareSpace"],
+    //   linkText: t("VISIT_OURWEBSITE"),
+    //   url: "https://tinkerit.fi/",
+    // },
+    // {
+    //   id: 2,
+    //   title: "SafkaStock",
+    //   icon: SafkaStock,
+    //   screenshots: [SafkaStockSivu1, SafkaStockSivu2, SafkaStockSivu4, SafkaStockSivu5],
+    //   description: t("SAFKASTOCK_TEXT"),
+    //   technologies: ["GPT API", "Azure Document Intelligence", "PERN-stack"],
+    //   linkText: t("WEBSITE_SOON"),
+    //   url: "mailto:jesse.haimi@icloud.com",
+    // },
     {
       id: 3,
       title: t("JYU_RUOKAILUAPP_TITLE"),
@@ -178,27 +178,27 @@ function Projects() {
       linkText: t("VIEW_CODE"),
       url: "https://github.com/jkhaimi/NHL-scoreDB",
     },
-    {
-      id: 5,
-      title: "OurHarvia",
-      type: "mobile",
-      icon: Harvia,
-      screenshots: [Harvia4, Harvia2, Harvia5, Harvia3],
-      description: t("OURHARVIA_TEXT"),
-      technologies: ["ElevenLabs", "PostgreSQL", "TypeScript", "Tailwind"],
-      linkText: t("VIEW_CODE"),
-      url: "https://github.com/jkhaimi/OurHarvia",
-    },
+    // {
+    //   id: 5,
+    //   title: "OurHarvia",
+    //   type: "mobile",
+    //   icon: Harvia,
+    //   screenshots: [Harvia4, Harvia2, Harvia5, Harvia3],
+    //   description: t("OURHARVIA_TEXT"),
+    //   technologies: ["ElevenLabs", "PostgreSQL", "TypeScript", "Tailwind"],
+    //   linkText: t("VIEW_CODE"),
+    //   url: "https://github.com/jkhaimi/OurHarvia",
+    // },
     {
       id: 6,
       title: t("MUSIC_TITLE"),
       type: "audio",
       icon: Music,
       tracks: [
-        { src: Beat1, name: "Trappin" },
-        { src: Beat2, name: "Motion" },
-        { src: Beat3, name: "Rockin" },
-        { src: Beat4, name: "Chillin" },
+        { src: Beat1, name: "Song 1" },
+        { src: Beat2, name: "Song 2" },
+        { src: Beat3, name: "Song 3" },
+        { src: Beat4, name: "Song 4" },
       ],
       description: t("MUSIC_TEXT"),
       technologies: ["FL Studio", "Logic Pro"],
@@ -309,7 +309,7 @@ function Projects() {
   
   return (
     <div className="projects" id="projects">
-      <h1>{t("MYWORK")}</h1>
+      <h1>{t("PROJECTS_TITLE")}</h1>
 
       {/* PROJECT LIST */}
       <div className="project-list">

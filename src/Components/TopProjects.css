@@ -1,0 +1,299 @@
+/* =========================
+   WRAPPER
+   ========================= */
+
+   .top-projects {
+    margin: 3em auto;
+    max-width: 1230px;
+    color: whitesmoke;
+  }
+  
+  .top-projects h1 {
+    text-align: center;
+    margin-bottom: 3em;
+  }
+  
+  /* =========================
+     PROJECT BLOCK
+     ========================= */
+  
+     .top-project {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3em;
+        align-items: stretch;              /* 🔑 stretch columns */
+        margin-bottom: 5em;
+        background: #1e1e1e;
+        padding: 3em;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        border-radius: 14px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      /* =========================
+         CONTENT COLUMN (LOCKED)
+         ========================= */
+      
+      .top-project-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;               
+      }
+    
+/* =========================
+   TEXT AREA (LOCKED)
+   ========================= */
+
+.top-project-text {
+    min-height: 260px;                 /* 🔑 text won't resize card */
+  }
+  
+  
+  .top-project.reverse {
+    direction: rtl;
+  }
+  
+  .top-project.reverse > * {
+    direction: ltr;
+  }
+  
+  /* =========================
+     IMAGE / CAROUSEL
+     ========================= */
+  
+  .top-project-image {
+    position: relative;
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .image-slider {
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    margin-top: 1em;
+  }
+  
+  .image-track {
+    display: flex;
+    width: 100%;
+    transition: transform 0.4s ease;
+  }
+  
+  .image-track img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: zoom-in;
+    padding: 0.75em;
+    box-sizing: border-box;
+  }
+  
+  /* =========================
+     ARROWS
+     ========================= */
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.55);
+    border: none;
+    color: white;
+    font-size: 1.4em;
+    padding: 0.15em 0.45em;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .arrow.left {
+    left: 8px;                     /* never negative */
+  }
+  
+  .arrow.right {
+    right: 8px;
+  }
+  
+  .arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* =========================
+     MOBILE CAROUSEL (PHONES)
+     ========================= */
+  
+  .mobile-carousel .image-slider {
+    aspect-ratio: 9 / 16;
+    max-width: 210px;
+    margin: 0 auto;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  
+  .mobile-carousel .image-track img {
+    padding: 1em;
+    border-radius: 42px;
+    background: #000;
+    border: 2px solid #444;
+    margin-right: 1em;
+  }
+  
+  /* =========================
+     CONTENT
+     ========================= */
+  
+  .top-project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .top-project-text h2 {
+    margin-bottom: 0.4em;
+  }
+  
+  .subtitle {
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  
+  .step-label {
+    display: inline-block;
+    margin-top: 1em;
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #8f7aff;
+    margin-bottom: 1em;
+  }
+  
+  .top-project-text p {
+    line-height: 1.6;
+    color: #ddd;
+  }
+  
+  /* =========================
+     FOOTER
+     ========================= */
+  
+  .top-project-footer {
+    margin-top: 1em;
+  }
+  
+  .top-tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6em;
+    margin-bottom: 2em;
+  }
+  
+  .top-tech-list span {
+    background: #2b2b2b;
+    padding: 0.4em 0.9em;
+    border-radius: 20px;
+    font-size: 0.85em;
+  }
+  
+  .project-link,
+  .contact-project-link {
+    display: inline-block;
+    padding: 0.8em 2em;
+    background: #8f7aff;
+    color: black;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .project-link:hover,
+  .contact-project-link:hover {
+    background: rgb(194, 72, 222);
+  }
+  
+  /* =========================
+     FULLSCREEN IMAGE
+     ========================= */
+  
+  .image-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 3000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+  }
+  
+  .image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 16px;
+  }
+  
+  .image-modal-mobile {
+    height: 70vh;
+    background: #000;
+    border: 2px solid #444;
+    border-radius: 42px !important;
+  }
+  
+  /* =========================
+     MOBILE LAYOUT
+     ========================= */
+  
+  @media (max-width: 900px) {
+    .top-project {
+      grid-template-columns: 1fr;
+      padding: 2em 1.4em;
+      text-align: center;
+      width: 92.5%;
+      margin-left: 0.85em;
+    }
+
+    .top-projects h1 { 
+        margin-bottom: 1em;
+    }
+
+    .step-label {
+        margin-bottom: 0em;
+      }
+  
+    .top-project.reverse {
+      direction: ltr;
+    }
+  
+    .top-project-image {
+      max-width: 90%;
+      margin-bottom: -2em;
+    }
+
+    .mobile-carousel .image-slider {
+        max-width: 180px;
+      }
+    
+  
+    .image-slider {
+      aspect-ratio: 4 / 3;
+    }
+  
+    .arrow {
+      font-size: 1.5em;
+    }
+  
+    .top-tech-list {
+      justify-content: center;
+    }
+  }
+  
+  /* =========================
+     SAFETY NET
+     ========================= */
+
+  

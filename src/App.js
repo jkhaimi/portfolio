@@ -9,6 +9,8 @@ import OptionsMobile from "./Components/OptionsMobile";
 import InfoMobile from "./Components/InfoMobile";
 import Footer from "./Components/Footer";
 
+import Jesse from "./Components/Jesse";
+import TopProjects from "./Components/TopProjects";
 import Home from "./Components/Home";
 import Projects from "./Components/Projects";
 import Resume from "./Components/Resume";
@@ -42,8 +44,11 @@ function App() {
                   path="/"
                   element={
                     <>
+                    <Jesse />
+                    <TopProjects />
+                    <Projects />
                       <Home />
-                      <Projects />
+                      
                     </>
                   }
                 />
