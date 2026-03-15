@@ -10,7 +10,6 @@ const Translations = {
         CONTACT_BUTTON: "Get in Touch",
 
         // Contact
-
         CONTACT_TITLE: "Contact",
         CONTACT_TEXT: "Have any questions or feedback? Fill the form, or",
         CONTACT_EMAIL_LINK: "email me",
@@ -93,7 +92,6 @@ const Translations = {
         BACK: "Back",
 
         // Top Projects
-
         TOP_PROJECTS_TITLE: "Top Projects",
 
         STEP_WHAT: "What",

@@ -13,8 +13,6 @@ import Jesse from "./Components/Jesse";
 import TopProjects from "./Components/TopProjects";
 import Home from "./Components/Home";
 import Projects from "./Components/Projects";
-import Resume from "./Components/Resume";
-import ChessGame from "./Components/ChessGame";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
@@ -52,9 +50,6 @@ function App() {
                     </>
                   }
                 />
-
-                <Route path="/resume" element={<Resume />} />
-                <Route path="/chess" element={<ChessGame />} />
               </Routes>
             </div>
           </div>

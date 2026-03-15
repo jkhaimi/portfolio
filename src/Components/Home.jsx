@@ -4,6 +4,9 @@ import { FaReact, FaNodeJs, FaPython, FaDatabase, FaJsSquare, FaJava, FaAws, FaG
 import { FaFutbol, FaMusic, FaChessKnight, FaDumbbell, FaBook, FaCode } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
 import { useTranslation } from "react-i18next";
+import finnishIcon from "../Images/finnish2.png";
+import englishIcon from "../Images/english2.png";
+import spanishIcon from "../Images/spanish2.png";
 
 const Home = () => {
 
@@ -138,15 +141,15 @@ const Home = () => {
         <FaCode size={40} className="hobby-icon" />
         </div>
       <div className="language-item">
-        <img src={require("../Images/finnish2.png")} alt="Finnish" className="language-icon" />
+        <img src={finnishIcon} alt="Finnish" className="language-icon" />
         <span className="tooltip">{t("FINNISH")}</span>
       </div>
       <div className="language-item">
-        <img src={require("../Images/english2.png")} alt="English" className="language-icon" />
+        <img src={englishIcon} alt="English" className="language-icon" />
         <span className="tooltip">{t("ENGLISH")}</span>
       </div>
       <div className="language-item">
-        <img src={require("../Images/spanish2.png")} alt="Spanish" className="language-icon" />
+        <img src={spanishIcon} alt="Spanish" className="language-icon" />
         <span className="tooltip">{t("SPANISH")}</span>
       </div>
     </div>
