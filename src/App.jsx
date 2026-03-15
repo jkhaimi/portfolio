@@ -38,18 +38,14 @@ function App() {
               {isMobile && <InfoMobile />}
 
               <Routes>
-                <Route
-                  path="/"
-                  element={
-                    <>
-                    <Jesse />
-                    <TopProjects />
-                    <Projects />
-                      <Home />
-                      
-                    </>
-                  }
-                />
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Home />
+                  </>
+                }
+              />
               </Routes>
             </div>
           </div>
